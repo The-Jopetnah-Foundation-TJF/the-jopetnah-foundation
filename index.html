@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Jopetnah Foundation — Building whole communities, one life at a time</title>
+<meta name="description" content="The Jopetnah Foundation integrates education, health, livelihoods, and environment programs into one family-centered model.">
+
+<!-- Open Graph / Facebook, LinkedIn, WhatsApp -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Jopetnah Foundation — Building whole communities, one life at a time">
+<meta property="og:description" content="Education, health, livelihoods, and environment — one family-centered model. Currently in founding stage and seeking founding partners.">
+<meta property="og:image" content="https://REPLACE-WITH-YOUR-USERNAME.github.io/REPLACE-WITH-YOUR-REPO/social-preview.png">
+<meta property="og:url" content="https://REPLACE-WITH-YOUR-USERNAME.github.io/REPLACE-WITH-YOUR-REPO/">
+<meta property="og:site_name" content="The Jopetnah Foundation">
+
+<!-- Twitter / X Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Jopetnah Foundation — Building whole communities, one life at a time">
+<meta name="twitter:description" content="Education, health, livelihoods, and environment — one family-centered model. Currently in founding stage and seeking founding partners.">
+<meta name="twitter:image" content="https://REPLACE-WITH-YOUR-USERNAME.github.io/REPLACE-WITH-YOUR-REPO/social-preview.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #241609;
+    --bg-deep: #180E06;
+    --surface: #32211A;
+    --surface-2: #3D291F;
+    --terracotta: #C4623C;
+    --terracotta-dim: #8F4A31;
+    --gold: #D8A63D;
+    --sage: #7C9473;
+    --cream: #F3E9DC;
+    --muted: #B9A390;
+    --line: rgba(243,233,220,0.12);
+    --radius: 14px;
+    --maxw: 1120px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--cream);
+    font-family:'Work Sans', sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    margin:0 0 0.4em 0;
+    letter-spacing:-0.01em;
+  }
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.78rem;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--gold);
+    margin-bottom:0.9em;
+    display:block;
+  }
+  a{color:var(--gold);}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 28px;}
+  section{padding:100px 0;}
+  @media (max-width:720px){ section{padding:64px 0;} }
+
+  /* ---------- NAV ---------- */
+  nav{
+    position:sticky; top:0; z-index:50;
+    background:rgba(24,14,6,0.85);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  nav .wrap{display:flex; align-items:center; justify-content:space-between; padding-top:18px; padding-bottom:18px;}
+  .brand{font-family:'Fraunces', serif; font-weight:600; font-size:1.15rem; color:var(--cream); text-decoration:none;}
+  .brand span{color:var(--terracotta);}
+  .navlinks{display:flex; gap:28px; font-size:0.92rem;}
+  .navlinks a{color:var(--muted); text-decoration:none; transition:color .2s;}
+  .navlinks a:hover{color:var(--cream);}
+  .navcta{
+    background:var(--terracotta); color:var(--bg-deep) !important; font-weight:600;
+    padding:9px 18px; border-radius:999px; text-decoration:none; font-size:0.88rem;
+  }
+  @media (max-width:720px){ .navlinks{display:none;} }
+
+  /* ---------- HERO ---------- */
+  .hero{padding-top:90px; padding-bottom:70px; position:relative; overflow:hidden;}
+  .hero-grid{display:grid; grid-template-columns:1.1fr 0.9fr; gap:40px; align-items:center;}
+  @media (max-width:860px){ .hero-grid{grid-template-columns:1fr;} }
+  .hero h1{font-size:clamp(2.4rem, 5vw, 3.6rem); line-height:1.06; color:var(--cream);}
+  .hero h1 em{font-style:italic; color:var(--terracotta);}
+  .hero p.lede{font-size:1.15rem; color:var(--muted); max-width:46ch; margin-top:18px;}
+  .hero-actions{display:flex; gap:14px; margin-top:34px; flex-wrap:wrap;}
+  .btn{
+    display:inline-block; padding:13px 26px; border-radius:999px; text-decoration:none;
+    font-weight:600; font-size:0.95rem; transition:transform .15s ease, opacity .15s ease;
+  }
+  .btn:hover{transform:translateY(-1px);}
+  .btn-primary{background:var(--terracotta); color:#1A0F07;}
+  .btn-secondary{background:transparent; color:var(--cream); border:1px solid var(--line);}
+
+  /* convergence signature graphic */
+  .converge-wrap{display:flex; justify-content:center; align-items:center;}
+  .converge{width:100%; max-width:420px;}
+  .converge circle.node{transition: transform 1s cubic-bezier(.22,.9,.3,1), opacity 1s ease;}
+  .converge .beam{stroke-dasharray:4 7; animation:dash 30s linear infinite;}
+  @keyframes dash{to{stroke-dashoffset:-500;}}
+  @media (prefers-reduced-motion: reduce){ .converge .beam{animation:none;} }
+
+  /* ---------- STAT STRIP ---------- */
+  .stats-strip{border-top:1px solid var(--line); border-bottom:1px solid var(--line); background:var(--bg-deep);}
+  .stats-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:0;}
+  @media (max-width:720px){ .stats-grid{grid-template-columns:repeat(2,1fr);} }
+  .stat{padding:34px 20px; text-align:center; border-right:1px solid var(--line);}
+  .stat:last-child{border-right:none;}
+  .stat .num{font-family:'Fraunces', serif; font-size:2.3rem; color:var(--gold); font-weight:600;}
+  .stat .lbl{font-size:0.85rem; color:var(--muted); margin-top:4px;}
+
+  /* ---------- PROBLEM ---------- */
+  .problem .wrap{max-width:820px;}
+  .problem h2{font-size:2rem; color:var(--cream);}
+  .problem p{color:var(--muted); font-size:1.08rem; max-width:62ch;}
+  .problem p.emph{color:var(--cream); font-weight:500;}
+
+  /* ---------- MODEL / CONVERGENCE DETAIL ---------- */
+  .model{background:var(--surface); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .model-grid{display:grid; grid-template-columns:0.95fr 1.05fr; gap:56px; align-items:center;}
+  @media (max-width:860px){ .model-grid{grid-template-columns:1fr;} }
+  .model h2{color:var(--cream); font-size:2rem;}
+  .model p{color:var(--muted);}
+  .pillar-row{display:flex; align-items:flex-start; gap:14px; margin-top:20px; padding-top:20px; border-top:1px solid var(--line);}
+  .pillar-row:first-of-type{border-top:none; margin-top:26px; padding-top:0;}
+  .pillar-dot{width:10px; height:10px; border-radius:50%; margin-top:8px; flex-shrink:0;}
+  .pillar-row h4{margin:0; font-family:'Work Sans'; font-weight:600; font-size:1.02rem; color:var(--cream);}
+  .pillar-row p{margin:4px 0 0 0; font-size:0.94rem; color:var(--muted);}
+
+  /* ---------- PROGRAMS ---------- */
+  .programs h2{font-size:2rem; color:var(--cream); text-align:center;}
+  .programs > .wrap > p.center{text-align:center; color:var(--muted); max-width:56ch; margin:14px auto 50px auto;}
+  .card-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:22px;}
+  @media (max-width:720px){ .card-grid{grid-template-columns:1fr;} }
+  .card{
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+    padding:30px; transition:border-color .2s ease;
+  }
+  .card:hover{border-color:var(--terracotta-dim);}
+  .card .icon{width:46px; height:46px; border-radius:50%; display:flex; align-items:center; justify-content:center; margin-bottom:18px;}
+  .card h3{font-size:1.25rem; color:var(--cream); margin-bottom:10px;}
+  .card ul{margin:0; padding-left:18px; color:var(--muted); font-size:0.94rem;}
+  .card li{margin-bottom:6px;}
+
+  /* ---------- SUPPORT ---------- */
+  .support{background:var(--bg-deep); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .support h2{text-align:center; color:var(--cream); font-size:2rem;}
+  .support-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-top:44px;}
+  @media (max-width:860px){ .support-grid{grid-template-columns:1fr;} }
+  .support-col{padding:28px; border:1px solid var(--line); border-radius:var(--radius);}
+  .support-col h3{font-size:1.1rem; color:var(--gold); margin-bottom:14px;}
+  .support-col ul{padding-left:18px; color:var(--muted); font-size:0.93rem; margin:0;}
+  .support-col li{margin-bottom:8px;}
+
+  .tiers{margin-top:56px; overflow-x:auto;}
+  table{width:100%; border-collapse:collapse; font-size:0.92rem;}
+  th,td{text-align:left; padding:14px 16px; border-bottom:1px solid var(--line);}
+  th{font-family:'IBM Plex Mono', monospace; font-size:0.75rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--muted); font-weight:500;}
+  td:first-child, th:first-child{color:var(--cream); font-weight:600;}
+  td.amt{color:var(--gold); font-family:'IBM Plex Mono', monospace;}
+
+  /* ---------- ROADMAP ---------- */
+  .roadmap h2{text-align:center; color:var(--cream); font-size:2rem;}
+  .timeline{max-width:720px; margin:50px auto 0 auto; position:relative; padding-left:34px; border-left:1px solid var(--line);}
+  .phase{position:relative; padding-bottom:44px;}
+  .phase:last-child{padding-bottom:0;}
+  .phase::before{
+    content:''; position:absolute; left:-39.5px; top:2px; width:11px; height:11px; border-radius:50%;
+    background:var(--terracotta); border:3px solid var(--bg);
+  }
+  .phase h4{margin:0 0 6px 0; color:var(--cream); font-family:'Fraunces'; font-size:1.15rem;}
+  .phase p{margin:0; color:var(--muted); font-size:0.95rem;}
+
+  /* ---------- CTA ---------- */
+  .cta{background:linear-gradient(160deg, var(--surface-2), var(--bg-deep)); text-align:center;}
+  .cta h2{font-size:2.1rem; color:var(--cream);}
+  .cta p{color:var(--muted); max-width:52ch; margin:14px auto 0 auto;}
+  .cta .hero-actions{justify-content:center;}
+
+  /* ---------- FOOTER ---------- */
+  footer{border-top:1px solid var(--line); padding:44px 0; background:var(--bg-deep);}
+  footer .wrap{display:flex; flex-wrap:wrap; gap:20px; justify-content:space-between; align-items:center;}
+  footer p{margin:0; color:var(--muted); font-size:0.85rem;}
+  footer .flinks a{color:var(--muted); text-decoration:none; margin-left:18px; font-size:0.85rem;}
+  footer .flinks a:hover{color:var(--cream);}
+
+  .reveal{opacity:0; transform:translateY(16px); transition:opacity .7s ease, transform .7s ease;}
+  .reveal.in{opacity:1; transform:translateY(0);}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="#" class="brand">Jopetnah<span>.</span></a>
+    <div class="navlinks">
+      <a href="#model">Model</a>
+      <a href="#programs">Programs</a>
+      <a href="#support">Support</a>
+      <a href="#roadmap">Roadmap</a>
+    </div>
+    <a class="navcta" href="#get-involved">Get Involved</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">The Jopetnah Foundation</span>
+      <h1>Building whole<br>communities, <em>one life</em><br>at a time.</h1>
+      <p class="lede">We fold education, health, livelihoods, and environment into a single family-centered model — because the families we serve never face one problem at a time.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#get-involved">Partner with us</a>
+        <a class="btn btn-secondary" href="#programs">See the programs</a>
+      </div>
+    </div>
+    <div class="converge-wrap">
+      <svg class="converge" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-label="Four program pillars converging into one family-centered model">
+        <line class="beam" x1="90" y1="90" x2="200" y2="200" stroke="#8F4A31" stroke-width="1.5" opacity="0.6"/>
+        <line class="beam" x1="310" y1="90" x2="200" y2="200" stroke="#8F4A31" stroke-width="1.5" opacity="0.6"/>
+        <line class="beam" x1="90" y1="310" x2="200" y2="200" stroke="#8F4A31" stroke-width="1.5" opacity="0.6"/>
+        <line class="beam" x1="310" y1="310" x2="200" y2="200" stroke="#8F4A31" stroke-width="1.5" opacity="0.6"/>
+
+        <circle class="node" cx="90" cy="90" r="34" fill="#C4623C"/>
+        <circle class="node" cx="310" cy="90" r="34" fill="#8F4A31"/>
+        <circle class="node" cx="90" cy="310" r="34" fill="#D8A63D"/>
+        <circle class="node" cx="310" cy="310" r="34" fill="#7C9473"/>
+
+        <text x="90" y="95" text-anchor="middle" font-size="13" fill="#180E06" font-family="Work Sans" font-weight="600">Edu</text>
+        <text x="310" y="95" text-anchor="middle" font-size="13" fill="#F3E9DC" font-family="Work Sans" font-weight="600">Health</text>
+        <text x="90" y="315" text-anchor="middle" font-size="12" fill="#180E06" font-family="Work Sans" font-weight="600">Income</text>
+        <text x="310" y="315" text-anchor="middle" font-size="11" fill="#180E06" font-family="Work Sans" font-weight="600">Environ.</text>
+
+        <circle cx="200" cy="200" r="52" fill="#F3E9DC"/>
+        <text x="200" y="196" text-anchor="middle" font-size="13" fill="#241609" font-family="Fraunces" font-weight="600">One</text>
+        <text x="200" y="214" text-anchor="middle" font-size="13" fill="#241609" font-family="Fraunces" font-weight="600">family</text>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<div class="stats-strip">
+  <div class="wrap stats-grid">
+    <div class="stat"><div class="num">4</div><div class="lbl">integrated pillars</div></div>
+    <div class="stat"><div class="num">1</div><div class="lbl">family-centered model</div></div>
+    <div class="stat"><div class="num">3</div><div class="lbl">ways to partner</div></div>
+    <div class="stat"><div class="num">2026</div><div class="lbl">founding year</div></div>
+  </div>
+</div>
+
+<section class="problem reveal">
+  <div class="wrap">
+    <span class="eyebrow">The problem</span>
+    <h2>It never arrives in one piece.</h2>
+    <p>In the communities Jopetnah serves, a child out of school, a family without healthcare, and a household without income are rarely separate problems — they're the same problem, seen from different angles.</p>
+    <p class="emph">Most organizations specialize in one slice of it. Jopetnah is built to address the whole picture, for the whole family.</p>
+  </div>
+</section>
+
+<section class="model reveal" id="model">
+  <div class="wrap model-grid">
+    <div>
+      <span class="eyebrow">Our model</span>
+      <h2>Four pillars.<br>One point of entry.</h2>
+      <p>Because our programs work together, a single Jopetnah gift or partnership can be shown to reach every part of one family's life — not just one slice of it.</p>
+    </div>
+    <div>
+      <div class="pillar-row"><span class="pillar-dot" style="background:#C4623C"></span><div><h4>Education & Youth Development</h4><p>Scholarships, mentorship, and digital-skills labs.</p></div></div>
+      <div class="pillar-row"><span class="pillar-dot" style="background:#8F4A31"></span><div><h4>Health & Wellbeing</h4><p>Community health champions and mobile wellness clinics.</p></div></div>
+      <div class="pillar-row"><span class="pillar-dot" style="background:#D8A63D"></span><div><h4>Livelihoods</h4><p>Micro-grants, vocational-to-job pipelines, savings circles.</p></div></div>
+      <div class="pillar-row"><span class="pillar-dot" style="background:#7C9473"></span><div><h4>Environment</h4><p>Clean water, sanitation access, and climate-smart farming.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="programs reveal" id="programs">
+  <div class="wrap">
+    <span class="eyebrow" style="display:block;text-align:center;">Programs</span>
+    <h2>Flagship work in every pillar</h2>
+    <p class="center">A closer look at what Jopetnah funds and runs on the ground.</p>
+    <div class="card-grid">
+      <div class="card">
+        <div class="icon" style="background:#C4623C"></div>
+        <h3>Education & Youth Development</h3>
+        <ul>
+          <li><strong>Jopetnah Scholars</strong> — need-based scholarships + mentorship</li>
+          <li><strong>Future-Ready Labs</strong> — digital & vocational skills hubs</li>
+          <li><strong>Read to Lead</strong> — community libraries & literacy</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="icon" style="background:#8F4A31"></div>
+        <h3>Health & Wellbeing</h3>
+        <ul>
+          <li><strong>Community Health Champions</strong> — trained local health educators</li>
+          <li><strong>Mobile Wellness Clinics</strong> — maternal health, screenings, vaccines</li>
+          <li><strong>Mind & Body Program</strong> — mental health & nutrition education</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="icon" style="background:#D8A63D"></div>
+        <h3>Poverty Alleviation & Livelihoods</h3>
+        <ul>
+          <li><strong>Jopetnah Micro-Grants</strong> — seed capital + training</li>
+          <li><strong>Skills-to-Income Pipeline</strong> — training tied to jobs</li>
+          <li><strong>Cooperative Savings Circles</strong> — savings + financial literacy</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="icon" style="background:#7C9473"></div>
+        <h3>Environment & Community Development</h3>
+        <ul>
+          <li><strong>Green Neighborhoods</strong> — tree planting & clean-ups</li>
+          <li><strong>Water & Sanitation Access</strong> — boreholes & hygiene education</li>
+          <li><strong>Climate-Smart Livelihoods</strong> — eco-friendly agribusiness</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="support reveal" id="support">
+  <div class="wrap">
+    <span class="eyebrow" style="display:block;text-align:center;">How to support</span>
+    <h2>Three ways to partner with Jopetnah</h2>
+    <div class="support-grid">
+      <div class="support-col">
+        <h3>Individuals & Diaspora</h3>
+        <ul>
+          <li>Send Home Hope giving circle</li>
+          <li>Sponsor-a-Student / Sponsor-a-Family</li>
+          <li>Founder's Circle recurring giving</li>
+        </ul>
+      </div>
+      <div class="support-col">
+        <h3>Corporate Sponsors</h3>
+        <ul>
+          <li>Tiered partnership program</li>
+          <li>Adopt-a-Program sponsorship</li>
+          <li>Employee giving & matching</li>
+        </ul>
+      </div>
+      <div class="support-col">
+        <h3>Institutional Grants</h3>
+        <ul>
+          <li>Active, trackable grants calendar</li>
+          <li>Modular concept notes per pillar</li>
+          <li>Consortium partnerships for scale</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tiers">
+      <table>
+        <thead><tr><th>Tier</th><th>Gift</th><th>Funds</th></tr></thead>
+        <tbody>
+          <tr><td>Friend</td><td class="amt">$25/mo</td><td>One month of a community library slot</td></tr>
+          <tr><td>Champion</td><td class="amt">$100/mo</td><td>One month of a Community Health Champion's outreach</td></tr>
+          <tr><td>Guardian</td><td class="amt">$500</td><td>A full "whole-family" bundled gift</td></tr>
+          <tr><td>Founder's Circle</td><td class="amt">$5,000+/yr</td><td>Named recognition, gala invite, quarterly briefings</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="roadmap reveal" id="roadmap">
+  <div class="wrap">
+    <span class="eyebrow" style="display:block;text-align:center;">Launch roadmap</span>
+    <h2>Where we are, and where we're headed</h2>
+    <div class="timeline">
+      <div class="phase">
+        <h4>Phase 1 — Foundation</h4>
+        <p>Legal registration, board formation, brand & website launch, one pilot program per pillar.</p>
+      </div>
+      <div class="phase">
+        <h4>Phase 2 — First Partners</h4>
+        <p>First Jopetnah Day giving campaign, 2–3 anchor corporate sponsors signed, first grant applications submitted.</p>
+      </div>
+      <div class="phase">
+        <h4>Phase 3 — Scale</h4>
+        <p>Scale successful pilots, host the first annual Gala, pursue multi-year institutional grants, expand geographically.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta reveal" id="get-involved">
+  <div class="wrap">
+    <span class="eyebrow">Get involved</span>
+    <h2>Join us at the ground level.</h2>
+    <p>We're finalizing our legal registration and looking for founding board members, an incorporation partner, and early corporate and institutional co-founders.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="mailto:partnerships@jopetnahfoundation.org">Email partnerships@jopetnahfoundation.org</a>
+      <a class="btn btn-secondary" href="https://github.com/">Open an issue on GitHub</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 The Jopetnah Foundation</p>
+    <div class="flinks">
+      <a href="README.md">Repo README</a>
+      <a href="docs/BLUEPRINT.md">Blueprint</a>
+      <a href="LICENSE">License</a>
+      <a href="CONTRIBUTING.md">Contributing</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => io.observe(el));
+
+  // gentle idle pulse on the convergence nodes (respects reduced motion)
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!prefersReduced) {
+    const nodes = document.querySelectorAll('.converge .node');
+    let t = 0;
+    setInterval(() => {
+      t += 1;
+      nodes.forEach((n, i) => {
+        const s = 1 + Math.sin(t / 12 + i) * 0.03;
+        n.style.transformOrigin = `${n.getAttribute('cx')}px ${n.getAttribute('cy')}px`;
+        n.style.transform = `scale(${s})`;
+      });
+    }, 200);
+  }
+</script>
+
+</body>
+</html>
