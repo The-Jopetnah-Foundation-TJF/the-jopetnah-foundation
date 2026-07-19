@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="google-site-verification" content="_Eg663Hq9ZPiB28TuhgNFLIrnGq34O-PieZXQLz6pJc" />
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <title>The Jopetnah Foundation — Building whole communities, one life at a time</title>
 <meta name="description" content="The Jopetnah Foundation integrates education, health, livelihoods, and environment programs into one family-centered model.">
 <link rel="canonical" href="https://jopetnahinternationallimited.github.io/the-jopetnah-foundation/">
@@ -29,7 +31,7 @@
   "@type": "NGO",
   "name": "The Jopetnah Foundation",
   "url": "https://jopetnahinternationallimited.github.io/the-jopetnah-foundation/",
-  "logo": "https://jopetnahinternationallimited.github.io/the-jopetnah-foundation/social-preview.png",
+  "logo": "https://jopetnahinternationallimited.github.io/the-jopetnah-foundation/jopetnah-icon-512.png",
   "description": "The Jopetnah Foundation integrates education, health, livelihoods, and environment programs into one family-centered model for underserved communities.",
   "areaServed": "Uganda",
   "foundingLocation": {
@@ -104,7 +106,8 @@
     border-bottom:1px solid var(--line);
   }
   nav .wrap{display:flex; align-items:center; justify-content:space-between; padding-top:18px; padding-bottom:18px;}
-  .brand{font-family:'Fraunces', serif; font-weight:600; font-size:1.15rem; color:var(--cream); text-decoration:none;}
+  .brand{font-family:'Fraunces', serif; font-weight:600; font-size:1.15rem; color:var(--cream); text-decoration:none; display:flex; align-items:center; gap:9px;}
+  .brand-mark{flex-shrink:0;}
   .brand span{color:var(--terracotta);}
   .navlinks{display:flex; gap:28px; font-size:0.92rem;}
   .navlinks a{color:var(--muted); text-decoration:none; transition:color .2s;}
@@ -231,7 +234,16 @@
 
 <nav>
   <div class="wrap">
-    <a href="#" class="brand">Jopetnah<span>.</span></a>
+    <a href="#" class="brand">
+      <svg class="brand-mark" width="30" height="30" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M100,150 C 66,126.25 66,74 100,55 C 134,74 134,126.25 100,150 Z" fill="#7C9473" transform="rotate(-48 100 150)"/>
+        <path d="M100,150 C 66,126.25 66,74 100,55 C 134,74 134,126.25 100,150 Z" fill="#D8A63D" transform="rotate(48 100 150)"/>
+        <path d="M100,150 C 74,130.5 74,87.6 100,72 C 126,87.6 126,130.5 100,150 Z" fill="#C4623C" transform="rotate(-16 100 150)"/>
+        <path d="M100,150 C 74,130.5 74,87.6 100,72 C 126,87.6 126,130.5 100,150 Z" fill="#8F4A31" transform="rotate(16 100 150)"/>
+        <rect x="95" y="150" width="10" height="17" rx="5" fill="#F3E9DC"/>
+      </svg>
+      Jopetnah<span>.</span>
+    </a>
     <div class="navlinks">
       <a href="#model">Model</a>
       <a href="#programs">Programs</a>
