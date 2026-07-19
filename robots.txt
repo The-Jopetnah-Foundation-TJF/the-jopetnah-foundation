@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jopetnahinternationallimited.github.io/the-jopetnah-foundation/sitemap.xml
