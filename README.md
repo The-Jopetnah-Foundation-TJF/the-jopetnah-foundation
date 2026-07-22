@@ -1,4 +1,4 @@
-[README_CONSOLIDATED.md](https://github.com/user-attachments/files/30171497/README_CONSOLIDATED.md)
+[README_CONSOLIDATED.md](https://github.com/user-attachments/files/30258161/README_CONSOLIDATED.md)
 <div align="center">
 
 <img src="jopetnah-icon-512.png" width="90" alt="The Jopetnah Foundation logo">
@@ -176,12 +176,13 @@ You left, but your community didn't leave your heart. Send Home Hope turns that 
 
 ## 🏛️ Governance & Accountability
 
-*(Reflects current planning intent — final legal form to be confirmed with counsel.)*
-
 - Independent **Board of Trustees** (7–9 members) for fiduciary oversight
 - **Executive Director** + Program Directors for each of the four pillars
 - **Advisory Council** of community, diaspora, and sector leaders
 - Commitment to published annual impact reports and audited financials once operational
+
+**📄 Full governance document bundle** — Constitution, Board Charter, Conflict of Interest Policy, Whistleblower Policy, and Safeguarding Policy, reviewed and approved by the founding Board of Trustees:
+[`governance/TJF_Governance_Bundle_FINAL.pdf`](governance/TJF_Governance_Bundle_FINAL.pdf)
 
 ## 🗺️ Launch Roadmap
 
