@@ -1,0 +1,28 @@
+# -------------------------------------------------------------------
+# The Jopetnah Foundation
+# CODEOWNERS
+#
+# Automatically assigns reviewers for pull requests.
+# Update GitHub usernames as the Foundation team grows.
+# -------------------------------------------------------------------
+
+# Default reviewers
+* @JopetnahInternationalLimited
+
+# Governance
+/governance/ @JopetnahInternationalLimited
+
+# Compliance
+/compliance/ @JopetnahInternationalLimited
+
+# Policies
+/policies/ @JopetnahInternationalLimited
+
+# Programs
+/programs/ @JopetnahInternationalLimited
+
+# Reports
+/reports/ @JopetnahInternationalLimited
+
+# Website
+/docs/ @JopetnahInternationalLimited
