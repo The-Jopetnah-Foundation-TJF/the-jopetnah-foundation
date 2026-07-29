@@ -1,4 +1,4 @@
-[README_CONSOLIDATED.md](https://github.com/user-attachments/files/30258161/README_CONSOLIDATED.md)
+[README_CONSOLIDATED.md](https://github.com/user-attachments/files/30505103/README_CONSOLIDATED.md)
 <div align="center">
 
 <img src="jopetnah-icon-512.png" width="90" alt="The Jopetnah Foundation logo">
@@ -66,8 +66,10 @@ In the communities Jopetnah serves, a child out of school, a family without heal
 - **Read to Lead** — community libraries and literacy campaigns for early learners
 
 ### 🩺 Health & Wellbeing
+Malaria remains one of the leading causes of death in sub-Saharan Africa: the WHO African Region accounted for 95% of the world's roughly 610,000 malaria deaths in 2024, three-quarters of them children under five — and Uganda is ranked among the ten highest-burden countries globally *(WHO, World Malaria Report 2025)*. This is a core reason the Health pillar exists and how its programs are designed.
 - **Community Health Champions** — trains local volunteers as first-line health educators
 - **Mobile Wellness Clinics** — periodic outreach to remote areas (maternal health, screenings, vaccinations)
+- **Malaria Prevention & Response** — insecticide-treated bed net distribution, rapid diagnostic testing referrals, and community education, delivered alongside Mobile Wellness Clinic visits
 - **Mind & Body Program** — mental health awareness, nutrition, and adolescent health education
 
 ### 💰 Poverty Alleviation & Livelihoods
