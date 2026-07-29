@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jopetnahinternationallimited.github.io/the-jopetnah-foundation/sitemap.xml
+Sitemap: https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/sitemap.xml
