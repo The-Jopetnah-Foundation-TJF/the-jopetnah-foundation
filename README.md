@@ -209,7 +209,7 @@ You left, but your community didn't leave your heart. Send Home Hope turns that 
 └── .github/ISSUE_TEMPLATE/    ← Grant Lead, Offer of Support, and Correction issue forms
 ```
 
-**Landing page:** live at `https://jopetnahinternationallimited.github.io/the-jopetnah-foundation/` via GitHub Pages.
+**Landing page:** live at `https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/` via GitHub Pages.
 
 *(A companion `Jopetnah_Grants_Calendar.xlsx`, `Jopetnah_Donor_Pitch_Deck.pptx`, and the Foundation's governance documents — Constitution, Board Charter, Conflict of Interest Policy, Whistleblower Policy, and Safeguarding Policy — are maintained alongside this repo, not rendered in markdown, but referenced throughout.)*
 
