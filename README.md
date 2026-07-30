@@ -3,7 +3,7 @@
 
 <img src="jopetnah-icon-512.png" width="90" alt="The Jopetnah Foundation logo">
 
-# The Jopetnah Foundation
+# The Jopetnah Foundation [TJP]
 
 **Building whole communities, one life at a time.**
 
