@@ -1,9 +1,9 @@
-[README_CONSOLIDATED.md](https://github.com/user-attachments/files/30505103/README_CONSOLIDATED.md)
+[README_CONSOLIDATED.md](https://github.com/user-attachments/files/30578363/README_CONSOLIDATED.md)
 <div align="center">
 
 <img src="jopetnah-icon-512.png" width="90" alt="The Jopetnah Foundation logo">
 
-# The Jopetnah Foundation [TJP]
+# The Jopetnah Foundation [TJF]
 
 **Building whole communities, one life at a time.**
 
@@ -44,6 +44,18 @@ In the communities Jopetnah serves, a child out of school, a family without heal
  Education     Health           Livelihoods   Environment
 ```
 
+**The Ugandan Context:** This interconnection isn't theoretical — it shows up in the data. Malaria alone makes Uganda one of the ten highest-burden countries in the world, and a leading cause of under-five deaths *(WHO, World Malaria Report 2025)*. And when illness strikes, the financial shock compounds it: the World Bank estimates that out-of-pocket healthcare costs push nearly one million Ugandans into poverty every year, often forcing families to sell productive assets or interrupt a child's schooling to cover a single medical bill *(World Bank; Economic Policy Research Centre, Uganda)*. TJF's integrated model exists because a health crisis, an education gap, and a poverty trap are rarely separate problems in the households we aim to serve — they're the same shock, radiating outward.
+
+### 🔄 Our Theory of Change
+
+**If** we provide integrated support at the household level...
+
+- **Inputs:** Funding, volunteers, expertise
+- ➡️ **Activities:** Health clinics, micro-grants, scholarships, boreholes
+- ➡️ **Outputs:** Illnesses treated, businesses started, children in school, access to clean water
+- ➡️ **Outcomes:** Improved family health, increased household income, higher graduation rates
+- ➡️ **Impact:** A generation of communities that are educated, healthy, economically self-reliant, and environmentally sustainable
+
 ## 🏛️ Organizational Structure
 
 | Layer | Role |
@@ -65,6 +77,8 @@ In the communities Jopetnah serves, a child out of school, a family without heal
 - **Future-Ready Labs** — digital literacy and vocational skills hubs in underserved schools
 - **Read to Lead** — community libraries and literacy campaigns for early learners
 
+**Year 1 Pilot Goal:** Sponsor 50 vulnerable students (primary/secondary) and establish one Future-Ready digital literacy hub in a target underserved school, training 200 students in basic ICT skills.
+
 ### 🩺 Health & Wellbeing
 Malaria remains one of the leading causes of death in sub-Saharan Africa: the WHO African Region accounted for 95% of the world's roughly 610,000 malaria deaths in 2024, three-quarters of them children under five — and Uganda is ranked among the ten highest-burden countries globally *(WHO, World Malaria Report 2025)*. This is a core reason the Health pillar exists and how its programs are designed.
 - **Community Health Champions** — trains local volunteers as first-line health educators
@@ -72,15 +86,21 @@ Malaria remains one of the leading causes of death in sub-Saharan Africa: the WH
 - **Malaria Prevention & Response** — insecticide-treated bed net distribution, rapid diagnostic testing referrals, and community education, delivered alongside Mobile Wellness Clinic visits
 - **Mind & Body Program** — mental health awareness, nutrition, and adolescent health education
 
+**Year 1 Pilot Goal:** Train 20 Community Health Champions (aligning with Uganda's Village Health Team structure) and distribute 1,000 Long-Lasting Insecticidal Nets (LLINs) to pregnant women and children under 5 in our target district.
+
 ### 💰 Poverty Alleviation & Livelihoods
 - **Jopetnah Micro-Grants** — seed capital + training for small entrepreneurs (esp. women, youth)
 - **Skills-to-Income Pipeline** — vocational training tied directly to job placement or self-employment
 - **Cooperative Savings Circles** — savings groups paired with financial literacy training
 
+**Year 1 Pilot Goal:** Establish 5 Village Savings and Loan Association (VSLA) groups, enrolling 125 women and youth, and disburse 25 micro-grants ($50–$100 each) to fund viable micro-enterprises.
+
 ### 🌱 Environment & Community Development
 - **Green Neighborhoods** — tree planting, clean-up drives, community gardens
 - **Water & Sanitation Access** — boreholes, filtration units, hygiene education
 - **Climate-Smart Livelihoods** — links environment back to livelihoods (e.g., eco-friendly agribusiness)
+
+**Year 1 Pilot Goal:** Plant 5,000 indigenous and fruit trees in partnership with two local schools, and rehabilitate one community borehole to provide clean water access to an estimated 500 households.
 
 *Cross-pillar design lets us package "bundled" giving — e.g., a $500 gift funds one family's full-circle support: a child's school fees, a health check-up, and a livelihood grant for a parent.*
 
@@ -206,7 +226,10 @@ You left, but your community didn't leave your heart. Send Home Hope turns that 
 ├── social-preview.png         ← link-share preview image
 ├── robots.txt                 ← search engine crawl rules
 ├── sitemap.xml                ← search engine sitemap
-└── .github/ISSUE_TEMPLATE/    ← Grant Lead, Offer of Support, and Correction issue forms
+└── .github/ISSUE_TEMPLATE/
+    ├── grant_lead.md           ← Track a new grant opportunity
+    ├── offer_of_support.md     ← Volunteers, mentors, or pro-bono legal/tech help
+    └── correction.md           ← Report outdated info or broken links
 ```
 
 **Landing page:** live at `https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/` via GitHub Pages.
@@ -219,6 +242,8 @@ We're currently formalizing Jopetnah's legal structure and looking for:
 - Founding board members and advisors
 - An initial legal/incorporation partner
 - Early corporate and institutional co-founders
+
+**Current Donor Readiness & Fiscal Sponsorship:** TJF is currently finalizing its legal registration as a Company Limited by Guarantee and NGO in Uganda. For international donors and diaspora members who require tax-deductibility (such as US 501(c)(3) equivalence) before contributing, TJF is pursuing fiscal sponsorship. Our strategy is to onboard as a partner on **GlobalGiving.org**, a recognized platform that allows US and UK donors to make tax-deductible contributions to vetted grassroots organizations globally. Once our registration is complete and our pilot data is collected, we will launch a GlobalGiving campaign to unlock corporate matching funds and recurring diaspora giving. If you are a registered US/UK fiscal sponsor or an established NGO interested in a sub-grantee partnership, please reach out to us directly.
 
 **Interested?** Open an issue in this repo, or reach out at `partnerships@jopetnahfoundation.org` *(placeholder — update once the domain/email is live)*.
 
