@@ -85,4 +85,31 @@ Every Send Home Hope member receives a direct quarterly report — not just a th
 
 ---
 
+## PART C — Individual Program Page Copy
+
+*Full-length copy for dedicated program subpages (e.g., `/programs/education`) — distinct from the short homepage teaser blurbs in Part A, which link through to these.*
+
+### Page: Education & Youth Development
+**Headline:** Keeping Dreams in the Classroom.
+
+Education is the most powerful tool to break the cycle of poverty, but many Ugandan children are kept out of school by fees, lack of materials, or poor health. Through the **Jopetnah Scholars** program, we provide need-based scholarships and mentorship. Through **Future-Ready Labs**, we bridge the digital divide by bringing offline-first technology and vocational skills to underserved schools. And through **Read to Lead**, we build community libraries to foster a love for learning in early childhood. We don't just pay school fees; we build future leaders.
+
+### Page: Health & Wellbeing
+**Headline:** Health is the Foundation of Everything Else.
+
+A child cannot learn if they are sick. A parent cannot work if they are caring for a sick family member. Malaria alone remains a leading cause of death in sub-Saharan Africa, with Uganda carrying one of the highest burdens *(WHO, World Malaria Report 2025)*. TJF tackles health at the community level. We train **Community Health Champions** to serve as first-line educators, deploy **Mobile Wellness Clinics** to remote areas, and distribute insecticide-treated bed nets through our **Malaria Prevention & Response** program. We are building communities where health is a right, not a privilege.
+
+### Page: Poverty Alleviation & Livelihoods
+**Headline:** From Surviving to Thriving.
+
+Charity creates dependency; economic empowerment creates freedom. At TJF, we move families from vulnerability to self-reliance. We establish **Cooperative Savings Circles (VSLAs)** that teach financial literacy and allow communities to pool their resources. We provide **Jopetnah Micro-Grants** — small injections of seed capital tied to business training — specifically targeting women and youth. Through our **Skills-to-Income Pipeline**, we ensure vocational training is directly linked to job placement or self-employment.
+
+### Page: Environment & Community Development
+**Headline:** Protecting Today, Preserving Tomorrow.
+
+True development cannot come at the cost of the environment. Climate change disproportionately affects the poorest communities, degrading land and drying up water sources. Our **Green Neighborhoods** initiative plants indigenous and fruit trees, linking environmental restoration to future food security. Our **Water & Sanitation Access** program rehabilitates boreholes, bringing clean water to underserved households. And through **Climate-Smart Livelihoods**, we teach farmers eco-friendly agribusiness practices so they can earn an income while restoring the soil.
+
+---
+
 *Want this adapted into ready-to-post social captions, a WhatsApp broadcast script for launching the diaspora circle, or an email welcome sequence for new members? Happy to draft any of those next.*
+
