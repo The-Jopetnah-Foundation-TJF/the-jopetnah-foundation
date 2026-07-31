@@ -1,5 +1,4 @@
-[README_CONSOLIDATED.md](https://github.com/user-attachments/files/30578363/README_CONSOLIDATED.md)
-<div align="center">
+[README_CONSOLIDATED.md](https://github.com/user-attachments/files/30586207/README_CONSOLIDATED.md)[<div align="center">
 
 <img src="jopetnah-icon-512.png" width="90" alt="The Jopetnah Foundation logo">
 
@@ -135,6 +134,8 @@ Three tracks running in parallel:
 | Guardian | $500 (one-time or /mo) | A full "whole-family" bundled gift |
 | Founder's Circle | $5,000+/yr | Named recognition, gala invite, quarterly briefings |
 
+**📊 Donor & Partner Pitch Deck:** [`media/Jopetnah_Donor_Pitch_Deck.pptx`](media/Jopetnah_Donor_Pitch_Deck.pptx) — a 15-slide briefing covering the problem, our model, program detail by pillar, Year 1 pilot metrics, budget allocation, giving tiers, and governance highlights.
+
 ## 📅 Grants Calendar
 
 Real, current funding opportunities relevant to our pillars in Uganda/East Africa. *(Also maintained as an interactive spreadsheet with status-tracking dropdowns, shared alongside this repo.)*
@@ -226,6 +227,10 @@ You left, but your community didn't leave your heart. Send Home Hope turns that 
 ├── social-preview.png         ← link-share preview image
 ├── robots.txt                 ← search engine crawl rules
 ├── sitemap.xml                ← search engine sitemap
+├── media/
+│   └── Jopetnah_Donor_Pitch_Deck.pptx  ← 15-slide donor & partner briefing (see Funding Strategy)
+├── governance/
+│   └── TJF_Governance_Bundle_FINAL.pdf ← Constitution, Board Charter, and 3 policies (see Governance)
 └── .github/ISSUE_TEMPLATE/
     ├── grant_lead.md           ← Track a new grant opportunity
     ├── offer_of_support.md     ← Volunteers, mentors, or pro-bono legal/tech help
@@ -234,7 +239,7 @@ You left, but your community didn't leave your heart. Send Home Hope turns that 
 
 **Landing page:** live at `https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/` via GitHub Pages.
 
-*(A companion `Jopetnah_Grants_Calendar.xlsx`, `Jopetnah_Donor_Pitch_Deck.pptx`, and the Foundation's governance documents — Constitution, Board Charter, Conflict of Interest Policy, Whistleblower Policy, and Safeguarding Policy — are maintained alongside this repo, not rendered in markdown, but referenced throughout.)*
+*(A companion `Jopetnah_Grants_Calendar.xlsx` is maintained alongside this repo, not rendered in markdown.)*
 
 ## 🙋 Get Involved
 
@@ -256,3 +261,4 @@ Content in this repository is shared under [CC BY-NC 4.0](LICENSE) — see [`LIC
 <div align="center">
 <sub>© 2026 The Jopetnah Foundation</sub>
 </div>
+Uploading README_CONSOLIDATED.md…]()
