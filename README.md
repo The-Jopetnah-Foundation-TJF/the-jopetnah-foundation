@@ -1,4 +1,5 @@
-[README_CONSOLIDATED.md](https://github.com/user-attachments/files/30586207/README_CONSOLIDATED.md)[<div align="center">
+[README_CONSOLIDATED.md](https://github.com/user-attachments/files/30618300/README_CONSOLIDATED.md)
+<div align="center">
 
 <img src="jopetnah-icon-512.png" width="90" alt="The Jopetnah Foundation logo">
 
@@ -18,7 +19,20 @@
 
 ---
 
-> This repository is the working home for The Jopetnah Foundation's mission, programs, and fundraising plans as we finalize registration with legal counsel. Details will be updated as that process completes.
+## At a Glance
+
+**The Jopetnah Foundation (TJF)** is a newly established nonprofit building whole communities in Uganda through an integrated, family-centered model. We address education, health, livelihoods, and the environment together — because the families we serve never face one problem at a time.
+
+- **Stage:** Founding (legal registration in progress)
+- **Focus:** Underserved communities in Uganda
+- **Model:** Four interconnected pillars → one family, one gift
+- **Seeking:** Founding board members, an incorporation partner, and early corporate/institutional co-founders
+
+🌐 **Live site:** [the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation](https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/)
+
+---
+
+> This repository is the working home for The Jopetnah Foundation's mission, programs, and fundraising plans as we finalize registration with legal counsel. It serves both as an internal operating document and as a transparent briefing for potential founding partners, board members, and early supporters. Details will be updated as that process completes.
 
 ## 🎯 Mission
 
@@ -221,6 +235,7 @@ You left, but your community didn't leave your heart. Send Home Hope turns that 
 ├── index.html                 ← public landing page (GitHub Pages)
 ├── LICENSE                    ← CC BY-NC 4.0
 ├── CONTRIBUTING.md            ← how to get involved
+├── VOLUNTEER_ONBOARDING.md    ← step-by-step process for new volunteers
 ├── jopetnah-icon-512.png      ← logo (used above, and as the site's structured-data logo)
 ├── favicon.png                ← browser tab icon
 ├── apple-touch-icon.png       ← mobile home-screen icon
@@ -250,15 +265,16 @@ We're currently formalizing Jopetnah's legal structure and looking for:
 
 **Current Donor Readiness & Fiscal Sponsorship:** TJF is currently finalizing its legal registration as a Company Limited by Guarantee and NGO in Uganda. For international donors and diaspora members who require tax-deductibility (such as US 501(c)(3) equivalence) before contributing, TJF is pursuing fiscal sponsorship. Our strategy is to onboard as a partner on **GlobalGiving.org**, a recognized platform that allows US and UK donors to make tax-deductible contributions to vetted grassroots organizations globally. Once our registration is complete and our pilot data is collected, we will launch a GlobalGiving campaign to unlock corporate matching funds and recurring diaspora giving. If you are a registered US/UK fiscal sponsor or an established NGO interested in a sub-grantee partnership, please reach out to us directly.
 
-**Interested?** Open an issue in this repo, or reach out at `partnerships@jopetnahfoundation.org` *(placeholder — update once the domain/email is live)*.
+**Interested?** Open an issue using the "Offer of Support" or "Grant Lead" template in this repo, or reach out at `thejopetnahfoundation@gmail.com` *(interim address — will move to a dedicated domain email once live)*.
+
+🔒 **Note:** This repo is public. Please don't post personal beneficiary information, financial details, or other sensitive data in issues — email us directly for anything confidential. See [CONTRIBUTING.md](CONTRIBUTING.md#a-note-on-confidentiality) for details.
 
 ## License
 
-Content in this repository is shared under [CC BY-NC 4.0](LICENSE) — see [`LICENSE`](LICENSE) for details.
+Content in this repository is shared under [CC BY-NC 4.0](LICENSE.md) — see [`LICENSE.md`](LICENSE.md) for details.
 
 ---
 
 <div align="center">
 <sub>© 2026 The Jopetnah Foundation</sub>
 </div>
-Uploading README_CONSOLIDATED.md…]()
