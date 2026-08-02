@@ -189,7 +189,7 @@ The primary vehicle for major-donor cultivation and corporate sponsorship renewa
 
 ### Homepage Hero
 **Headline:** Building whole communities, one life at a time.
-**Subhead:** The Jopetnah Foundation [TJF] brings education, health, economic opportunity, and environmental care together — because families don't face one problem at a time, and neither should we.
+**Subhead:** The Jopetnah Foundation (TJF) brings education, health, economic opportunity, and environmental care together — because families don't face one problem at a time, and neither should we.
 
 ### Trust Strip *(place near the donate button)*
 - ✅ Governed by an independent Board of Trustees
