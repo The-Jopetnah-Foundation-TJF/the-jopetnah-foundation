@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta name="google-site-verification" content="CnCbERAr9KPDmlIs4_f8wzb0unwrl-QdERQl6OIpI6g" />
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="google-site-verification" content="_Eg663Hq9ZPiB28TuhgNFLIrnGq34O-PieZXQLz6pJc" />
@@ -8,30 +8,30 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <title>The Jopetnah Foundation [TJF] — Building whole communities, one life at a time</title>
 <meta name="description" content="The Jopetnah Foundation [TJF] integrates education, health, livelihoods, and environment programs into one family-centered model.">
-<link rel="canonical" href="https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/">
+<link rel="canonical" href="https://jopetnahinternationallimited.github.io/the-jopetnah-foundation/">
 
 <!-- Open Graph / Facebook, LinkedIn, WhatsApp -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="The Jopetnah Foundation [TJF] — Building whole communities, one life at a time">
 <meta property="og:description" content="Education, health, livelihoods, and environment — one family-centered model. Currently in founding stage and seeking founding partners.">
-<meta property="og:image" content="https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/social-preview.png">
-<meta property="og:url" content="https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/">
+<meta property="og:image" content="https://jopetnahinternationallimited.github.io/the-jopetnah-foundation/social-preview.png">
+<meta property="og:url" content="https://jopetnahinternationallimited.github.io/the-jopetnah-foundation/">
 <meta property="og:site_name" content="The Jopetnah Foundation [TJF]">
 
 <!-- Twitter / X Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="The Jopetnah Foundation [TJF] — Building whole communities, one life at a time">
+<meta name="twitter:title" content="The Jopetnah Foundation — Building whole communities, one life at a time">
 <meta name="twitter:description" content="Education, health, livelihoods, and environment — one family-centered model. Currently in founding stage and seeking founding partners.">
-<meta name="twitter:image" content="https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/social-preview.png">
+<meta name="twitter:image" content="https://jopetnahinternationallimited.github.io/the-jopetnah-foundation/social-preview.png">
 
 <!-- Structured data: helps Google understand this is a real organization -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "NGO",
+  "@type": "Not-for-Profit" "NGO",
   "name": "The Jopetnah Foundation [TJF]",
-  "url": "https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/",
-  "logo": "https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/jopetnah-icon-512.png",
+  "url": "https://jopetnahinternationallimited.github.io/the-jopetnah-foundation/",
+  "logo": "https://jopetnahinternationallimited.github.io/the-jopetnah-foundation/jopetnah-icon-512.png",
   "description": "The Jopetnah Foundation [TJF] integrates education, health, livelihoods, and environment programs into one family-centered model for underserved communities.",
   "areaServed": "Uganda",
   "foundingLocation": {
@@ -40,17 +40,17 @@
   },
   "parentOrganization": {
     "@type": "Organization",
-    "name": "Jopetnah International Limited"
+    "name": "Jopetnah International Limited [TJF]"
   },
   "sameAs": [
-    "https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/"
+    "https://github.com/JopetnahInternationalLimited/the-jopetnah-foundation"
   ]
 }
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
     --bg: #241609;
@@ -101,8 +101,7 @@
   /* ---------- NAV ---------- */
   nav{
     position:sticky; top:0; z-index:50;
-    background:rgba(24,14,6,0.85);
-    backdrop-filter:blur(8px);
+    background:rgba(24,14,6,0.95);
     border-bottom:1px solid var(--line);
   }
   nav .wrap{display:flex; align-items:center; justify-content:space-between; padding-top:18px; padding-bottom:18px;}
@@ -138,6 +137,9 @@
   .converge-wrap{display:flex; justify-content:center; align-items:center;}
   .converge{width:100%; max-width:420px;}
   .converge circle.node{transition: transform 1s cubic-bezier(.22,.9,.3,1), opacity 1s ease;}
+  .converge .node{transform-box: fill-box; transform-origin: center; animation: nodePulse 3.6s ease-in-out infinite;}
+  @keyframes nodePulse{ 0%,100%{transform:scale(1);} 50%{transform:scale(1.03);} }
+  @media (prefers-reduced-motion: reduce){ .converge .node{animation:none;} }
   .converge .beam{stroke-dasharray:4 7; animation:dash 30s linear infinite;}
   @keyframes dash{to{stroke-dashoffset:-500;}}
   @media (prefers-reduced-motion: reduce){ .converge .beam{animation:none;} }
@@ -257,7 +259,7 @@
 <header class="hero">
   <div class="wrap hero-grid">
     <div>
-      <span class="eyebrow">The Jopetnah Foundation [TJF]</span>
+      <span class="eyebrow">The Jopetnah Foundation</span>
       <h1>Building whole<br>communities, <em>one life</em><br>at a time.</h1>
       <p class="lede">We fold education, health, livelihoods, and environment into a single family-centered model — because the families we serve never face one problem at a time.</p>
       <div class="hero-actions">
@@ -442,8 +444,8 @@
     <h2>Join us at the ground level.</h2>
     <p>We're finalizing our legal registration and looking for founding board members, an incorporation partner, and early corporate and institutional co-founders.</p>
     <div class="hero-actions">
-      <a class="btn btn-primary" href="mailto:thejopetnahfoundation@gmail.com">Email thejopetnahfoundation@gmail.com</a>
-      <a class="btn btn-secondary" href="https://github.com/the-jopetnah-foundation-tjf/the-jopetnah-foundation/issues/new/choose">Open an issue on GitHub</a>
+      <a class="btn btn-primary" href="mailto:thejopetnahfoundation@gmail.com">Email: thejopetnahfoundation@gmail.com</a>
+      <a class="btn btn-secondary" href="https://github.com/">Open an issue on GitHub</a>
     </div>
   </div>
 </section>
@@ -453,7 +455,7 @@
     <p>© 2026 The Jopetnah Foundation [TJF]</p>
     <div class="flinks">
       <a href="README.md">Repo README</a>
-      <a href="Jopetnah_Foundation_Blueprint.md">Blueprint</a>
+      <a href="docs/BLUEPRINT.md">Blueprint</a>
       <a href="LICENSE.md">License</a>
       <a href="CONTRIBUTING.md">Contributing</a>
     </div>
@@ -466,21 +468,6 @@
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
   }, { threshold: 0.15 });
   revealEls.forEach(el => io.observe(el));
-
-  // gentle idle pulse on the convergence nodes (respects reduced motion)
-  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (!prefersReduced) {
-    const nodes = document.querySelectorAll('.converge .node');
-    let t = 0;
-    setInterval(() => {
-      t += 1;
-      nodes.forEach((n, i) => {
-        const s = 1 + Math.sin(t / 12 + i) * 0.03;
-        n.style.transformOrigin = `${n.getAttribute('cx')}px ${n.getAttribute('cy')}px`;
-        n.style.transform = `scale(${s})`;
-      });
-    }, 200);
-  }
 </script>
 
 </body>
