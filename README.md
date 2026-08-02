@@ -3,7 +3,7 @@
 
 <img src="jopetnah-icon-512.png" width="90" alt="The Jopetnah Foundation logo">
 
-# The Jopetnah Foundation [TJF]
+# The Jopetnah Foundation (TJF)
 
 **Building whole communities, one life at a time.**
 
@@ -32,7 +32,7 @@
 
 ---
 
-> This repository is the working home for The Jopetnah Foundation's mission, programs, and fundraising plans as we finalize registration with legal counsel. It serves both as an internal operating document and as a transparent briefing for potential founding partners, board members, and early supporters. Details will be updated as that process completes.
+> This repository is the working home for The Jopetnah Foundation (TJF)'s mission, programs, and fundraising plans as we finalize registration with legal counsel. It serves both as an internal operating document and as a transparent briefing for potential founding partners, board members, and early supporters. Details will be updated as that process completes.
 
 ## 🎯 Mission
 
@@ -281,5 +281,5 @@ Content in this repository is shared under [CC BY-NC 4.0](LICENSE.md) — see [`
 ---
 
 <div align="center">
-<sub>© 2026 The Jopetnah Foundation</sub>
+<sub>© 2026 The Jopetnah Foundation (TJF)</sub>
 </div>
