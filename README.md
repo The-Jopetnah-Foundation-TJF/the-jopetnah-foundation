@@ -1,4 +1,4 @@
-[README_CONSOLIDATED.md](https://github.com/user-attachments/files/30618300/README_CONSOLIDATED.md)
+[README_CONSOLIDATED.md](https://github.com/user-attachments/files/30627725/README_CONSOLIDATED.md)
 <div align="center">
 
 <img src="jopetnah-icon-512.png" width="90" alt="The Jopetnah Foundation logo">
@@ -152,7 +152,7 @@ Three tracks running in parallel:
 
 ## 📅 Grants Calendar
 
-Real, current funding opportunities relevant to our pillars in Uganda/East Africa. *(Also maintained as an interactive spreadsheet with status-tracking dropdowns, shared alongside this repo.)*
+Real, current funding opportunities relevant to our pillars in Uganda/East Africa. *(This is a condensed view — see [`donor-resources/GRANTS_CALENDAR.md`](donor-resources/GRANTS_CALENDAR.md) for the full, status-tracked version, including eligibility notes and application links. Propose new leads via the [Grant Lead issue template](../../issues/new?template=grant_lead.md).)*
 
 | Funder / Program | Pillar(s) | Grant Type | Typical Range (USD) | Deadline / Cycle | Notes |
 |---|---|---|---|---|---|
@@ -189,7 +189,7 @@ The primary vehicle for major-donor cultivation and corporate sponsorship renewa
 
 ### Homepage Hero
 **Headline:** Building whole communities, one life at a time.
-**Subhead:** The Jopetnah Foundation brings education, health, economic opportunity, and environmental care together — because families don't face one problem at a time, and neither should we.
+**Subhead:** The Jopetnah Foundation [TJF] brings education, health, economic opportunity, and environmental care together — because families don't face one problem at a time, and neither should we.
 
 ### Trust Strip *(place near the donate button)*
 - ✅ Governed by an independent Board of Trustees
@@ -246,6 +246,11 @@ You left, but your community didn't leave your heart. Send Home Hope turns that 
 │   └── Jopetnah_Donor_Pitch_Deck.pptx  ← 15-slide donor & partner briefing (see Funding Strategy)
 ├── governance/
 │   └── TJF_Governance_Bundle_FINAL.pdf ← Constitution, Board Charter, and 3 policies (see Governance)
+├── donor-resources/
+│   ├── README.md               ← donor-facing resource index
+│   └── GRANTS_CALENDAR.md      ← full, status-tracked grants pipeline (see Grants Calendar)
+├── communications/
+│   └── README.md               ← communications resource index
 └── .github/ISSUE_TEMPLATE/
     ├── grant_lead.md           ← Track a new grant opportunity
     ├── offer_of_support.md     ← Volunteers, mentors, or pro-bono legal/tech help
@@ -254,7 +259,7 @@ You left, but your community didn't leave your heart. Send Home Hope turns that 
 
 **Landing page:** live at `https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/` via GitHub Pages.
 
-*(A companion `Jopetnah_Grants_Calendar.xlsx` is maintained alongside this repo, not rendered in markdown.)*
+*(The full status-tracked Grants Calendar now lives in-repo at `donor-resources/GRANTS_CALENDAR.md` — see the Grants Calendar section above. The original `Jopetnah_Grants_Calendar.xlsx` may still be used for offline work but is no longer the primary reference.)*
 
 ## 🙋 Get Involved
 
