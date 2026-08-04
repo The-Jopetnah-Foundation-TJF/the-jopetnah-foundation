@@ -1,4 +1,4 @@
-[README_CONSOLIDATED.md](https://github.com/user-attachments/files/30627725/README_CONSOLIDATED.md)
+[README_CONSOLIDATED.md](https://github.com/user-attachments/files/30698573/README_CONSOLIDATED.md)
 <div align="center">
 
 <img src="jopetnah-icon-512.png" width="90" alt="The Jopetnah Foundation logo">
@@ -32,7 +32,7 @@
 
 ---
 
-> This repository is the working home for The Jopetnah Foundation (TJF)'s mission, programs, and fundraising plans as we finalize registration with legal counsel. It serves both as an internal operating document and as a transparent briefing for potential founding partners, board members, and early supporters. Details will be updated as that process completes.
+> This repository is the working home for The Jopetnah Foundation's mission, programs, and fundraising plans as we finalize registration with legal counsel. It serves both as an internal operating document and as a transparent briefing for potential founding partners, board members, and early supporters. Details will be updated as that process completes.
 
 ## 🎯 Mission
 
@@ -148,6 +148,8 @@ Three tracks running in parallel:
 | Guardian | $500 (one-time or /mo) | A full "whole-family" bundled gift |
 | Founder's Circle | $5,000+/yr | Named recognition, gala invite, quarterly briefings |
 
+**🎁 Not ready to give cash?** We also welcome **in-kind gifts** — books, medical supplies, tools, equipment, professional expertise, or connections — matched directly to real needs across our four pillars. See [`donor-resources/IN_KIND_GIVING.md`](donor-resources/IN_KIND_GIVING.md) for the full list and how to offer one.
+
 **📊 Donor & Partner Pitch Deck:** [`media/Jopetnah_Donor_Pitch_Deck.pptx`](media/Jopetnah_Donor_Pitch_Deck.pptx) — a 15-slide briefing covering the problem, our model, program detail by pillar, Year 1 pilot metrics, budget allocation, giving tiers, and governance highlights.
 
 ## 📅 Grants Calendar
@@ -189,7 +191,7 @@ The primary vehicle for major-donor cultivation and corporate sponsorship renewa
 
 ### Homepage Hero
 **Headline:** Building whole communities, one life at a time.
-**Subhead:** The Jopetnah Foundation (TJF) brings education, health, economic opportunity, and environmental care together — because families don't face one problem at a time, and neither should we.
+**Subhead:** The Jopetnah Foundation brings education, health, economic opportunity, and environmental care together — because families don't face one problem at a time, and neither should we.
 
 ### Trust Strip *(place near the donate button)*
 - ✅ Governed by an independent Board of Trustees
@@ -248,7 +250,8 @@ You left, but your community didn't leave your heart. Send Home Hope turns that 
 │   └── TJF_Governance_Bundle_FINAL.pdf ← Constitution, Board Charter, and 3 policies (see Governance)
 ├── donor-resources/
 │   ├── README.md               ← donor-facing resource index
-│   └── GRANTS_CALENDAR.md      ← full, status-tracked grants pipeline (see Grants Calendar)
+│   ├── GRANTS_CALENDAR.md      ← full, status-tracked grants pipeline (see Grants Calendar)
+│   └── IN_KIND_GIVING.md       ← non-cash giving guide (see Funding Strategy)
 ├── communications/
 │   └── README.md               ← communications resource index
 └── .github/ISSUE_TEMPLATE/
