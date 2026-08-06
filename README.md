@@ -1,4 +1,4 @@
-[README_CONSOLIDATED.md](https://github.com/user-attachments/files/30698573/README_CONSOLIDATED.md)
+[README_CONSOLIDATED.md](https://github.com/user-attachments/files/30773213/README_CONSOLIDATED.md)
 <div align="center">
 
 <img src="jopetnah-icon-512.png" width="90" alt="The Jopetnah Foundation logo">
@@ -13,7 +13,7 @@
 [![Stage](https://img.shields.io/badge/stage-seeking%20founding%20partners-blueviolet)]()
 [![License](https://img.shields.io/badge/license-CC%20BY--NC%204.0-lightgrey)]()
 
-[Mission](#-mission) · [Programs](#-programs) · [Funding Strategy](#-funding-strategy) · [Grants Calendar](#-grants-calendar) · [Flagship Events](#-flagship-fundraising-events) · [Website Copy](#-website-copy--diaspora-giving-circle) · [Governance](#-governance--accountability) · [Roadmap](#-launch-roadmap) · [Get Involved](#-get-involved)
+[Mission](#-mission) · [Programs](#-programs) · [Funding Strategy](#-funding-strategy) · [Grants Calendar](#-grants-calendar) · [Flagship Events](#-flagship-fundraising-events) · [Website Copy](#-website-copy--diaspora-giving-circle) · [Governance](#-governance--accountability) · [FAQ](#-frequently-asked-questions) · [Roadmap](#-launch-roadmap) · [Get Involved](#-get-involved)
 
 </div>
 
@@ -223,6 +223,29 @@ You left, but your community didn't leave your heart. Send Home Hope turns that 
 **📄 Full governance document bundle** — Constitution, Board Charter, Conflict of Interest Policy, Whistleblower Policy, and Safeguarding Policy, reviewed and approved by the founding Board of Trustees:
 [`governance/TJF_Governance_Bundle_FINAL.pdf`](governance/TJF_Governance_Bundle_FINAL.pdf)
 
+## ❓ Frequently Asked Questions
+
+**Why should we trust TJF?**
+Trust shouldn't be demanded — it should be earned and demonstrated. That's why our governance documents, financial controls, and decision-making structure are published before we ever make a funding ask, not after. A donor shouldn't have to take our word for it; our systems should provide the evidence.
+
+**Why an integrated model instead of a single-issue charity?**
+Because vulnerability rarely has one cause. A child leaves school because a household can't afford basics; a parent can't earn because of poor health; a community stagnates because its environment has degraded. These problems are connected, so our response is too — one gift, working across education, health, livelihoods, and environment for the same family, instead of four separate, disconnected efforts.
+
+**What will our support actually accomplish?**
+We'll tell you specifically, not vaguely — see [Year 1 Pilot Goals](#-programs) under each pillar for concrete, named targets. We won't tell a donor "your gift will change lives"; we'll tell them what it's intended to accomplish and how we'll report back on whether it did.
+
+**How will we know it worked?**
+Every major program will track a clear chain: who we reached → what access they gained → what capability they built → what behavior changed → what outcome resulted. Numbers alone can mislead ("10,000 people trained" says nothing about what happened to them afterward) — so our reporting will combine data with real beneficiary outcomes, not activity counts alone.
+
+**Is TJF currently able to receive donations?**
+Not yet online — see [Support Our Work](#-funding-strategy) for our current, honest status. We're finalizing our bank account and payment processing. In the meantime, we welcome in-kind gifts and early conversations with anyone ready to give once we're live.
+
+**What can a corporate or institutional partner contribute besides money?**
+Technology, equipment, professional expertise, employee volunteering, research capacity, logistics, market access, or mentorship — a partnership with TJF doesn't have to start with "here's a check." It can start with "here's what our organization is good at."
+
+**What makes TJF different from other NGOs?**
+Not a claim to be the only organization doing this work — that would be hard to substantiate. Our differentiation is the integrated model itself: connecting interventions across pillars rather than treating each as an isolated project, backed by governance and evidence discipline from day one rather than added later.
+
 ## 🗺️ Launch Roadmap
 
 - [ ] **Phase 1:** Legal registration & nonprofit status, board formation, brand + website launch, one pilot program per pillar
@@ -284,5 +307,5 @@ Content in this repository is shared under [CC BY-NC 4.0](LICENSE.md) — see [`
 ---
 
 <div align="center">
-<sub>© 2026 The Jopetnah Foundation (TJF)</sub>
+<sub>© 2026 The Jopetnah Foundation</sub>
 </div>
