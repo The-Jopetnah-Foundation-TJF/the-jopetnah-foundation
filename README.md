@@ -307,5 +307,5 @@ Content in this repository is shared under [CC BY-NC 4.0](LICENSE.md) — see [`
 ---
 
 <div align="center">
-<sub>© 2026 The Jopetnah Foundation</sub>
+<sub>© 2026 The Jopetnah Foundation (TJF)</sub>
 </div>
