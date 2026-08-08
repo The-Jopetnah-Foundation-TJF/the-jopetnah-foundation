@@ -1,4 +1,4 @@
-[README_CONSOLIDATED.md](https://github.com/user-attachments/files/30773213/README_CONSOLIDATED.md)
+[README_CONSOLIDATED.md](https://github.com/user-attachments/files/30857144/README_CONSOLIDATED.md)
 <div align="center">
 
 <img src="jopetnah-icon-512.png" width="90" alt="The Jopetnah Foundation logo">
@@ -298,6 +298,8 @@ We're currently formalizing Jopetnah's legal structure and looking for:
 
 **Interested?** Open an issue using the "Offer of Support" or "Grant Lead" template in this repo, or reach out at `thejopetnahfoundation@gmail.com` *(interim address — will move to a dedicated domain email once live)*.
 
+**Follow along:** [Facebook](https://www.facebook.com/profile.php?id=61592047384135) · [LinkedIn](https://www.linkedin.com/company/135127890) · [X](https://x.com/TJFoundatio4P) · [YouTube](https://www.youtube.com/@TheJopetnahFoundationTJF) · [Instagram](https://www.instagram.com/thejopetnahfoundation/) · [TikTok](https://www.tiktok.com/@thejopetnahfoundationtjf)
+
 🔒 **Note:** This repo is public. Please don't post personal beneficiary information, financial details, or other sensitive data in issues — email us directly for anything confidential. See [CONTRIBUTING.md](CONTRIBUTING.md#a-note-on-confidentiality) for details.
 
 ## License
@@ -307,5 +309,5 @@ Content in this repository is shared under [CC BY-NC 4.0](LICENSE.md) — see [`
 ---
 
 <div align="center">
-<sub>© 2026 The Jopetnah Foundation (TJF)</sub>
+<sub>© 2026 The Jopetnah Foundation</sub>
 </div>
