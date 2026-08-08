@@ -298,7 +298,7 @@ We're currently formalizing Jopetnah's legal structure and looking for:
 
 **Interested?** Open an issue using the "Offer of Support" or "Grant Lead" template in this repo, or reach out at `thejopetnahfoundation@gmail.com` *(interim address — will move to a dedicated domain email once live)*.
 
-**Follow along:** [Facebook](https://www.facebook.com/profile.php?id=61592047384135) · [LinkedIn](https://www.linkedin.com/company/135127890) · [X](https://x.com/TJFoundatio4P) · [YouTube](https://www.youtube.com/@TheJopetnahFoundationTJF) · [Instagram](https://www.instagram.com/thejopetnahfoundation/) · [TikTok](https://www.tiktok.com/@thejopetnahfoundationtjf)
+**Follow along:** [Facebook](https://www.facebook.com/profile.php?id=61592047384135) · [LinkedIn](https://www.linkedin.com/company/135127890) · [X](https://x.com/FoundationTJF) · [YouTube](https://www.youtube.com/@TheJopetnahFoundationTJF) · [Instagram](https://www.instagram.com/thejopetnahfoundation/) · [TikTok](https://www.tiktok.com/@thejopetnahfoundationtjf)
 
 🔒 **Note:** This repo is public. Please don't post personal beneficiary information, financial details, or other sensitive data in issues — email us directly for anything confidential. See [CONTRIBUTING.md](CONTRIBUTING.md#a-note-on-confidentiality) for details.
 
