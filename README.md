@@ -44,14 +44,63 @@ To advance **education, health, economic opportunity, and environmental resilien
 
 **Why one foundation, four pillars?** Funders increasingly favor organizations that show how issues interconnect — a sick child can't stay in school; a family without income can't afford healthcare. Jopetnah's positioning as an *integrated development* foundation, rather than four disconnected charities, is itself a fundraising advantage: it lets us pitch a whole-family, whole-community model to donors who want higher-impact-per-dollar stories.
 
-## 💡 The Problem
+## 💡 The Problem We See Differently
 
-In the communities Jopetnah serves, a child out of school, a family without healthcare, and a household without income are rarely separate problems — they're the same problem, seen from different angles. Most charities specialize in one slice of it. **Jopetnah is built to address the whole picture, for the whole family.**
+In the communities The Jopetnah Foundation serves, a child out of school, a family without healthcare, unsafe water, food insecurity, and a household without reliable income are rarely separate problems.  
+
+They are interconnected expressions of the same underlying vulnerability.
+
+A child may need school fees — but school fees alone may not keep that child in school.  
+If the child falls sick because the family lacks safe water or basic healthcare, attendance suffers.  
+If a parent must sell productive assets or borrow heavily to cover medical costs, household income collapses.  
+And when income falls far enough, the family is forced into impossible choices between food, healthcare, and education.
+
+Treating only one problem may offer temporary relief, yet leave the deeper conditions of vulnerability untouched.
+
+**This is the problem The Jopetnah Foundation is designed to address.**
+
+We take an integrated, household-centered approach.  
+Rather than treating education, health, livelihoods, water, skills, and economic empowerment as isolated programmes, we recognize them as interconnected parts of a family’s capacity to achieve stability and build a better future.
+
+Our work begins by understanding the household and identifying the specific barriers that prevent it from becoming resilient and self-reliant.
+
+For one family, the priority may be keeping children in school.  
+For another, it may be access to essential healthcare or safe water.  
+For another, it may be vocational training, agricultural support, or a small productive grant that enables a parent to establish a sustainable source of income.
+
+The goal is not to provide everything to everyone.  
+It is to provide the **right combination of support** that addresses the barriers that matter most — and creates a pathway toward increasing self-reliance.
+
+We seek to move households through a clear progression:
+
+**Stabilize → Protect → Empower → Strengthen → Graduate.**
+
+- We **stabilize** households when immediate vulnerabilities threaten survival.  
+- We **protect** children and families from preventable setbacks.  
+- We **empower** individuals with knowledge, skills, and economic opportunities.  
+- We **strengthen** household resilience through sustainable livelihoods and community support.  
+- And ultimately, we help families **graduate** toward greater self-reliance.
+
+This is why Jopetnah does not measure success only by how many people receive assistance.
+
+We ask a more important question: **What changed in their lives?**
+
+Did the child remain in school?  
+Did the family become healthier?  
+Did household income improve?  
+Did preventable medical expenses decline?  
+Did the parent establish a sustainable livelihood?  
+Did the family become better able to withstand the next crisis?
+
+We do not simply want to help a family survive the next crisis.  
+**We want to help create the conditions in which that family becomes increasingly capable of facing the future with dignity, opportunity, and resilience.**
+
+That is the Jopetnah difference.
 
 ```
-            ┌───────────────────────────┐
-            │   ONE FAMILY, ONE GIFT    │
-            └─────────────┬─────────────┘
+             ┌───────────────────────────┐
+             │   ONE FAMILY, ONE GIFT    │
+             └─────────────┬─────────────┘
      ┌───────────┬─────────┴─────────┬───────────┐
      ▼           ▼                   ▼           ▼
  Education     Health           Livelihoods   Environment
