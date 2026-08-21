@@ -235,8 +235,40 @@ section{
   border-radius:0 var(--radius) var(--radius) 0;
 }
 
-.pillar{
-  padding-top:18px;
+.status-box{
+  background:var(--surface-2);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:22px 26px;
+  margin-top:28px;
+  color:var(--muted);
+  font-size:0.98rem;
+}
+
+.status-box strong{
+  color:var(--gold);
+}
+
+.jump-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:28px;
+}
+
+.jump-links a{
+  display:inline-block;
+  padding:8px 14px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  font-size:0.85rem;
+  color:var(--muted);
+  background:var(--surface);
+}
+
+.jump-links a:hover{
+  color:var(--cream);
+  border-color:var(--gold);
 }
 
 .pillar-header{
@@ -291,6 +323,73 @@ section{
   border-radius:999px;
   color:var(--gold);
   margin-bottom:14px;
+}
+
+.pilot-note{
+  margin-top:22px;
+  padding:18px 22px;
+  background:var(--surface-2);
+  border-radius:var(--radius);
+  border:1px solid var(--line);
+  font-size:0.92rem;
+  color:var(--muted);
+}
+
+.pilot-note strong{
+  color:var(--gold);
+}
+
+/* Timeline */
+.timeline{
+  border-left:1px solid var(--line);
+  margin-left:12px;
+  padding-left:32px;
+  margin-top:10px;
+}
+
+.timeline-item{
+  margin-bottom:36px;
+  position:relative;
+}
+
+.timeline-item:last-child{
+  margin-bottom:0;
+}
+
+.timeline-item::before{
+  content:"";
+  width:13px;
+  height:13px;
+  background:var(--gold);
+  border-radius:50%;
+  position:absolute;
+  left:-39px;
+  top:8px;
+  border:3px solid var(--bg);
+}
+
+.timeline-item h3{
+  margin-bottom:6px;
+  font-size:1.25rem;
+}
+
+.timeline-item .phase-label{
+  display:inline-block;
+  font-size:0.75rem;
+  text-transform:uppercase;
+  letter-spacing:0.08em;
+  color:var(--gold);
+  margin-bottom:6px;
+  font-weight:700;
+}
+
+.timeline-item p{
+  color:var(--muted);
+  margin:0;
+}
+
+.timeline-item.current .phase-label{
+  color:#D98663;
 }
 
 .callout{
@@ -391,7 +490,6 @@ footer .wrap{
 
 <nav>
   <div class="wrap">
-
     <a href="index.html" class="brand">
       <svg class="brand-mark" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <path d="M100,150 C66,126.25 66,74 100,55 C134,74 134,126.25 100,150 Z" fill="#7C9473" transform="rotate(-48 100 150)"/>
@@ -413,15 +511,12 @@ footer .wrap{
     </div>
 
     <a class="navcta" href="index.html#get-involved">Get Involved</a>
-
   </div>
 </nav>
 
 <header class="hero">
   <div class="wrap">
-
     <span class="eyebrow">Our Programs</span>
-
     <h1>Four pillars. Thirteen program pathways. One integrated purpose.</h1>
 
     <p class="lede">
@@ -437,23 +532,35 @@ footer .wrap{
       communities and design practical interventions that can reinforce one another.
     </div>
 
+    <div class="status-box">
+      <strong>Current Status (August 2026):</strong>
+      All programs listed below are in the design stage. Legal registration in Uganda
+      is in progress. First pilots are planned once governance, safeguarding systems
+      and initial partnerships are in place. No programs are currently operational.
+    </div>
+
+    <div class="jump-links">
+      <a href="#education">Education</a>
+      <a href="#health">Health</a>
+      <a href="#livelihoods">Livelihoods</a>
+      <a href="#environment">Environment</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#accountability">Accountability</a>
+    </div>
   </div>
 </header>
 
 <section>
   <div class="wrap intro-grid">
-
     <div>
       <span class="eyebrow">Program Architecture</span>
       <h2>Designed around real-life interconnected needs.</h2>
-
       <p class="muted">
         A child may struggle to remain in school because a household is under
         financial pressure. A health crisis may reduce a family's ability to
         work. Unsafe water may contribute to illness and lost school or work days.
         Climate shocks can undermine livelihoods.
       </p>
-
       <p class="muted">
         TJF's program architecture is designed to respond to those relationships
         while remaining practical, measurable and locally grounded.
@@ -462,7 +569,6 @@ footer .wrap{
 
     <div class="panel">
       <h3>Program development principles</h3>
-
       <ul class="checklist">
         <li>Community-informed design and participation</li>
         <li>Clear beneficiary selection and eligibility criteria</li>
@@ -472,17 +578,14 @@ footer .wrap{
         <li>Long-term sustainability and local ownership</li>
       </ul>
     </div>
-
   </div>
 </section>
 
 <!-- PILLAR 1 -->
 <section id="education">
   <div class="wrap">
-
     <div class="pillar-header">
       <span class="pillar-dot" style="background:#C4623C"></span>
-
       <div>
         <span class="eyebrow">Pillar One</span>
         <h2>Education & Youth Development</h2>
@@ -494,15 +597,10 @@ footer .wrap{
     </div>
 
     <div class="program-grid">
-
       <article class="program-card">
-        <span class="status">Program Portfolio</span>
+        <span class="status">Design Stage</span>
         <h3>Jopetnah Scholars</h3>
-        <p>
-          A proposed education-support and mentorship pathway for learners
-          facing documented financial barriers to secondary or tertiary education.
-        </p>
-
+        <p>A proposed education-support and mentorship pathway for learners facing documented financial barriers to secondary or tertiary education.</p>
         <h4>Focus</h4>
         <ul>
           <li>Needs-based education support</li>
@@ -513,14 +611,9 @@ footer .wrap{
       </article>
 
       <article class="program-card">
-        <span class="status">Program Portfolio</span>
+        <span class="status">Design Stage</span>
         <h3>Future-Ready Labs</h3>
-        <p>
-          A proposed digital and practical-skills initiative designed to give
-          underserved young people greater exposure to technology, employability
-          skills and future-oriented learning.
-        </p>
-
+        <p>A proposed digital and practical-skills initiative designed to give underserved young people greater exposure to technology, employability skills and future-oriented learning.</p>
         <h4>Focus</h4>
         <ul>
           <li>Digital literacy</li>
@@ -531,14 +624,9 @@ footer .wrap{
       </article>
 
       <article class="program-card">
-        <span class="status">Program Portfolio</span>
+        <span class="status">Design Stage</span>
         <h3>Read to Lead</h3>
-        <p>
-          A proposed literacy and reading-access initiative supporting children,
-          caregivers, schools and communities with books, reading spaces and
-          community-led reading activities.
-        </p>
-
+        <p>A proposed literacy and reading-access initiative supporting children, caregivers, schools and communities with books, reading spaces and community-led reading activities.</p>
         <h4>Focus</h4>
         <ul>
           <li>Community libraries and mobile reading resources</li>
@@ -547,7 +635,11 @@ footer .wrap{
           <li>Caregiver and volunteer engagement</li>
         </ul>
       </article>
+    </div>
 
+    <div class="pilot-note">
+      <strong>Indicative Year-1 pilot goal (subject to funding & partnerships):</strong>
+      Sponsor 50 vulnerable students and establish one Future-Ready digital literacy hub, training approximately 200 young people in basic ICT skills.
     </div>
   </div>
 </section>
@@ -555,10 +647,8 @@ footer .wrap{
 <!-- PILLAR 2 -->
 <section id="health">
   <div class="wrap">
-
     <div class="pillar-header">
       <span class="pillar-dot" style="background:#8F4A31"></span>
-
       <div>
         <span class="eyebrow">Pillar Two</span>
         <h2>Health & Wellbeing</h2>
@@ -570,16 +660,10 @@ footer .wrap{
     </div>
 
     <div class="program-grid">
-
       <article class="program-card">
-        <span class="status">Program Portfolio</span>
+        <span class="status">Design Stage</span>
         <h3>Community Health Champions</h3>
-        <p>
-          A proposed community-based health education model using trained local
-          champions to strengthen prevention knowledge, early recognition and
-          appropriate referral.
-        </p>
-
+        <p>A proposed community-based health education model using trained local champions to strengthen prevention knowledge, early recognition and appropriate referral.</p>
         <h4>Focus</h4>
         <ul>
           <li>Community health education</li>
@@ -590,14 +674,9 @@ footer .wrap{
       </article>
 
       <article class="program-card">
-        <span class="status">Program Portfolio</span>
+        <span class="status">Design Stage</span>
         <h3>Mobile Wellness Clinics</h3>
-        <p>
-          A proposed outreach model designed to connect underserved communities
-          with selected preventive, screening, health-education and referral services
-          through qualified providers.
-        </p>
-
+        <p>A proposed outreach model designed to connect underserved communities with selected preventive, screening, health-education and referral services through qualified providers.</p>
         <h4>Focus</h4>
         <ul>
           <li>Community outreach</li>
@@ -608,14 +687,9 @@ footer .wrap{
       </article>
 
       <article class="program-card">
-        <span class="status">Program Portfolio</span>
+        <span class="status">Design Stage</span>
         <h3>Malaria Prevention & Response</h3>
-        <p>
-          A proposed community-focused malaria initiative designed to strengthen
-          prevention awareness, timely care-seeking and appropriate referral in
-          coordination with qualified health and public-health partners.
-        </p>
-
+        <p>A proposed community-focused malaria initiative designed to strengthen prevention awareness, timely care-seeking and appropriate referral in coordination with qualified health and public-health partners.</p>
         <h4>Focus</h4>
         <ul>
           <li>Prevention education</li>
@@ -626,13 +700,9 @@ footer .wrap{
       </article>
 
       <article class="program-card">
-        <span class="status">Program Portfolio</span>
+        <span class="status">Design Stage</span>
         <h3>Mind & Body</h3>
-        <p>
-          A proposed health and wellbeing initiative integrating mental wellbeing,
-          nutrition, healthy behaviors and age-appropriate adolescent health education.
-        </p>
-
+        <p>A proposed health and wellbeing initiative integrating mental wellbeing, nutrition, healthy behaviors and age-appropriate adolescent health education.</p>
         <h4>Focus</h4>
         <ul>
           <li>Mental wellbeing awareness</li>
@@ -641,7 +711,11 @@ footer .wrap{
           <li>Appropriate referral to qualified providers</li>
         </ul>
       </article>
+    </div>
 
+    <div class="pilot-note">
+      <strong>Indicative Year-1 pilot goal (subject to funding & partnerships):</strong>
+      Train 20 Community Health Champions and distribute 1,000 long-lasting insecticidal nets to pregnant women and children under five in a target district.
     </div>
   </div>
 </section>
@@ -649,10 +723,8 @@ footer .wrap{
 <!-- PILLAR 3 -->
 <section id="livelihoods">
   <div class="wrap">
-
     <div class="pillar-header">
       <span class="pillar-dot" style="background:#D8A63D"></span>
-
       <div>
         <span class="eyebrow">Pillar Three</span>
         <h2>Poverty Alleviation & Livelihoods</h2>
@@ -664,16 +736,10 @@ footer .wrap{
     </div>
 
     <div class="program-grid">
-
       <article class="program-card">
-        <span class="status">Program Portfolio</span>
+        <span class="status">Design Stage</span>
         <h3>Jopetnah Micro-Grants</h3>
-        <p>
-          A proposed livelihood-support initiative combining targeted seed capital,
-          training and follow-up support for eligible entrepreneurs, with emphasis
-          on women, youth and vulnerable households where appropriate.
-        </p>
-
+        <p>A proposed livelihood-support initiative combining targeted seed capital, training and follow-up support for eligible entrepreneurs, with emphasis on women, youth and vulnerable households where appropriate.</p>
         <h4>Focus</h4>
         <ul>
           <li>Seed capital linked to training</li>
@@ -684,13 +750,9 @@ footer .wrap{
       </article>
 
       <article class="program-card">
-        <span class="status">Program Portfolio</span>
+        <span class="status">Design Stage</span>
         <h3>Skills-to-Income Pipeline</h3>
-        <p>
-          A proposed pathway linking vocational and employability training with
-          employer connections, apprenticeships, self-employment and market demand.
-        </p>
-
+        <p>A proposed pathway linking vocational and employability training with employer connections, apprenticeships, self-employment and market demand.</p>
         <h4>Focus</h4>
         <ul>
           <li>Market-informed skills development</li>
@@ -701,14 +763,9 @@ footer .wrap{
       </article>
 
       <article class="program-card">
-        <span class="status">Program Portfolio</span>
+        <span class="status">Design Stage</span>
         <h3>Cooperative Savings Circles</h3>
-        <p>
-          A proposed community savings and financial-literacy model that helps
-          participating groups strengthen saving habits, financial planning,
-          shock resilience and productive investment.
-        </p>
-
+        <p>A proposed community savings and financial-literacy model that helps participating groups strengthen saving habits, financial planning, shock resilience and productive investment.</p>
         <h4>Focus</h4>
         <ul>
           <li>Community savings groups</li>
@@ -717,7 +774,11 @@ footer .wrap{
           <li>Appropriate links to formal financial services</li>
         </ul>
       </article>
+    </div>
 
+    <div class="pilot-note">
+      <strong>Indicative Year-1 pilot goal (subject to funding & partnerships):</strong>
+      Establish 5 Village Savings and Loan Association (VSLA) groups (≈125 members) and disburse 25 micro-grants ($50–$100 each) to viable micro-enterprises.
     </div>
   </div>
 </section>
@@ -725,10 +786,8 @@ footer .wrap{
 <!-- PILLAR 4 -->
 <section id="environment">
   <div class="wrap">
-
     <div class="pillar-header">
       <span class="pillar-dot" style="background:#7C9473"></span>
-
       <div>
         <span class="eyebrow">Pillar Four</span>
         <h2>Environment & Community Development</h2>
@@ -740,15 +799,10 @@ footer .wrap{
     </div>
 
     <div class="program-grid">
-
       <article class="program-card">
-        <span class="status">Program Portfolio</span>
+        <span class="status">Design Stage</span>
         <h3>Green Neighborhoods</h3>
-        <p>
-          A proposed community environmental initiative supporting tree planting,
-          clean-up campaigns, greener public spaces and local environmental stewardship.
-        </p>
-
+        <p>A proposed community environmental initiative supporting tree planting, clean-up campaigns, greener public spaces and local environmental stewardship.</p>
         <h4>Focus</h4>
         <ul>
           <li>Tree planting and maintenance</li>
@@ -759,14 +813,9 @@ footer .wrap{
       </article>
 
       <article class="program-card">
-        <span class="status">Program Portfolio</span>
+        <span class="status">Design Stage</span>
         <h3>Water & Sanitation Access</h3>
-        <p>
-          A proposed community initiative to improve access to safer water,
-          sanitation and hygiene solutions through technically appropriate,
-          community-owned approaches.
-        </p>
-
+        <p>A proposed community initiative to improve access to safer water, sanitation and hygiene solutions through technically appropriate, community-owned approaches.</p>
         <h4>Focus</h4>
         <ul>
           <li>Needs and technical assessments</li>
@@ -777,14 +826,9 @@ footer .wrap{
       </article>
 
       <article class="program-card">
-        <span class="status">Program Portfolio</span>
+        <span class="status">Design Stage</span>
         <h3>Climate-Smart Livelihoods</h3>
-        <p>
-          A proposed initiative linking climate resilience with household
-          livelihoods through practical adaptation, sustainable production and
-          income-diversification opportunities.
-        </p>
-
+        <p>A proposed initiative linking climate resilience with household livelihoods through practical adaptation, sustainable production and income-diversification opportunities.</p>
         <h4>Focus</h4>
         <ul>
           <li>Climate-resilient livelihood practices</li>
@@ -793,23 +837,24 @@ footer .wrap{
           <li>Market and producer linkages</li>
         </ul>
       </article>
+    </div>
 
+    <div class="pilot-note">
+      <strong>Indicative Year-1 pilot goal (subject to funding & partnerships):</strong>
+      Plant 5,000 indigenous and fruit trees in partnership with two local schools and rehabilitate one community borehole serving an estimated 500 households.
     </div>
   </div>
 </section>
 
 <section>
   <div class="wrap two-col">
-
     <div>
       <span class="eyebrow">Integrated Programming</span>
       <h2>Programs are designed to reinforce one another.</h2>
-
       <p class="muted">
         TJF's integrated model allows complementary programs to work together
         around household and community needs.
       </p>
-
       <p class="muted">
         For example, educational support may be strengthened by health and
         nutrition interventions; livelihoods may be made more resilient through
@@ -820,7 +865,6 @@ footer .wrap{
 
     <div class="panel">
       <h3>A pathway, not a collection of isolated projects</h3>
-
       <ul class="checklist">
         <li>Assess needs and barriers</li>
         <li>Prioritize appropriate interventions</li>
@@ -830,24 +874,77 @@ footer .wrap{
         <li>Strengthen local capacity and sustainability</li>
       </ul>
     </div>
-
   </div>
 </section>
 
-<section>
+<!-- IMPLEMENTATION TIMELINE -->
+<section id="timeline">
   <div class="wrap">
+    <span class="eyebrow">Implementation Timeline</span>
+    <h2>From design to measurable impact.</h2>
+    <p class="lede">
+      TJF follows a deliberate, staged approach. We prioritise institutional readiness
+      and evidence before scale.
+    </p>
 
+    <div class="timeline" style="margin-top:40px;">
+      <div class="timeline-item current">
+        <div class="phase-label">Phase 1 — Current</div>
+        <h3>Foundation (2026)</h3>
+        <p>
+          Complete legal registration as a Company Limited by Guarantee and NGO in Uganda.
+          Form the founding Board, finalise core policies (safeguarding, finance, governance),
+          build digital presence, and design the first pilot programs in each pillar.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="phase-label">Phase 2</div>
+        <h3>Demonstration (2026–2027)</h3>
+        <p>
+          Launch one carefully selected pilot per pillar. Gather baseline data,
+          test delivery models, strengthen monitoring systems, and document early learning.
+          Secure first institutional and corporate partners.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="phase-label">Phase 3</div>
+        <h3>Consolidation (2027–2028)</h3>
+        <p>
+          Strengthen successful pilots, deepen community ownership, improve cost-effectiveness,
+          and expand partnerships. Publish the first public impact and learning report.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="phase-label">Phase 4</div>
+        <h3>Responsible Scale (2028 onwards)</h3>
+        <p>
+          Expand only where evidence, local capacity, partnerships and sustainable funding
+          justify broader reach. Maintain rigorous outcome measurement and continuous adaptation.
+        </p>
+      </div>
+    </div>
+
+    <div class="callout" style="margin-top:40px;">
+      <strong>Note:</strong>
+      Exact timing depends on the completion of legal registration, availability of seed funding,
+      and the strength of early partnerships. TJF will update this timeline publicly as milestones are reached.
+    </div>
+  </div>
+</section>
+
+<section id="accountability">
+  <div class="wrap">
     <span class="eyebrow">Program Accountability</span>
-
     <h2>We intend to measure what changes.</h2>
-
     <p class="lede">
       TJF's program development approach is designed around measurable results,
       transparent reporting and continuous learning.
     </p>
 
     <div class="two-col" style="margin-top:30px;">
-
       <div class="panel">
         <h3>Outputs</h3>
         <p class="muted">
@@ -864,7 +961,6 @@ footer .wrap{
           income-generating activity, resilience, access or community practices.
         </p>
       </div>
-
     </div>
 
     <div class="callout">
@@ -874,17 +970,13 @@ footer .wrap{
       requirements, local partnerships and donor requirements. TJF will distinguish
       clearly between planned programs, pilot activities and documented results.
     </div>
-
   </div>
 </section>
 
 <section class="cta">
   <div class="wrap">
-
     <span class="eyebrow">Partner With TJF</span>
-
     <h2>Help turn program ideas into measurable community outcomes.</h2>
-
     <p class="lede" style="margin:0 auto;">
       TJF welcomes philanthropic, corporate, institutional, technical,
       community and knowledge partnerships that can strengthen responsible
@@ -894,16 +986,16 @@ footer .wrap{
     <a href="index.html#get-involved" class="btn btn-primary">Explore Partnership</a>
     <a href="about.html" class="btn btn-secondary">About TJF</a>
 
+    <p style="margin-top:28px; color:var(--muted); font-size:0.95rem;">
+      Contact: <a href="mailto:thejopetnahfoundation@gmail.com">thejopetnahfoundation@gmail.com</a><br>
+      Public repository: <a href="https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation" target="_blank" rel="noopener">github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation</a>
+    </p>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-
-    <p>
-      © 2026 The Jopetnah Foundation (TJF). All rights reserved.
-    </p>
-
+    <p>© 2026 The Jopetnah Foundation (TJF). All rights reserved.</p>
     <div>
       <a href="index.html">Home</a>
       &nbsp;·&nbsp;
@@ -911,7 +1003,6 @@ footer .wrap{
       &nbsp;·&nbsp;
       <a href="index.html#get-involved">Get Involved</a>
     </div>
-
   </div>
 </footer>
 
