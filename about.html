@@ -268,6 +268,20 @@ section{
   color:var(--cream);
 }
 
+.status-box{
+  background:var(--surface-2);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:22px 26px;
+  margin-top:28px;
+  color:var(--muted);
+  font-size:0.98rem;
+}
+
+.status-box strong{
+  color:var(--gold);
+}
+
 .pillars{
   margin-top:35px;
 }
@@ -324,6 +338,39 @@ section{
   margin:0;
 }
 
+.leadership-table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:28px;
+  font-size:0.95rem;
+}
+
+.leadership-table th,
+.leadership-table td{
+  text-align:left;
+  padding:14px 16px;
+  border-bottom:1px solid var(--line);
+  color:var(--muted);
+}
+
+.leadership-table th{
+  color:var(--gold);
+  font-weight:700;
+  font-size:0.85rem;
+  text-transform:uppercase;
+  letter-spacing:0.06em;
+}
+
+.leadership-table td:first-child{
+  color:var(--cream);
+  font-weight:600;
+}
+
+.placeholder{
+  color:var(--gold);
+  font-style:italic;
+}
+
 .cta{
   text-align:center;
   padding:85px 0;
@@ -366,12 +413,15 @@ footer .wrap{
   .navlinks{display:none;}
   .grid-2,.grid-3{grid-template-columns:1fr;}
   section{padding:65px 0;}
+  .leadership-table{font-size:0.88rem;}
 }
 
 @media(max-width:560px){
   .wrap{width:min(var(--max), calc(100% - 28px));}
   .hero{padding:70px 0 55px;}
   h1{font-size:2.65rem;}
+  .leadership-table th,
+  .leadership-table td{padding:10px 8px;}
 }
 </style>
 </head>
@@ -423,6 +473,13 @@ footer .wrap{
         seen from different angles.”
       </div>
     </div>
+
+    <div class="status-box">
+      <strong>Current Status (August 2026):</strong>
+      TJF is finalizing legal registration in Uganda as a Company Limited by Guarantee and NGO.
+      We are building governance systems, program frameworks, and partnerships before launching full operations.
+      Online donations are not yet active. We publish our plans openly so partners can see exactly where we stand.
+    </div>
   </div>
 </header>
 
@@ -452,6 +509,93 @@ footer .wrap{
         TJF seeks to understand the barriers that keep people vulnerable and to
         develop practical, locally grounded pathways toward stability, opportunity,
         resilience and greater self-reliance.
+      </p>
+
+      <p style="color:var(--muted); font-size:0.95rem; margin-top:18px;">
+        <strong style="color:var(--gold);">Relationship note:</strong>
+        TJF is being established as an independent nonprofit. It draws early inspiration and networks
+        from individuals associated with Jopetnah International Limited (a Kampala-based enterprise founded in 2016),
+        but will operate under its own separate governance, registration, and accountability structures once formalized.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="eyebrow">Leadership</span>
+    <h2>Building the team that will steward the work.</h2>
+
+    <p class="lede">
+      As a founding-stage organisation, The Jopetnah Foundation is currently forming its leadership
+      and governance structures. The roles below reflect our planned structure.
+      <strong>Placeholder names are shown for layout purposes only</strong> and will be replaced
+      with real appointees once the founding Board is constituted and registration is complete.
+    </p>
+
+    <div class="card" style="overflow-x:auto;">
+      <table class="leadership-table">
+        <thead>
+          <tr>
+            <th>Role</th>
+            <th>Name</th>
+            <th>Focus</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Founding Chair, Board of Trustees</td>
+            <td class="placeholder">[To be appointed]</td>
+            <td>Governance, fiduciary oversight, high-level strategy</td>
+          </tr>
+          <tr>
+            <td>Executive Director</td>
+            <td class="placeholder">[To be appointed]</td>
+            <td>Day-to-day leadership, partnerships, organisational strategy</td>
+          </tr>
+          <tr>
+            <td>Program Director – Education & Youth</td>
+            <td class="placeholder">[To be appointed]</td>
+            <td>Scholarships, mentorship, digital skills, literacy</td>
+          </tr>
+          <tr>
+            <td>Program Director – Health & Wellbeing</td>
+            <td class="placeholder">[To be appointed]</td>
+            <td>Community health, prevention, malaria response, wellbeing</td>
+          </tr>
+          <tr>
+            <td>Program Director – Livelihoods</td>
+            <td class="placeholder">[To be appointed]</td>
+            <td>Micro-grants, skills-to-income, savings groups</td>
+          </tr>
+          <tr>
+            <td>Program Director – Environment</td>
+            <td class="placeholder">[To be appointed]</td>
+            <td>Water & sanitation, climate resilience, community greening</td>
+          </tr>
+          <tr>
+            <td>Fundraising & Partnerships Lead</td>
+            <td class="placeholder">[To be appointed]</td>
+            <td>Donor pipeline, grants, corporate partnerships</td>
+          </tr>
+          <tr>
+            <td>Advisory Council</td>
+            <td class="placeholder">[Multiple advisors – to be appointed]</td>
+            <td>Community, diaspora and sector expertise</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="highlight" style="margin-top:32px;">
+      <p style="margin:0; color:var(--muted);">
+        We are actively seeking founding Board members, advisors, and an incorporation partner
+        with experience in nonprofit governance, community development in Uganda, education,
+        health, livelihoods, or environmental resilience.
+      </p>
+      <p style="margin:14px 0 0; color:var(--cream);">
+        <strong>Interested in a founding role?</strong>
+        Email <a href="mailto:thejopetnahfoundation@gmail.com">thejopetnahfoundation@gmail.com</a>
       </p>
     </div>
   </div>
@@ -610,7 +754,7 @@ footer .wrap{
         <h3>Transparency</h3>
         <p>
           We aim to communicate clearly about our plans, progress, limitations,
-          resources and results.
+          resources and results — including publishing key working documents on our public GitHub repository.
         </p>
       </div>
 
@@ -665,10 +809,11 @@ footer .wrap{
     <div class="timeline">
 
       <div class="timeline-item">
-        <h3>Foundation</h3>
+        <h3>Foundation (Current)</h3>
         <p>
           Establish the organizational identity, governance architecture,
-          policies, digital presence and program portfolio.
+          policies, digital presence and program portfolio. Complete legal registration
+          and form the founding Board.
         </p>
       </div>
 
@@ -747,6 +892,11 @@ footer .wrap{
 
     <a href="index.html#get-involved" class="btn btn-primary">Get Involved</a>
     <a href="programs.html" class="btn btn-secondary">Explore Our Programs</a>
+
+    <p style="margin-top:28px; color:var(--muted); font-size:0.95rem;">
+      Contact: <a href="mailto:thejopetnahfoundation@gmail.com">thejopetnahfoundation@gmail.com</a><br>
+      Public repository: <a href="https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation" target="_blank" rel="noopener">github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation</a>
+    </p>
   </div>
 </section>
 
