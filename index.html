@@ -28,22 +28,47 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "NGO",
-  "name": "The Jopetnah Foundation",
-  "url": "https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/",
-  "logo": "https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/jopetnah-icon-512.png",
-  "description": "The Jopetnah Foundation integrates education, health, livelihoods, and environment programs into one family-centered model for underserved communities.",
-  "areaServed": "Uganda",
-  "foundingLocation": {
-    "@type": "Place",
-    "name": "Kampala, Uganda"
-  },
-  "parentOrganization": {
-    "@type": "Organization",
-    "name": "Jopetnah International Limited"
-  },
-  "sameAs": [
-    "https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation"
+  "@graph": [
+    {
+      "@type": "NGO",
+      "@id": "https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/#organization",
+      "name": "The Jopetnah Foundation",
+      "alternateName": "TJF",
+      "url": "https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/",
+      "logo": "https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/jopetnah-icon-512.png",
+      "description": "The Jopetnah Foundation integrates education, health, livelihoods, and environment programs into one family-centered model for underserved communities.",
+      "areaServed": "Uganda",
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "Kampala, Uganda"
+      },
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Jopetnah International Limited"
+      },
+      "sameAs": [
+        "https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/#website",
+      "url": "https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/",
+      "name": "The Jopetnah Foundation",
+      "alternateName": "TJF"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/#webpage",
+      "url": "https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/",
+      "name": "The Jopetnah Foundation — Building whole communities, one life at a time",
+      "isPartOf": {
+        "@id": "https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/#website"
+      },
+      "about": {
+        "@id": "https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/#organization"
+      }
+    }
   ]
 }
 </script>
