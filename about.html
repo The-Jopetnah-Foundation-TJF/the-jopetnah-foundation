@@ -12,6 +12,8 @@ content="Learn about The Jopetnah Foundation (TJF), a Uganda-based nonprofit dev
 <link rel="canonical"
 href="https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/about.html">
 
+<meta name="theme-color" content="#180E06">
+
 <meta property="og:type" content="website">
 <meta property="og:title" content="About The Jopetnah Foundation | TJF Uganda">
 <meta property="og:description"
@@ -72,186 +74,99 @@ content="https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/s
 }
 </script>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
 <style>
 :root{
-  --bg:#180E06;
-  --bg-deep:#100903;
-  --surface:#241609;
-  --surface-2:#2D1B0D;
-  --cream:#F3E9DC;
-  --muted:#BDAF9F;
-  --line:#4A3523;
-  --terracotta:#C4623C;
-  --terracotta-dark:#8F4A31;
-  --gold:#D8A63D;
-  --green:#7C9473;
-  --radius:18px;
-  --max:1100px;
+  --bg: #241609;
+  --bg-deep: #180E06;
+  --surface: #32211A;
+  --surface-2: #3D291F;
+  --terracotta: #C4623C;
+  --terracotta-dim: #8F4A31;
+  --gold: #D8A63D;
+  --sage: #7C9473;
+  --cream: #F3E9DC;
+  --muted: #B9A390;
+  --line: rgba(243,233,220,0.12);
+  --radius: 14px;
+  --maxw: 1120px;
 }
 
 *{box-sizing:border-box;}
-
 html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
+section[id]{scroll-margin-top:88px;}
+a:focus-visible, button:focus-visible{outline:2px solid var(--gold); outline-offset:3px;}
+.skip-link{
+  position:absolute; left:-999px; top:0; z-index:1000;
+  background:var(--gold); color:var(--bg-deep); font-weight:700;
+  padding:12px 18px; border-radius:0 0 8px 0;
+}
+.skip-link:focus{left:0;}
 
 body{
   margin:0;
   background:var(--bg);
   color:var(--cream);
-  font-family:Arial, Helvetica, sans-serif;
-  line-height:1.7;
+  font-family:'Work Sans', Arial, Helvetica, sans-serif;
+  font-size:16px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
 }
 
-a{
-  color:var(--gold);
-  text-decoration:none;
-}
+a{color:var(--gold); text-decoration:none;}
+a:hover{color:var(--cream);}
 
-a:hover{
-  color:var(--cream);
-}
+.wrap{max-width:var(--maxw); margin:0 auto; padding:0 28px;}
 
-.wrap{
-  width:min(var(--max), calc(100% - 40px));
-  margin:0 auto;
+h1,h2,h3{
+  font-family:'Fraunces', Georgia, serif;
+  font-weight:600;
+  letter-spacing:-0.01em;
+  line-height:1.15;
+  margin:0 0 0.4em 0;
 }
-
-nav{
-  position:sticky;
-  top:0;
-  z-index:100;
-  background:rgba(24,14,6,.96);
-  border-bottom:1px solid var(--line);
-  backdrop-filter:blur(8px);
-}
-
-nav .wrap{
-  min-height:68px;
-  display:flex;
-  align-items:center;
-  gap:28px;
-}
-
-.brand{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  color:var(--cream);
-  font-weight:700;
-  font-size:1.05rem;
-  margin-right:auto;
-}
-
-.brand span{
-  color:var(--gold);
-}
-
-.brand-mark{
-  width:31px;
-  height:31px;
-}
-
-.navlinks{
-  display:flex;
-  gap:22px;
-  align-items:center;
-}
-
-.navlinks a{
-  color:var(--muted);
-  font-size:.92rem;
-}
-
-.navlinks a:hover{
-  color:var(--cream);
-}
-
-.navcta{
-  background:var(--gold);
-  color:var(--bg) !important;
-  padding:9px 14px;
-  border-radius:999px;
-  font-weight:700;
-  font-size:.88rem;
-}
-
-.hero{
-  padding:95px 0 70px;
-  background:
-    radial-gradient(circle at top right, rgba(216,166,61,.12), transparent 30%),
-    linear-gradient(180deg,var(--bg-deep),var(--bg));
-}
+h1{font-size:clamp(2.4rem,5vw,3.6rem); max-width:900px; margin-bottom:20px;}
+h2{font-size:2rem; margin-bottom:20px;}
+h3{font-size:1.25rem; margin-bottom:10px;}
 
 .eyebrow{
+  font-family:'IBM Plex Mono', monospace;
   display:inline-block;
   text-transform:uppercase;
   letter-spacing:.14em;
-  font-size:.72rem;
+  font-size:.78rem;
   color:var(--gold);
-  font-weight:700;
-  margin-bottom:14px;
+  font-weight:500;
+  margin-bottom:.9em;
 }
+.eyebrow-center{display:block; text-align:center;}
 
-h1,h2,h3{
-  font-family:Georgia, "Times New Roman", serif;
-  line-height:1.15;
-  margin-top:0;
-}
+.lede{max-width:780px; color:var(--muted); font-size:1.12rem;}
 
-h1{
-  font-size:clamp(2.6rem,6vw,4.8rem);
-  max-width:900px;
-  margin-bottom:20px;
-}
+section{padding:100px 0;}
+@media(max-width:720px){ section{padding:64px 0;} }
 
-h2{
-  font-size:clamp(2rem,4vw,3rem);
-  margin-bottom:20px;
-}
+.band-surface{background:var(--surface); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+.band-deep{background:var(--bg-deep); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
 
-h3{
-  font-size:1.35rem;
-  margin-bottom:10px;
-}
-
-.lede{
-  max-width:780px;
-  color:var(--muted);
-  font-size:1.12rem;
-}
-
-section{
-  padding:82px 0;
-  border-bottom:1px solid var(--line);
-}
-
-.grid-2{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:28px;
-}
-
-.grid-3{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:22px;
-}
+.grid-2{display:grid; grid-template-columns:1fr 1fr; gap:28px;}
+.grid-3{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
 
 .card{
   background:var(--surface);
   border:1px solid var(--line);
   border-radius:var(--radius);
   padding:28px;
+  transition:border-color .2s ease;
 }
-
-.card p{
-  color:var(--muted);
-  margin-bottom:0;
-}
-
-.card ul{
-  color:var(--muted);
-  padding-left:20px;
-}
+.card:hover{border-color:var(--terracotta-dim);}
+.card h3{color:var(--cream);}
+.card p{color:var(--muted); margin-bottom:0; font-size:0.94rem;}
+.card ul{color:var(--muted); padding-left:20px; font-size:0.94rem;}
 
 .highlight{
   background:var(--surface-2);
@@ -260,9 +175,12 @@ section{
   border-radius:0 var(--radius) var(--radius) 0;
   margin-top:30px;
 }
+.accent-gold{color:var(--gold);}
 
 .quote{
-  font-family:Georgia, "Times New Roman", serif;
+  font-family:'Fraunces', Georgia, serif;
+  font-weight:500;
+  font-style:italic;
   font-size:1.55rem;
   line-height:1.45;
   color:var(--cream);
@@ -275,151 +193,126 @@ section{
   padding:22px 26px;
   margin-top:28px;
   color:var(--muted);
-  font-size:0.98rem;
+  font-size:0.95rem;
 }
+.status-box strong{color:var(--gold);}
 
-.status-box strong{
-  color:var(--gold);
-}
-
-.pillars{
-  margin-top:35px;
-}
-
+.pillars{margin-top:35px;}
 .pillar{
   padding:24px;
   border:1px solid var(--line);
   border-radius:var(--radius);
-  background:var(--surface);
+  background:var(--bg);
+  border-top:3px solid var(--pillar-color, var(--gold));
 }
-
-.pillar h3{
-  margin-bottom:8px;
-}
-
-.pillar p{
-  color:var(--muted);
-  margin:0;
-}
-
-.red h3{color:#D98663;}
-.gold h3{color:var(--gold);}
-.green h3{color:#A8BD9D;}
-.brown h3{color:#C49A86;}
+.pillar h3{margin-bottom:8px; color:var(--pillar-color, var(--cream));}
+.pillar p{color:var(--muted); margin:0; font-size:0.94rem;}
+.pillar.edu{--pillar-color:var(--terracotta);}
+.pillar.health{--pillar-color:var(--terracotta-dim);}
+.pillar.income{--pillar-color:var(--gold);}
+.pillar.env{--pillar-color:var(--sage);}
 
 .timeline{
   border-left:1px solid var(--line);
   margin-left:10px;
   padding-left:30px;
 }
-
-.timeline-item{
-  margin-bottom:35px;
-  position:relative;
-}
-
+.timeline-item{margin-bottom:35px; position:relative;}
 .timeline-item::before{
   content:"";
-  width:11px;
-  height:11px;
-  background:var(--gold);
+  width:11px; height:11px;
+  background:var(--terracotta);
+  border:3px solid var(--bg);
   border-radius:50%;
-  position:absolute;
-  left:-36px;
-  top:10px;
+  position:absolute; left:-40px; top:2px;
 }
+.timeline-item h3{margin-bottom:7px; font-size:1.15rem; color:var(--cream);}
+.timeline-item p{color:var(--muted); margin:0; font-size:0.95rem;}
 
-.timeline-item h3{
-  margin-bottom:7px;
-}
-
-.timeline-item p{
-  color:var(--muted);
-  margin:0;
-}
-
-.leadership-table{
-  width:100%;
-  border-collapse:collapse;
-  margin-top:28px;
-  font-size:0.95rem;
-}
-
+.leadership-table{width:100%; border-collapse:collapse; margin-top:0; font-size:0.92rem;}
 .leadership-table th,
-.leadership-table td{
-  text-align:left;
-  padding:14px 16px;
-  border-bottom:1px solid var(--line);
-  color:var(--muted);
-}
-
+.leadership-table td{text-align:left; padding:14px 16px; border-bottom:1px solid var(--line);}
 .leadership-table th{
-  color:var(--gold);
-  font-weight:700;
-  font-size:0.85rem;
+  font-family:'IBM Plex Mono', monospace;
+  font-size:0.75rem;
+  letter-spacing:0.08em;
   text-transform:uppercase;
-  letter-spacing:0.06em;
+  color:var(--muted);
+  font-weight:500;
 }
-
-.leadership-table td:first-child{
-  color:var(--cream);
-  font-weight:600;
-}
-
-.placeholder{
-  color:var(--gold);
-  font-style:italic;
-}
+.leadership-table td:first-child,
+.leadership-table th:first-child{color:var(--cream); font-weight:600;}
+.leadership-table td{color:var(--muted);}
+.placeholder{color:var(--gold); font-style:italic;}
 
 .cta{
   text-align:center;
-  padding:85px 0;
-  background:linear-gradient(135deg,rgba(196,98,60,.14),rgba(124,148,115,.12));
+  padding:100px 0;
+  background:linear-gradient(160deg, var(--surface-2), var(--bg-deep));
 }
+.cta .hero-actions{justify-content:center;}
 
+.hero-actions{display:flex; gap:14px; margin-top:28px; flex-wrap:wrap;}
 .btn{
   display:inline-block;
-  margin-top:14px;
-  padding:13px 20px;
+  padding:13px 26px;
   border-radius:999px;
-  font-weight:700;
+  text-decoration:none;
+  font-weight:600;
+  font-size:0.95rem;
+  transition:transform .15s ease, opacity .15s ease;
 }
+.btn:hover{transform:translateY(-1px);}
+.btn-primary{background:var(--terracotta); color:#1A0F07;}
+.btn-secondary{background:transparent; color:var(--cream); border:1px solid var(--line);}
 
-.btn-primary{
-  background:var(--gold);
-  color:var(--bg);
+footer{border-top:1px solid var(--line); padding:44px 0; background:var(--bg-deep); color:var(--muted); font-size:.85rem;}
+footer .wrap{display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:16px;}
+footer p{margin:0;}
+footer .flinks a{color:var(--muted); text-decoration:none; margin-left:18px; font-size:0.85rem;}
+footer .flinks a:hover{color:var(--cream);}
+
+/* ---------- NAV ---------- */
+nav{
+  position:sticky; top:0; z-index:50;
+  background:rgba(24,14,6,0.95);
+  border-bottom:1px solid var(--line);
 }
-
-.btn-secondary{
-  border:1px solid var(--line);
-  color:var(--cream);
-  margin-left:8px;
+nav .wrap{min-height:68px; display:flex; align-items:center; gap:28px; position:relative; padding-top:0; padding-bottom:0;}
+.brand{
+  font-family:'Fraunces', Georgia, serif; font-weight:600; font-size:1.05rem;
+  display:flex; align-items:center; gap:10px; color:var(--cream);
+  margin-right:auto;
 }
-
-footer{
-  padding:35px 0 45px;
-  color:var(--muted);
-  font-size:.88rem;
+.brand span{color:var(--terracotta);}
+.brand-mark{width:31px; height:31px; flex-shrink:0;}
+.navlinks{display:flex; gap:22px; align-items:center; font-size:.92rem;}
+.navlinks a{color:var(--muted);}
+.navlinks a:hover{color:var(--cream);}
+.navcta{
+  background:var(--terracotta); color:var(--bg-deep) !important;
+  padding:9px 18px; border-radius:999px; font-weight:600; font-size:.88rem;
 }
+.nav-toggle{display:none; flex-direction:column; justify-content:center; gap:5px; width:38px; height:38px; background:none; border:1px solid var(--line); border-radius:8px; cursor:pointer; padding:0; margin-left:12px;}
+.nav-toggle span{width:18px; height:2px; background:var(--cream); display:block; margin:0 auto;}
 
-footer .wrap{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:space-between;
-  gap:16px;
-}
-
-@media(max-width:820px){
-  .navlinks{display:none;}
+@media(max-width:720px){
+  .nav-toggle{display:flex;}
+  .navlinks{
+    display:none; flex-direction:column; align-items:flex-start; gap:2px;
+    position:absolute; top:100%; left:0; right:0;
+    background:var(--bg-deep); border:1px solid var(--line); border-top:none;
+    padding:8px 28px 18px;
+  }
+  .navlinks.open{display:flex;}
+  .navlinks a{padding:12px 0; width:100%; border-bottom:1px solid var(--line);}
+  .navlinks a:last-child{border-bottom:none;}
   .grid-2,.grid-3{grid-template-columns:1fr;}
-  section{padding:65px 0;}
   .leadership-table{font-size:0.88rem;}
 }
 
 @media(max-width:560px){
-  .wrap{width:min(var(--max), calc(100% - 28px));}
-  .hero{padding:70px 0 55px;}
-  h1{font-size:2.65rem;}
+  h1{font-size:2.5rem;}
   .leadership-table th,
   .leadership-table td{padding:10px 8px;}
 }
@@ -427,8 +320,9 @@ footer .wrap{
 </head>
 
 <body>
+<a href="#main-content" class="skip-link">Skip to content</a>
 
-<nav>
+<nav aria-label="Primary">
   <div class="wrap">
     <a href="index.html" class="brand">
       <svg class="brand-mark" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -441,7 +335,7 @@ footer .wrap{
       Jopetnah<span>.</span>
     </a>
 
-    <div class="navlinks">
+    <div class="navlinks" id="navlinks">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="programs.html">Programs</a>
@@ -451,10 +345,15 @@ footer .wrap{
     </div>
 
     <a class="navcta" href="index.html#get-involved">Get Involved</a>
+    <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navlinks" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
 
-<header class="hero">
+<main id="main-content">
+
+<header class="hero" style="padding:90px 0 70px; background:radial-gradient(circle at top right, rgba(216,166,61,.12), transparent 30%), linear-gradient(180deg,var(--bg-deep),var(--bg));">
   <div class="wrap">
     <span class="eyebrow">About The Jopetnah Foundation</span>
 
@@ -512,7 +411,7 @@ footer .wrap{
       </p>
 
       <p style="color:var(--muted); font-size:0.95rem; margin-top:18px;">
-        <strong style="color:var(--gold);">Relationship note:</strong>
+        <strong class="accent-gold">Relationship note:</strong>
         TJF is being established as an independent nonprofit. It draws early inspiration and networks
         from individuals associated with Jopetnah International Limited (a Kampala-based enterprise founded in 2016),
         but will operate under its own separate governance, registration, and accountability structures once formalized.
@@ -521,7 +420,7 @@ footer .wrap{
   </div>
 </section>
 
-<section>
+<section class="band-surface">
   <div class="wrap">
     <span class="eyebrow">Leadership</span>
     <h2>Building the team that will steward the work.</h2>
@@ -533,13 +432,14 @@ footer .wrap{
       with real appointees once the founding Board is constituted and registration is complete.
     </p>
 
-    <div class="card" style="overflow-x:auto;">
+    <div class="card" style="overflow-x:auto; margin-top:35px;">
       <table class="leadership-table">
+        <caption style="text-align:left;color:var(--muted);font-size:0.85rem;margin-bottom:12px;">Planned leadership structure — roles awaiting founding appointments</caption>
         <thead>
           <tr>
-            <th>Role</th>
-            <th>Name</th>
-            <th>Focus</th>
+            <th scope="col">Role</th>
+            <th scope="col">Name</th>
+            <th scope="col">Focus</th>
           </tr>
         </thead>
         <tbody>
@@ -595,7 +495,7 @@ footer .wrap{
       </p>
       <p style="margin:14px 0 0; color:var(--cream);">
         <strong>Interested in a founding role?</strong>
-        Email <a href="mailto:thejopetnahfoundation@gmail.com">thejopetnahfoundation@gmail.com</a>
+        Email <a href="mailto:thejopetnahfoundation@gmail.com?subject=Founding role inquiry - TJF">thejopetnahfoundation@gmail.com</a>
       </p>
     </div>
   </div>
@@ -626,7 +526,7 @@ footer .wrap{
   </div>
 </section>
 
-<section>
+<section class="band-surface">
   <div class="wrap">
     <span class="eyebrow">Our Philosophy</span>
     <h2>Four pillars. One integrated model.</h2>
@@ -639,7 +539,7 @@ footer .wrap{
 
     <div class="grid-2 pillars">
 
-      <div class="pillar red">
+      <div class="pillar edu">
         <h3>Education & Youth Development</h3>
         <p>
           Helping children and young people access learning, mentorship, literacy,
@@ -647,7 +547,7 @@ footer .wrap{
         </p>
       </div>
 
-      <div class="pillar brown">
+      <div class="pillar health">
         <h3>Health & Wellbeing</h3>
         <p>
           Strengthening community health awareness, prevention, referral pathways,
@@ -655,7 +555,7 @@ footer .wrap{
         </p>
       </div>
 
-      <div class="pillar gold">
+      <div class="pillar income">
         <h3>Poverty Alleviation & Livelihoods</h3>
         <p>
           Supporting skills, entrepreneurship, savings, income generation and
@@ -663,7 +563,7 @@ footer .wrap{
         </p>
       </div>
 
-      <div class="pillar green">
+      <div class="pillar env">
         <h3>Environment & Community Development</h3>
         <p>
           Promoting safer water and sanitation, environmental stewardship,
@@ -727,7 +627,7 @@ footer .wrap{
   </div>
 </section>
 
-<section>
+<section class="band-deep">
   <div class="wrap">
     <span class="eyebrow">Our Values</span>
     <h2>How we intend to work.</h2>
@@ -890,8 +790,10 @@ footer .wrap{
       responsible and lasting community impact.
     </p>
 
-    <a href="index.html#get-involved" class="btn btn-primary">Get Involved</a>
-    <a href="programs.html" class="btn btn-secondary">Explore Our Programs</a>
+    <div class="hero-actions" style="justify-content:center;">
+      <a href="index.html#get-involved" class="btn btn-primary">Get Involved</a>
+      <a href="programs.html" class="btn btn-secondary">Explore Our Programs</a>
+    </div>
 
     <p style="margin-top:28px; color:var(--muted); font-size:0.95rem;">
       Contact: <a href="mailto:thejopetnahfoundation@gmail.com">thejopetnahfoundation@gmail.com</a><br>
@@ -900,21 +802,39 @@ footer .wrap{
   </div>
 </section>
 
+</main>
+
 <footer>
   <div class="wrap">
     <p>
       © 2026 The Jopetnah Foundation (TJF). All rights reserved.
     </p>
 
-    <div>
+    <div class="flinks">
       <a href="index.html">Home</a>
-      &nbsp;·&nbsp;
       <a href="programs.html">Programs</a>
-      &nbsp;·&nbsp;
       <a href="index.html#get-involved">Get Involved</a>
     </div>
   </div>
 </footer>
+
+<script>
+(function(){
+  var toggle = document.getElementById('navToggle');
+  var links = document.getElementById('navlinks');
+  if(!toggle || !links) return;
+  toggle.addEventListener('click', function(){
+    var isOpen = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+  links.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      links.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+</script>
 
 </body>
 </html>
