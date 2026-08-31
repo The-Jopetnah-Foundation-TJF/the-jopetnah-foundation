@@ -120,15 +120,15 @@ That is the Jopetnah difference.
 
 ## 🏛️ Organizational Structure
 
-| Layer | Role |
-|---|---|
-| **Board of Trustees** | 7–9 members: governance, fiduciary oversight, high-level fundraising relationships |
-| **Executive Director** | Day-to-day leadership, funder relationships, strategy |
-| **Program Directors (x4)** | One per pillar: Education, Health, Livelihoods, Environment |
-| **Fundraising & Partnerships Lead** | Owns donor pipeline, grants, corporate CSR deals |
-| **Communications/Marketing Lead** | Storytelling, digital presence, campaign execution |
-| **Advisory Council** | Respected community, diaspora, and sector figures |
-| **M&E Officer** | Tracks and reports impact data for grant renewals and donor retention |
+| Layer                               | Name                         | Role                                                                               |
+| ----------------------------------- | ---------------------------- | -----------------------------------------------------------------------------------|
+| **Board of Trustees**               | *To be appointed*            | 7–9 members: governance, fiduciary oversight, high-level fundraising relationships |
+| **Executive Director**              | Okello Carlos Torach         | Day-to-day leadership, funder relationships, strategy                              |
+| **Program Directors (x4)**          | *To be appointed*            | One per pillar: Education, Health, Livelihoods, Environment                        |
+| **Fundraising & Partnerships Lead** | *To be appointed*            | Owns donor pipeline, grants, corporate CSR deals                                   |
+| **Communications/Marketing Lead**   | *To be appointed*            | Storytelling, digital presence, campaign execution                                 |
+| **Advisory Council**                | *To be appointed*            | Respected community, diaspora, and sector figures                                  |
+| **M&E Officer**                     | *To be appointed*            | Tracks and reports impact data for grant renewals and donor retention              |
 
 **Legal recommendation:** Register as a nonprofit/NGO with tax-exempt status where available — often a prerequisite for both corporate CSR partnerships and institutional grants.
 
@@ -158,9 +158,10 @@ Malaria remains one of the leading causes of death in sub-Saharan Africa: the WH
 **Year 1 Pilot Goal:** Establish 5 Village Savings and Loan Association (VSLA) groups, enrolling 125 women and youth, and disburse 25 micro-grants ($50–$100 each) to fund viable micro-enterprises.
 
 ### 🌱 Environment & Community Development
+
+- **Strengthening climate resilience** — through safer water and sanitation access, climate-smart agriculture, and community-based environmental stewardship — helping households adapt to a changing climate while building healthier, more sustainable communities.
+
 - **Green Neighborhoods** — tree planting, clean-up drives, community gardens
-- **Water & Sanitation Access** — boreholes, filtration units, hygiene education
-- **Climate-Smart Livelihoods** — links environment back to livelihoods (e.g., eco-friendly agribusiness)
 
 **Year 1 Pilot Goal:** Plant 5,000 indigenous and fruit trees in partnership with two local schools, and rehabilitate one community borehole to provide clean water access to an estimated 500 households.
 
