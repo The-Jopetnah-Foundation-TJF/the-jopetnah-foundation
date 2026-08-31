@@ -274,6 +274,31 @@
   .card ul{margin:0; padding-left:18px; color:var(--muted); font-size:0.94rem;}
   .card li{margin-bottom:6px;}
 
+  /* ---------- VALUES ---------- */
+  .values{background:var(--surface); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .values h2{text-align:center; color:var(--cream); font-size:2rem;}
+  .values > .wrap > p.center{text-align:center; color:var(--muted); max-width:56ch; margin:14px auto 0 auto;}
+  .values-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:44px;}
+  @media (max-width:720px){ .values-grid{grid-template-columns:1fr;} }
+  .values-grid .card h3{font-size:1.1rem; color:var(--gold); margin-bottom:8px;}
+  .values-grid .card p{color:var(--muted); font-size:0.92rem; margin:0;}
+
+  /* ---------- DIASPORA GIVING CIRCLE ---------- */
+  .diaspora{
+    background:var(--surface-2);
+    border-left:4px solid var(--gold);
+    border-radius:0 var(--radius) var(--radius) 0;
+    padding:32px 36px;
+    margin-top:50px;
+  }
+  .diaspora .tagline{
+    font-family:'Fraunces', serif; font-style:italic; font-weight:500;
+    font-size:1.2rem; color:var(--cream); margin:0 0 12px 0;
+  }
+  .diaspora p.body{color:var(--muted); font-size:0.96rem; max-width:660px; margin:0 0 26px 0;}
+  .diaspora table{background:transparent;}
+  .diaspora .note{margin-top:20px; font-size:0.86rem; color:var(--muted); font-style:italic; max-width:660px;}
+
   /* ---------- SUPPORT ---------- */
   .support{background:var(--bg-deep); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
   .support h2{text-align:center; color:var(--cream); font-size:2rem;}
@@ -342,6 +367,7 @@
     <div class="navlinks" id="navlinks">
       <a href="about.html">About</a>
       <a href="#model">Model</a>
+      <a href="#values">Values</a>
       <a href="#programs">Programs</a>
       <a href="#support">Support</a>
       <a href="#donate">Donate</a>
@@ -423,6 +449,41 @@
       <div class="pillar-row"><span class="pillar-dot" style="background:var(--terracotta-dim)"></span><div><h4>Health & Wellbeing</h4><p>Community health champions, malaria prevention, and mobile wellness clinics.</p></div></div>
       <div class="pillar-row"><span class="pillar-dot" style="background:var(--gold)"></span><div><h4>Livelihoods</h4><p>Micro-grants, vocational-to-job pipelines, savings circles.</p></div></div>
       <div class="pillar-row"><span class="pillar-dot" style="background:var(--sage)"></span><div><h4>Environment</h4><p>Clean water, sanitation access, and climate-smart farming.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="values reveal" id="values">
+  <div class="wrap">
+    <span class="eyebrow eyebrow-center">Our Values</span>
+    <h2>How we intend to work.</h2>
+    <p class="center">The principles that shape every program decision, from pilot design to how we report back.</p>
+
+    <div class="values-grid">
+      <div class="card">
+        <h3>Integrity</h3>
+        <p>We seek to act honestly, responsibly and transparently in how we manage relationships, resources and commitments.</p>
+      </div>
+      <div class="card">
+        <h3>Community Ownership</h3>
+        <p>We believe sustainable development is stronger when communities participate meaningfully in defining priorities and solutions.</p>
+      </div>
+      <div class="card">
+        <h3>Transparency</h3>
+        <p>We aim to communicate clearly about our plans, progress, limitations, resources and results — including publishing key working documents on our public GitHub repository.</p>
+      </div>
+      <div class="card">
+        <h3>Sustainability</h3>
+        <p>We seek approaches that strengthen capacity and resilience rather than creating unnecessary long-term dependency.</p>
+      </div>
+      <div class="card">
+        <h3>Inclusion</h3>
+        <p>We seek to create opportunities that respect dignity, participation and fair access for underserved people and communities.</p>
+      </div>
+      <div class="card">
+        <h3>Learning</h3>
+        <p>We intend to measure, reflect, adapt and improve as programs develop and evidence becomes available.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -515,6 +576,22 @@
           <tr><td>Founder's Circle</td><td class="amt">$5,000+/yr</td><td>Named recognition, gala invite, quarterly briefings</td></tr>
         </tbody>
       </table>
+    </div>
+
+    <div class="diaspora">
+      <p class="tagline">"Send Home Hope." A giving circle for the Jopetnah diaspora community — because home is never as far as it feels.</p>
+      <p class="body">You left, but your community didn't leave your heart. Send Home Hope turns that pull into something concrete: a child staying in school, a mother getting a check-up, a neighbor starting a small business.</p>
+      <table>
+        <caption style="text-align:left;color:var(--muted);font-size:0.85rem;margin-bottom:12px;">Send Home Hope monthly giving tiers</caption>
+        <thead><tr><th scope="col">Tier</th><th scope="col">Monthly Gift</th><th scope="col">What it funds</th></tr></thead>
+        <tbody>
+          <tr><td>Seedling</td><td class="amt">$15</td><td>One month of school supplies for one child</td></tr>
+          <tr><td>Rooted</td><td class="amt">$40</td><td>One month of a Community Health Champion's outreach</td></tr>
+          <tr><td>Grove</td><td class="amt">$100</td><td>One family's monthly "whole-family" bundled support</td></tr>
+          <tr><td>Elder</td><td class="amt">$250+</td><td>Recognition in our diaspora newsletter + invite to virtual town halls</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Why recurring, not one-time? A single $500 gift helps one family for one moment. A $40/month gift helps one family for a whole year — and lets Jopetnah plan programs with confidence instead of guessing what next quarter's funding will look like.</p>
     </div>
   </div>
 </section>
