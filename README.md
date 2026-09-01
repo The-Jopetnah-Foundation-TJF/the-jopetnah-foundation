@@ -12,7 +12,7 @@
 [![Stage](https://img.shields.io/badge/stage-seeking%20founding%20partners-blueviolet)](#-get-involved)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC%204.0-lightgrey)](https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation/blob/main/LICENSE.md)
 
-[At a Glance](#at-a-glance) · [Mission](#-mission) · [The Problem We See Differently](#-the-problem-we-see-differently) · [Organizational Structure](#️-organizational-structure) · [Programs](#-programs) · [Funding Strategy](#-funding-strategy) · [Grants Calendar](#-grants-calendar) · [Flagship Events](#-flagship-fundraising-events) · [Website Copy](#-website-copy--diaspora-giving-circle) · [Governance](#-governance--accountability) · [FAQ](#-frequently-asked-questions) · [Roadmap](#-launch-roadmap) · [Get Involved](#-get-involved)
+[At a Glance](#at-a-glance) · [Mission](#-mission) · [The Problem We See Differently](#-the-problem-we-see-differently) · [Organizational Structure](#️-organizational-structure) · [Programs](#️-programs) · [Funding Strategy](#-funding-strategy) · [Grants Calendar](#-grants-calendar) · [Flagship Events](#-flagship-fundraising-events) · [Website Copy](#-website-copy--diaspora-giving-circle) · [Governance](#️-governance--accountability) · [FAQ](#-frequently-asked-questions) · [Roadmap](#️-launch-roadmap) · [Get Involved](#-get-involved)
 
 </div>
 
