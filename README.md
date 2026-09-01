@@ -1,4 +1,3 @@
-[README_CONSOLIDATED.md](https://github.com/user-attachments/files/30857144/README_CONSOLIDATED.md)
 <div align="center">
 
 <img src="jopetnah-icon-512.png" width="90" alt="The Jopetnah Foundation logo">
@@ -13,7 +12,7 @@
 [![Stage](https://img.shields.io/badge/stage-seeking%20founding%20partners-blueviolet)]()
 [![License](https://img.shields.io/badge/license-CC%20BY--NC%204.0-lightgrey)]()
 
-[Mission](#-mission) · [Programs](#-programs) · [Funding Strategy](#-funding-strategy) · [Grants Calendar](#-grants-calendar) · [Flagship Events](#-flagship-fundraising-events) · [Website Copy](#-website-copy--diaspora-giving-circle) · [Governance](#-governance--accountability) · [FAQ](#-frequently-asked-questions) · [Roadmap](#-launch-roadmap) · [Get Involved](#-get-involved)
+[At a Glance](#at-a-glance) · [Mission](#-mission) · [The Problem We See Differently](#-the-problem-we-see-differently) · [Organizational Structure](#️-organizational-structure) · [Programs](#-programs) · [Funding Strategy](#-funding-strategy) · [Grants Calendar](#-grants-calendar) · [Flagship Events](#-flagship-fundraising-events) · [Website Copy](#-website-copy--diaspora-giving-circle) · [Governance](#-governance--accountability) · [FAQ](#-frequently-asked-questions) · [Roadmap](#-launch-roadmap) · [Get Involved](#-get-involved)
 
 </div>
 
