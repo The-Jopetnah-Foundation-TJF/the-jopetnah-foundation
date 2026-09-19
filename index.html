@@ -83,7 +83,7 @@
       "name": "Why should we trust TJF?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Trust shouldn't be demanded — it should be earned. Our governance documents, financial controls, and decision-making structure are published before we ever make a funding ask, not after."
+        "text": "Trust shouldn't be demanded — it should be earned and demonstrated. That's why our governance documents, financial controls, and decision-making structure are published before we ever make a funding ask, not after. A donor shouldn't have to take our word for it; our systems should provide the evidence."
       }
     },
     {
@@ -91,7 +91,15 @@
       "name": "Why an integrated model instead of a single-issue charity?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Vulnerability rarely has one cause — a child leaves school, a parent can't earn, a community's environment degrades, often together. One gift working across all four pillars for the same family reflects how these problems actually arrive."
+        "text": "Because vulnerability rarely has one cause. A child leaves school because a household can't afford basics; a parent can't earn because of poor health; a community stagnates because its environment has degraded. These problems are connected, so our response is too — one gift, working across education, health, livelihoods, and environment for the same family, instead of four separate, disconnected efforts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What will our support actually accomplish?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We'll tell you specifically, not vaguely — see the Year 1 Pilot Goals under each program pillar for concrete, named targets. We won't tell a donor your gift will change lives; we'll tell them what it's intended to accomplish and how we'll report back on whether it did."
       }
     },
     {
@@ -99,7 +107,7 @@
       "name": "How will we know it worked?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We track who we reached, what access and capability they gained, and what actually changed for them, not just activity counts. We report outcomes, not just outputs."
+        "text": "Every major program will track a clear chain: who we reached, what access they gained, what capability they built, what behavior changed, what outcome resulted. Numbers alone can mislead, so our reporting will combine data with real beneficiary outcomes, not activity counts alone."
       }
     },
     {
@@ -107,7 +115,23 @@
       "name": "Is TJF able to receive donations right now?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not yet online — see the Support Our Work section for current, honest status, and how to get involved in the meantime."
+        "text": "Not yet online — see the Support Our Work section for our current, honest status. We're finalizing our bank account and payment processing. In the meantime, we welcome in-kind gifts and early conversations with anyone ready to give once we're live."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What can a corporate or institutional partner contribute besides money?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Technology, equipment, professional expertise, employee volunteering, research capacity, logistics, market access, or mentorship — a partnership with TJF doesn't have to start with a check. It can start with here's what our organization is good at."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What makes TJF different from other NGOs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not a claim to be the only organization doing this work. Our differentiation is the integrated model itself: connecting interventions across pillars rather than treating each as an isolated project, backed by governance and evidence discipline from day one rather than added later."
       }
     }
   ]
@@ -299,6 +323,25 @@
   .diaspora table{background:transparent;}
   .diaspora .note{margin-top:20px; font-size:0.86rem; color:var(--muted); font-style:italic; max-width:660px;}
 
+  /* ---------- TRUST STRIP ---------- */
+  .trust-strip{
+    display:flex; flex-wrap:wrap; gap:20px 28px;
+    max-width:820px; margin:0 auto 40px;
+    padding:26px 30px;
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+  }
+  .trust-strip-heading{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.72rem; text-transform:uppercase; letter-spacing:0.1em;
+    color:var(--gold); flex-basis:100%; margin-bottom:2px;
+  }
+  .trust-strip .item{
+    display:flex; align-items:flex-start; gap:10px;
+    flex:1 1 280px;
+    font-size:0.92rem; color:var(--muted); line-height:1.4;
+  }
+  .trust-strip .item .check{color:var(--gold); font-weight:700; flex-shrink:0; font-size:1rem;}
+
   /* ---------- SUPPORT ---------- */
   .support{background:var(--bg-deep); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
   .support h2{text-align:center; color:var(--cream); font-size:2rem;}
@@ -388,7 +431,7 @@
     <div>
       <span class="eyebrow">The Jopetnah Foundation (TJF)</span>
       <h1>Building whole<br>communities, <em>one life</em><br>at a time.</h1>
-      <p class="lede">We fold education, health, livelihoods, and environment into a single family-centered model — because the families we serve never face one problem at a time.</p>
+      <p class="lede">The Jopetnah Foundation brings education, health, economic opportunity, and environmental care together — because families don't face one problem at a time, and neither should we.</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#get-involved">Partner with us</a>
         <a class="btn btn-secondary" href="programs.html">View All Programs</a>
@@ -606,6 +649,14 @@
       <p style="margin:12px 0 0;color:var(--muted);">We're a founding-stage organization and we'd rather tell you that plainly than show you a donate button that doesn't work yet. In the meantime, here's how you can support us right now:</p>
     </div>
 
+    <div class="trust-strip">
+      <div class="trust-strip-heading">Our Commitments</div>
+      <div class="item"><span class="check">→</span><span>Governance by an independent Board of Trustees, once formally seated</span></div>
+      <div class="item"><span class="check">→</span><span>Full publication of annual audited financials, from our first fiscal year</span></div>
+      <div class="item"><span class="check">→</span><span>Locally-led program decisions, shaped by the communities we serve</span></div>
+      <div class="item"><span class="check">→</span><span>Directing at least 70% of every dollar to programs</span></div>
+    </div>
+
     <div class="support-grid">
       <div class="support-col">
         <h3>Give In-Kind, Today</h3>
@@ -640,19 +691,31 @@
     <div style="max-width:820px;margin:32px auto 0;">
       <div style="margin-bottom:28px;">
         <h3 style="color:var(--gold);font-size:1.05rem;margin-bottom:8px;">Why should we trust TJF?</h3>
-        <p style="color:var(--muted);">Trust shouldn't be demanded — it should be earned. Our governance documents, financial controls, and decision-making structure are published before we ever make a funding ask, not after.</p>
+        <p style="color:var(--muted);">Trust shouldn't be demanded — it should be earned and demonstrated. That's why our governance documents, financial controls, and decision-making structure are published before we ever make a funding ask, not after. A donor shouldn't have to take our word for it; our systems should provide the evidence.</p>
       </div>
       <div style="margin-bottom:28px;">
         <h3 style="color:var(--gold);font-size:1.05rem;margin-bottom:8px;">Why an integrated model instead of a single-issue charity?</h3>
-        <p style="color:var(--muted);">Vulnerability rarely has one cause — a child leaves school, a parent can't earn, a community's environment degrades, often together. One gift working across all four pillars for the same family reflects how these problems actually arrive.</p>
+        <p style="color:var(--muted);">Because vulnerability rarely has one cause. A child leaves school because a household can't afford basics; a parent can't earn because of poor health; a community stagnates because its environment has degraded. These problems are connected, so our response is too — one gift, working across education, health, livelihoods, and environment for the same family, instead of four separate, disconnected efforts.</p>
+      </div>
+      <div style="margin-bottom:28px;">
+        <h3 style="color:var(--gold);font-size:1.05rem;margin-bottom:8px;">What will our support actually accomplish?</h3>
+        <p style="color:var(--muted);">We'll tell you specifically, not vaguely — see the <a href="#programs" style="color:var(--cream);">Year 1 Pilot Goals</a> under each program pillar for concrete, named targets. We won't tell a donor "your gift will change lives"; we'll tell them what it's intended to accomplish and how we'll report back on whether it did.</p>
       </div>
       <div style="margin-bottom:28px;">
         <h3 style="color:var(--gold);font-size:1.05rem;margin-bottom:8px;">How will we know it worked?</h3>
-        <p style="color:var(--muted);">We track who we reached, what access and capability they gained, and what actually changed for them — not just activity counts. "10,000 people trained" says nothing on its own; we report outcomes, not just outputs.</p>
+        <p style="color:var(--muted);">Every major program will track a clear chain: who we reached → what access they gained → what capability they built → what behavior changed → what outcome resulted. Numbers alone can mislead ("10,000 people trained" says nothing about what happened to them afterward) — so our reporting will combine data with real beneficiary outcomes, not activity counts alone.</p>
+      </div>
+      <div style="margin-bottom:28px;">
+        <h3 style="color:var(--gold);font-size:1.05rem;margin-bottom:8px;">Is TJF able to receive donations right now?</h3>
+        <p style="color:var(--muted);">Not yet online — see <a href="#donate" style="color:var(--cream);">Support Our Work</a> for our current, honest status. We're finalizing our bank account and payment processing. In the meantime, we welcome in-kind gifts and early conversations with anyone ready to give once we're live.</p>
+      </div>
+      <div style="margin-bottom:28px;">
+        <h3 style="color:var(--gold);font-size:1.05rem;margin-bottom:8px;">What can a corporate or institutional partner contribute besides money?</h3>
+        <p style="color:var(--muted);">Technology, equipment, professional expertise, employee volunteering, research capacity, logistics, market access, or mentorship — a partnership with TJF doesn't have to start with "here's a check." It can start with "here's what our organization is good at."</p>
       </div>
       <div style="margin-bottom:8px;">
-        <h3 style="color:var(--gold);font-size:1.05rem;margin-bottom:8px;">Is TJF able to receive donations right now?</h3>
-        <p style="color:var(--muted);">Not yet online — see <a href="#donate" style="color:var(--cream);">Support Our Work</a> above for our current, honest status, and how to get involved in the meantime.</p>
+        <h3 style="color:var(--gold);font-size:1.05rem;margin-bottom:8px;">What makes TJF different from other NGOs?</h3>
+        <p style="color:var(--muted);">Not a claim to be the only organization doing this work — that would be hard to substantiate. Our differentiation is the integrated model itself: connecting interventions across pillars rather than treating each as an isolated project, backed by governance and evidence discipline from day one rather than added later.</p>
       </div>
     </div>
   </div>
