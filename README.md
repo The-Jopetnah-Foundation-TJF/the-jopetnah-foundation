@@ -158,9 +158,11 @@ Malaria remains one of the leading causes of death in sub-Saharan Africa: the WH
 
 ### 🌱 Environment & Community Development
 
-- **Strengthening climate resilience** — through safer water and sanitation access, climate-smart agriculture, and community-based environmental stewardship — helping households adapt to a changing climate while building healthier, more sustainable communities.
+Strengthening climate resilience through safer water and sanitation access, climate-smart agriculture, and community-based environmental stewardship — helping households adapt to a changing climate while building healthier, more sustainable communities.
 
 - **Green Neighborhoods** — tree planting, clean-up drives, community gardens
+- **Water & Sanitation Access** — boreholes, filtration units, hygiene education
+- **Climate-Smart Livelihoods** — links environment back to livelihoods (e.g., eco-friendly agribusiness)
 
 **Year 1 Pilot Goal:** Plant 5,000 indigenous and fruit trees in partnership with two local schools, and rehabilitate one community borehole to provide clean water access to an estimated 500 households.
 
