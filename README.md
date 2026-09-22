@@ -22,7 +22,7 @@
 
 **The Jopetnah Foundation (TJF)** is a **Uganda-based nonprofit organization at the founding stage**, building whole communities, one life at a time through an **integrated, family-centered approach to community development**.
 
-Rather than treating interconnected challenges in isolation, TJF brings together **education, health, livelihoods, and environmental resilience** to help families and communities move progressively from vulnerability toward **stability, opportunity, resilience, and greater self-reliance**.
+Rather than treating interconnected challenges in isolation, TJF brings together **education, health, livelihoods, and environmental resilience** to help families and communities move progressively from vulnerability toward **stability, then opportunity, resilience, and greater self-reliance**.
 
 | | |
 |---|---|
