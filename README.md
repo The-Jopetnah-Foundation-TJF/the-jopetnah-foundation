@@ -349,7 +349,8 @@ Not a claim to be the only organization doing this work — that would be hard t
 │   ├── GRANTS_CALENDAR.md      ← full, status-tracked grants pipeline (see Grants Calendar)
 │   └── IN_KIND_GIVING.md       ← non-cash giving guide (see Funding Strategy)
 ├── communications/
-│   └── README.md               ← communications resource index
+│   ├── README.md               ← communications resource index
+│   └── TJF_Program_Pathways_at_a_Glance.docx  ← 1-page numbered reference to all 13 program pathways (stakeholder/funder handout)
 └── .github/ISSUE_TEMPLATE/
     ├── grant_lead.md           ← Track a new grant opportunity
     ├── offer_of_support.md     ← Volunteers, mentors, or pro-bono legal/tech help
