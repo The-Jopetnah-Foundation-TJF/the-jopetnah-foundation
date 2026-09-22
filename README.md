@@ -39,6 +39,20 @@ Rather than treating interconnected challenges in isolation, TJF brings together
 
 **Founding Board Members · Strategic & Institutional Partners · Incorporation & Legal Support · Technical & Program Advisors · Early Corporate & Philanthropic Partners**
 
+## Elevator Pitch
+
+**The Jopetnah Foundation (TJF)** builds whole communities in Uganda, one life at a time.
+
+In many underserved communities, a child out of school, a family without access to healthcare, and a household without a reliable income are rarely separate problems — they are interconnected challenges.
+
+TJF brings together four strategic pillars — **Education & Youth Development, Health & Wellbeing, Poverty Alleviation & Livelihoods, and Environment & Community Development** — through an integrated, family-centered approach. From scholarships and skills development to community health initiatives, livelihood pathways, water solutions and climate-smart practices, our program portfolio is designed to complement one another and respond to the interconnected realities families and communities face.
+
+We are a **Uganda-based nonprofit at the founding stage, currently finalizing registration**, and are deliberately building the governance, institutional systems, partnerships and pilot programs needed for practical, locally led and sustainable impact.
+
+Our aim is not simply to respond to individual needs, but to help create the conditions in which families and communities can move progressively from **vulnerability toward stability, opportunity, resilience and greater self-reliance**.
+
+**TJF is building the foundation for lasting community transformation — one life, one family and one community at a time.**
+
 🌐 **Live site:** [the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation](https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/)
 
 ---
