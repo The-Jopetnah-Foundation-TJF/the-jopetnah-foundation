@@ -138,7 +138,7 @@ That is the Jopetnah difference.
 - **Future-Ready Labs** — digital literacy and vocational skills hubs in underserved schools
 - **Read to Lead** — community libraries and literacy campaigns for early learners
 
-**Year 1 Pilot Goal:** Sponsor 50 vulnerable students (primary/secondary) and establish one Future-Ready digital literacy hub in a target underserved school, training 200 students in basic ICT skills.
+**Year 1 Pilot Goal:** Sponsor a first cohort of vulnerable students, sized to what we can fund through each student's full school cycle, with costs paid directly to schools and monthly mentoring, and establish one Future-Ready digital literacy hub in a target underserved school, with student numbers matched to the hub's device capacity.
 
 ### 🩺 Health & Wellbeing
 Malaria remains one of the leading causes of death in sub-Saharan Africa: the WHO African Region accounted for 95% of the world's roughly 610,000 malaria deaths in 2024, three-quarters of them children under five — and Uganda is ranked among the ten highest-burden countries globally *(WHO, World Malaria Report 2025)*. This is a core reason the Health pillar exists and how its programs are designed.
@@ -147,14 +147,14 @@ Malaria remains one of the leading causes of death in sub-Saharan Africa: the WH
 - **Malaria Prevention & Response** — insecticide-treated bed net distribution, rapid diagnostic testing referrals, and community education, delivered alongside Mobile Wellness Clinic visits
 - **Mind & Body Program** — mental health awareness, nutrition, and adolescent health education
 
-**Year 1 Pilot Goal:** Train 20 Community Health Champions (aligning with Uganda's Village Health Team structure) and distribute 1,000 Long-Lasting Insecticidal Nets (LLINs) to pregnant women and children under 5 in our target district.
+**Year 1 Pilot Goal:** Train 20 Community Health Champions, working with the District Health Office and Uganda's existing Village Health Team structure, to support net use, timely care-seeking, antenatal attendance and malaria-vaccine completion for pregnant women and children under 5 in our target district. National net distribution is supported where the district asks, without duplicating government supply.
 
 ### 💰 Poverty Alleviation & Livelihoods
 - **Jopetnah Micro-Grants** — seed capital + training for small entrepreneurs (esp. women, youth)
 - **Skills-to-Income Pipeline** — vocational training tied directly to job placement or self-employment
 - **Cooperative Savings Circles** — savings groups paired with financial literacy training
 
-**Year 1 Pilot Goal:** Establish 5 Village Savings and Loan Association (VSLA) groups, enrolling 125 women and youth, and disburse 25 micro-grants ($50–$100 each) to fund viable micro-enterprises.
+**Year 1 Pilot Goal:** Establish 5 Village Savings and Loan Association (VSLA) groups, enrolling approximately 125 women and youth, and support the strongest business plans with a smaller number of seed grants (about $150–$200 each), business training and follow-up.
 
 ### 🌱 Environment & Community Development
 
@@ -164,20 +164,7 @@ Strengthening climate resilience through safer water and sanitation access, clim
 - **Water & Sanitation Access** — boreholes, filtration units, hygiene education
 - **Climate-Smart Livelihoods** — links environment back to livelihoods (e.g., eco-friendly agribusiness)
 
-**Year 1 Pilot Goal:** Plant 5,000 indigenous and fruit trees in partnership with two local schools, and rehabilitate one community borehole to provide clean water access to an estimated 500 households.
-
-### 🐾 Cross-Cutting: Jopetnah Animal Health Initiative (One Health)
-
-A One Health thread across all four pillars: protecting families from rabies and other shared diseases by improving the health of the dogs and cats they live with. **Status: in design — no field activity has started.** See the [initiative page](https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/animal-health.html).
-
-- **Rabies Zero** — dog and cat vaccination run from or alongside health centres, plus a bite-response pathway (awareness → referral → treatment support → reporting)
-- **Community Animal Health Workers** — locally selected, trained and equipped workers with a tiered fee-and-subsidy income model, so services continue after grants end
-- **Schools & Faith Communities** — bite-prevention and first-aid education
-- **Evidence & Partnerships** — baseline study, simple monitoring and a university partnership; clinical leadership through a veterinary partner
-
-Links to the pillars: vaccination and bite response → Health; school programs → Education; animal-health worker enterprise → Livelihoods; stray-animal and waste work → Environment.
-
-**Indicative pilot goals (subject to funding & partnerships):** at least 65% dog vaccination coverage in each pilot district (aiming for 70%), 30–45 Community Animal Health Workers trained and equipped, and at least 80% of reported bite cases completing post-exposure treatment. Targets to be confirmed by a baseline study. Culling is not part of the approach.
+**Year 1 Pilot Goal:** With two local schools, establish indigenous and fruit trees on land confirmed by a site assessment (up to 5,000), tracked for 12-month survival, and rehabilitate one district-listed community borehole to provide reliable, tested water for the community it is designed to serve.
 
 *Cross-pillar design lets us package "bundled" giving — e.g., a $500 gift funds one family's full-circle support: a child's school fees, a health check-up, and a livelihood grant for a parent.*
 
@@ -228,17 +215,13 @@ Real, current funding opportunities relevant to our pillars in Uganda/East Afric
 | GEF Small Grants Programme (UNDP Uganda) | Environment / Livelihoods | Project grant | Up to $40,000–$50,000 | Rolling calls (recent call closed 2-Jul-2026) | Strong fit for Green Neighborhoods / Water & Sanitation |
 | MTN Uganda Foundation — Changemakers Initiative | Education / Health / Environment / Livelihoods | Community grant | Share of ~$130,000 pool / ~25 projects | Phased calls; Phase 3 launched Oct 2025 | Requires co-branding with MTN |
 | MTN Uganda Foundation — General Partnership Proposals | Education / Health / ICT / Youth | Sponsorship / CSI grant | Varies | Rolling, reviewed quarterly | Separate from Changemakers |
-| US Government global health opportunities (State Dept; CDC Uganda) — replaces the former USAID Uganda Mission row | Health | Institutional grant / subaward | Varies; State Department calls can start at $500,000 | Check grants.gov / SAM.gov | USAID was dissolved in 2025 and its remaining programs moved to the State Department. Best pursued as a subaward via an established prime partner |
-| Global Alliance for Rabies Control (GARC) — Communities Against Rabies / Rabies Centers of Excellence | Health / Animal health (One Health) | Network membership + small grants | Varies (small grants) | Check rabiesalliance.org; World Rabies Day (28 Sept) is a natural moment to engage | Free data tools for tracking vaccination; recognition as a Rabies Center of Excellence builds credibility |
-| WHO African Region / TDR Impact Grants for Implementation Research | Health / One Health | Small research grant | Up to $15,000 (12 months) | Last deadline 15-Sep-2026; watch for the next round | NGOs eligible; One Health and zoonotic diseases are priority areas |
-| Vaccine-industry in-kind donations (e.g. MSD Animal Health Afya program; Boehringer Ingelheim STOP Rabies via GARC) | Health / Animal health (One Health) | In-kind rabies vaccine | Doses, not cash | Rolling, usually via partner NGOs | Needs a registered organisation and veterinary oversight — hold until registration and a clinical partner are in place |
-| Pandemic Fund projects in Uganda (via FAO / WHO / UNICEF implementing entities) | Health / One Health | Subpartnership (not a direct grant) | Varies | Through implementing entities | Government-facing; approach the implementing agencies as a community-delivery partner |
+| USAID Uganda Mission — open solicitations | All pillars | Institutional grant / cooperative agreement | Often $100,000+ | Continuous — check grants.gov / SAM.gov | Best pursued via consortium with an established NGO first |
 | Comic Relief — International Grants | Health / Education / Gender | Project grant | £30,000–£500,000+ | Check comicrelief.com | Usually needs a UK fiscal partner |
 | Stanbic Bank Uganda CSR | Education / Livelihoods | Sponsorship / CSR partnership | Varies | Check annually, typically Q1 | Aligns with Skills-to-Income Pipeline |
 | Airtel Uganda / Airtel Foundation CSR | Health / Education / ICT | Sponsorship / in-kind + cash | Varies | Rolling | Consider pitching Digital Literacy Labs |
 | *Add your own opportunity* | | | | | |
 
-**How to use this calendar:** update status (Not started → Researching → In progress → Submitted → Awarded/Declined) as you progress, assign an owner per opportunity, and re-verify deadlines quarterly — this list reflects information available as of **July 2026** (animal-health rows and the USAID correction added September 2026). Treat rolling/no-deadline funders as always-open.
+**How to use this calendar:** update status (Not started → Researching → In progress → Submitted → Awarded/Declined) as you progress, assign an owner per opportunity, and re-verify deadlines quarterly — this list reflects information available as of **July 2026**. Treat rolling/no-deadline funders as always-open.
 
 ## 🎉 Flagship Fundraising Events
 
@@ -311,9 +294,6 @@ Not yet online — see [Support Our Work](#-funding-strategy) for our current, h
 **What can a corporate or institutional partner contribute besides money?**
 Technology, equipment, professional expertise, employee volunteering, research capacity, logistics, market access, or mentorship — a partnership with TJF doesn't have to start with "here's a check." It can start with "here's what our organization is good at."
 
-**What is the Animal Health Initiative, and is it operating?**
-It is a planned One Health program that runs through all four pillars, aiming to protect families from rabies by vaccinating community dogs and cats, training local animal-health workers and linking bite victims to treatment. It is in design: no vaccinations have been carried out and we are not yet taking donations for it. We will publish plans, pilot activity and documented results separately, and update the [initiative page](https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/animal-health.html) as each stage is reached.
-
 **What makes TJF different from other NGOs?**
 Not a claim to be the only organization doing this work — that would be hard to substantiate. Our differentiation is the integrated model itself: connecting interventions across pillars rather than treating each as an isolated project, backed by governance and evidence discipline from day one rather than added later.
 
@@ -322,7 +302,6 @@ Not a claim to be the only organization doing this work — that would be hard t
 - [ ] **Phase 1:** Legal registration & nonprofit status, board formation, brand + website launch, one pilot program per pillar
 - [ ] **Phase 2:** First Jopetnah Day, 2–3 anchor corporate sponsors signed, first grant applications submitted
 - [ ] **Phase 3:** Scale successful pilots, first Gala, multi-year institutional grants, geographic expansion
-- [ ] **Animal Health Initiative (cross-cutting):** clinical and district partnerships agreed, baseline study, pilot funding secured, then a phased pilot
 
 ## 📂 Repository Structure
 
@@ -330,7 +309,6 @@ Not a claim to be the only organization doing this work — that would be hard t
 .
 ├── README.md                  ← you are here (all program, funding, and event detail lives here)
 ├── index.html                 ← public landing page (GitHub Pages)
-├── animal-health.html         ← Animal Health Initiative page (One Health thread)
 ├── LICENSE                    ← CC BY-NC 4.0
 ├── CONTRIBUTING.md            ← how to get involved
 ├── VOLUNTEER_ONBOARDING.md    ← step-by-step process for new volunteers
