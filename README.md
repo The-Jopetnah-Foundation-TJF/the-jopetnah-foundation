@@ -20,12 +20,24 @@
 
 ## At a Glance
 
-**The Jopetnah Foundation (TJF)** is a newly established nonprofit building whole communities in Uganda through an integrated, family-centered model. We address education, health, livelihoods, and the environment together — because the families we serve never face one problem at a time.
+**The Jopetnah Foundation (TJF)** is a **Uganda-based nonprofit organization at the founding stage**, building whole communities, one life at a time through an **integrated, family-centered approach to community development**.
 
-- **Stage:** Founding (legal registration in progress)
-- **Focus:** Underserved communities in Uganda
-- **Model:** Four interconnected pillars → one family, one gift
-- **Seeking:** Founding board members, an incorporation partner, and early corporate/institutional co-founders
+Rather than treating interconnected challenges in isolation, TJF brings together **education, health, livelihoods, and environmental resilience** to help families and communities move progressively from vulnerability toward **stability, opportunity, resilience, and greater self-reliance**.
+
+| | |
+|---|---|
+| **Stage** | Founding stage — legal registration in progress |
+| **Country** | Uganda |
+| **Approach** | Integrated, family-centered community development |
+| **Strategic Pillars** | Education & Youth Development · Health & Wellbeing · Poverty Alleviation & Livelihoods · Environment & Community Development |
+| **Program Status** | Program portfolio and first-pilot frameworks in development |
+| **Current Priorities** | Governance · Registration · Institutional systems · Partnership development · Pilot readiness |
+| **Partnership Focus** | Local, corporate, institutional, philanthropic and technical partnerships |
+| **Current Funding Status** | Building institutional readiness and relationships; online donations are not yet live |
+
+### Seeking at This Stage
+
+**Founding Board Members · Strategic & Institutional Partners · Incorporation & Legal Support · Technical & Program Advisors · Early Corporate & Philanthropic Partners**
 
 🌐 **Live site:** [the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation](https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/)
 
