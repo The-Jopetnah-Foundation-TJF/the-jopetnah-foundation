@@ -29,7 +29,7 @@ Rather than treating interconnected challenges in isolation, TJF brings together
 | **Stage** | Founding stage — legal registration in progress |
 | **Country** | Uganda |
 | **Approach** | Integrated, family-centered community development |
-| **Strategic Pillars** | Education & Youth Development · Health & Wellbeing · Poverty Alleviation & Livelihoods · Environment & Community Development |
+| **Strategic Pillars** | Education & Youth Development · Health & Wellbeing · Livelihoods · Environment |
 | **Program Status** | Program portfolio and first-pilot frameworks in development |
 | **Current Priorities** | Governance · Registration · Institutional systems · Partnership development · Pilot readiness |
 | **Partnership Focus** | Local, corporate, institutional, philanthropic and technical partnerships |
