@@ -39,7 +39,7 @@ To advance **education, health, economic opportunity, and environmental resilien
 
 **Vision:** A generation of communities that are educated, healthy, economically self-reliant, and environmentally sustainable.
 
-**Values:** Integrity · Community ownership · Transparency · Sustainability · Inclusion
+**Values:** Integrity · Community ownership · Transparency · Sustainability · Inclusion · Learning
 
 **Why one foundation, four pillars?** Funders increasingly favor organizations that show how issues interconnect — a sick child can't stay in school; a family without income can't afford healthcare. Jopetnah's positioning as an *integrated development* foundation, rather than four disconnected charities, is itself a fundraising advantage: it lets us pitch a whole-family, whole-community model to donors who want higher-impact-per-dollar stories.
 
