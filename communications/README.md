@@ -206,6 +206,10 @@ Official publications may include:
 
 Publications should follow the **Publications Style Guide**.
 
+### Documents in this folder
+
+- **[`TJF_Program_Pathways_at_a_Glance.docx`](TJF_Program_Pathways_at_a_Glance.docx)** — a 1-page, numbered reference to all 13 program pathways across TJF's four pillars (plus the cross-cutting Animal Health Initiative), for stakeholders and funders.
+
 ---
 
 # 10. Crisis Communications
