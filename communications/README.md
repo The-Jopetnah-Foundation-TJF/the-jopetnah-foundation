@@ -155,6 +155,35 @@ TJF's brand should consistently reflect:
 
 Detailed brand standards are maintained in the **Brand Identity Guidelines**.
 
+## Key Messaging
+
+To keep TJF's voice consistent everywhere it appears, staff should use the copy below rather than redrafting it per use. The canonical version of our core promise is **"stability, opportunity, and lasting resilience"** — use this exact phrase (not "self-reliance," not a four-item list) in any new copy.
+
+**Elevator Pitch (full — for LinkedIn "About," grant applications, verbal introductions):**
+
+> The Jopetnah Foundation (TJF) is a Uganda-based nonprofit building whole communities, one life at a time. We address the interconnected challenges families face through four pillars: education and youth development, health and wellbeing, livelihoods, and environmental resilience. Our integrated, family-centered approach helps communities move from vulnerability toward stability, opportunity, and lasting resilience. We are currently finalizing registration and building the partnerships, programs, and systems needed to create practical, locally led, and sustainable impact.
+>
+> **TJF is building the foundation for lasting community transformation — one life, one family, and one community at a time.**
+
+*(See [README: Elevator Pitch](../README.md#elevator-pitch) for the canonical source.)*
+
+**Short description (~155 characters — website meta tags, directory listings):**
+
+> The Jopetnah Foundation (TJF) is a Uganda-based nonprofit building whole communities, one life at a time, via education, health, livelihoods and environment.
+
+**Social media bios:**
+
+| Platform | Copy | Length |
+|---|---|---|
+| X / Twitter (160 char limit) | Uganda-based nonprofit building whole communities, one life at a time — education, health, livelihoods & environment, together. Founding stage. | 143 |
+| Instagram (150 char limit) | Building whole communities, one life at a time 🇺🇬<br>Education · Health · Livelihoods · Environment<br>Founding stage — join us | 121 |
+| LinkedIn tagline/headline (120 char limit) | Building whole communities, one life at a time — Uganda's integrated, family-centered nonprofit. | 96 |
+| LinkedIn "About us" | Use the full Elevator Pitch above (well within the 2,600-character limit). | — |
+
+**Email signature line:**
+
+> The Jopetnah Foundation \| Building whole communities, one life at a time \| Uganda (founding stage)
+
 ---
 
 # 7. Media Relations
