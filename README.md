@@ -12,7 +12,7 @@
 [![Stage](https://img.shields.io/badge/stage-seeking%20founding%20partners-blueviolet)](#-get-involved)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC%204.0-lightgrey)](https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation/blob/main/LICENSE.md)
 
-[At a Glance](#at-a-glance) · [Elevator Pitch](#elevator-pitch) · [Mission](#-mission) · [The Problem We See Differently](#-the-problem-we-see-differently) · [Organizational Structure](#️-organizational-structure) · [Programs](#️-programs) · [Funding Strategy](#-funding-strategy) · [Grants Calendar](#-grants-calendar) · [Flagship Events](#-flagship-fundraising-events) · [Website Copy](#-website-copy--diaspora-giving-circle) · [Governance](#️-governance--accountability) · [FAQ](#-frequently-asked-questions) · [Roadmap](#️-launch-roadmap) · [Get Involved](#-get-involved)
+[At a Glance](#at-a-glance) · [Mission](#-mission) · [The Problem We See Differently](#-the-problem-we-see-differently) · [Organizational Structure](#️-organizational-structure) · [Programs](#️-programs) · [Funding Strategy](#-funding-strategy) · [Grants Calendar](#-grants-calendar) · [Flagship Events](#-flagship-fundraising-events) · [Website Copy](#-website-copy--diaspora-giving-circle) · [Governance](#️-governance--accountability) · [FAQ](#-frequently-asked-questions) · [Roadmap](#️-launch-roadmap) · [Get Involved](#-get-involved)
 
 </div>
 
@@ -20,13 +20,13 @@
 
 ## At a Glance
 
-**The Jopetnah Foundation (TJF)** is a **Uganda-based nonprofit at the founding stage**, taking an **integrated, family-centered approach to community development** — *building whole communities, one life at a time.*
+**The Jopetnah Foundation (TJF)** is a **Uganda-based nonprofit organization at the founding stage**, building whole communities, one life at a time through an **integrated, family-centered approach to community development**.
 
-Rather than treating interconnected challenges in isolation, TJF brings together **education, health, livelihoods, and environmental resilience** to help families and communities move from vulnerability toward **stability, opportunity, and lasting resilience**.
+Rather than treating interconnected challenges in isolation, TJF brings together **education, health, livelihoods, and environmental resilience** to help families and communities move progressively from vulnerability toward **stability, then opportunity, resilience, and greater self-reliance**.
 
-| Category | Details |
+| | |
 |---|---|
-| **Stage** | Founding stage — legal registration in progress |
+| **Stage** | Founding stage — legal registration in its final stages |
 | **Country** | Uganda |
 | **Approach** | Integrated, family-centered community development |
 | **Strategic Pillars** | Education & Youth Development · Health & Wellbeing · Livelihoods · Environment |
@@ -41,9 +41,9 @@ Rather than treating interconnected challenges in isolation, TJF brings together
 
 ## Elevator Pitch
 
-The Jopetnah Foundation (TJF) is a Uganda-based nonprofit building whole communities, one life at a time. We address the interconnected challenges families face through four pillars: **education and youth development, health and wellbeing, livelihoods, and environmental resilience**. Our integrated, family-centered approach helps communities move from vulnerability toward stability, opportunity, and lasting resilience. We are currently finalizing registration and building the partnerships, programs, and systems needed to create practical, locally led, and sustainable impact.
+The Jopetnah Foundation (TJF) is a Uganda-based nonprofit building whole communities, one life at a time. We address the interconnected challenges families face through four pillars: **education and youth development, health and wellbeing, livelihoods, and environmental resilience**. Our integrated, family-centered approach is designed to help communities move from vulnerability toward stability, opportunity and lasting resilience. We are currently finalizing registration and building the partnerships, programs and systems needed to create practical, locally led and sustainable impact.
 
-**TJF is building the foundation for lasting community transformation — one life, one family, and one community at a time.**
+**TJF is building the foundation for lasting community transformation — one life, one family and one community at a time.**
 
 🌐 **Live site:** [the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation](https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/)
 
@@ -386,7 +386,7 @@ We're currently formalizing Jopetnah's legal structure and looking for:
 - An initial legal/incorporation partner
 - Early corporate and institutional co-founders
 
-**Current Donor Readiness & Fiscal Sponsorship:** TJF is currently finalizing its legal registration as a Company Limited by Guarantee and NGO in Uganda. For international donors and diaspora members who require tax-deductibility (such as US 501(c)(3) equivalence) before contributing, TJF is pursuing fiscal sponsorship. Our strategy is to onboard as a partner on **GlobalGiving.org**, a recognized platform that allows US and UK donors to make tax-deductible contributions to vetted grassroots organizations globally. Once our registration is complete and our pilot data is collected, we will launch a GlobalGiving campaign to unlock corporate matching funds and recurring diaspora giving. If you are a registered US/UK fiscal sponsor or an established NGO interested in a sub-grantee partnership, please reach out to us directly.
+**Current Donor Readiness & Fiscal Sponsorship:** TJF is in the final stages of its legal registration as a Company Limited by Guarantee and NGO in Uganda. For international donors and diaspora members who require tax-deductibility (such as US 501(c)(3) equivalence) before contributing, TJF is pursuing fiscal sponsorship. Our strategy is to onboard as a partner on **GlobalGiving.org**, a recognized platform that allows US and UK donors to make tax-deductible contributions to vetted grassroots organizations globally. Once our registration is complete and our pilot data is collected, we will launch a GlobalGiving campaign to unlock corporate matching funds and recurring diaspora giving. If you are a registered US/UK fiscal sponsor or an established NGO interested in a sub-grantee partnership, please reach out to us directly.
 
 **Interested?** Open an issue using the "Offer of Support" or "Grant Lead" template in this repo, or reach out at `thejopetnahfoundation@gmail.com` *(interim address — will move to a dedicated domain email once live)*.
 
