@@ -1,54 +1,362 @@
 ---
-title: Monitoring, Evaluation, Accountability & Learning (MEAL)
-description: Canonical repository location for TJF MEAL documentation after consolidation of legacy duplicate files.
+title: Monitoring, Evaluation, Accountability & Learning (MEAL) Framework
+document_number: TJF-MEAL-001
 version: 1.1
 status: Approved
 classification: Public
-document_owner: Monitoring, Evaluation, Accountability & Learning (MEAL)
+document_owner: Monitoring, Evaluation & Learning Department
 approved_by: Executive Director
 effective_date: 2026-10-08
-review_cycle: Annual
+review_cycle: Biennial
+related_documents:
+  - Strategic_Plan.md
+  - Theory_of_Change.md
+  - Grant_Management_Framework.md
+  - Impact_Assessment_Framework.md
 ---
 
-# Monitoring, Evaluation, Accountability & Learning (MEAL)
+# Monitoring, Evaluation, Accountability & Learning (MEAL) Framework
 
-## Canonical Directory
+## Executive Summary
 
-This directory is the designated home for TJF's MEAL materials after the repository-wide cleanup of duplicate monitoring folders.
+The Jopetnah Foundation (TJF) is committed to delivering measurable, sustainable and evidence-based impact.
 
-The repository previously contained two overlapping directories:
+The Monitoring, Evaluation, Accountability & Learning (MEAL) Framework establishes the systems required to:
 
-- `monitoring-evaluation/` — legacy folder retained as read-only archive pending consolidation
-- `monitoring_evaluation_learning/` — canonical active location for current MEAL documents
+- Measure programme performance.
+- Demonstrate impact.
+- Strengthen accountability.
+- Capture learning.
+- Improve decision-making.
 
-## Safe Consolidation Status
+MEAL is central to TJF's commitment to transparency, effectiveness and continuous improvement.
 
-The following approach was adopted to avoid data loss:
+---
 
-1. Keep the active MEAL documents in `monitoring_evaluation_learning/` as the primary working location.
-2. Preserve legacy documents in `monitoring-evaluation/` until final review and migration is complete.
-3. Update team references to use the canonical path `monitoring_evaluation_learning/`.
-4. Only remove the legacy folder after all stakeholders confirm the final structure.
+# Canonical MEAL Location
 
-## Active MEAL Documents
+This folder is the designated source of truth for active TJF MEAL documentation.
 
-The current working set includes:
+The repository previously contained a second directory, `monitoring-evaluation/`, that held overlapping materials. To avoid data loss, that legacy folder was retained for review and marked as deprecated instead of being deleted.
 
-- `Baseline_Endline_Assessment_Tool.md`
-- `Beneficiary_Feedback_Mechanism.md`
-- `Data_Collection_Tools.md`
-- `Impact_Assessment_Framework.md`
-- `Indicator_Reference_Guide.md`
-- `Learning_and_Adaptation_Framework.md`
-- `Logical_Framework_Template.md`
-- `MEAL_Framework.md`
-- `MEAL_Report_Template.md`
-- `README.md`
-- `Theory_of_Change.md`
+The active working set for MEAL documentation is therefore:
 
-## Legacy Documents retained for review
+- `monitoring_evaluation_learning/`  ← canonical directory
+- `monitoring-evaluation/`  ← legacy archive retained for review only
 
-The following files remain in the legacy folder and are being reviewed for migration or consolidation:
+---
+
+# 1. Purpose
+
+The purpose of the MEAL Framework is to:
+
+- Establish a standardized approach to measuring results.
+- Strengthen programme quality.
+- Support evidence-based decision-making.
+- Improve accountability to stakeholders.
+- Promote organizational learning.
+
+---
+
+# 2. MEAL Definition
+
+## Monitoring
+
+The continuous collection and review of information to track:
+
+- Activities.
+- Outputs.
+- Progress.
+- Challenges.
+
+---
+
+## Evaluation
+
+A systematic assessment of:
+
+- Relevance.
+- Effectiveness.
+- Efficiency.
+- Sustainability.
+- Impact.
+
+---
+
+## Accountability
+
+Ensuring TJF remains responsible to:
+
+- Communities.
+- Donors.
+- Partners.
+- Stakeholders.
+
+---
+
+## Learning
+
+Using evidence and experience to:
+
+- Improve programmes.
+- Adapt strategies.
+- Strengthen impact.
+
+---
+
+# 3. MEAL Principles
+
+## Evidence-Based Decision Making
+
+TJF decisions should be informed by:
+
+- Data.
+- Research.
+- Feedback.
+- Analysis.
+
+---
+
+## Participation
+
+Stakeholders should contribute to:
+
+- Programme design.
+- Monitoring.
+- Evaluation.
+- Learning.
+
+---
+
+## Transparency
+
+TJF communicates:
+
+- Results.
+- Challenges.
+- Lessons.
+
+---
+
+## Continuous Improvement
+
+Learning is integrated into all programmes.
+
+---
+
+# 4. MEAL Cycle
+
+TJF follows:
+
+```
+Programme Design
+        │
+        ▼
+Theory of Change
+        │
+        ▼
+Indicator Development
+        │
+        ▼
+Data Collection
+        │
+        ▼
+Analysis
+        │
+        ▼
+Reporting
+        │
+        ▼
+Learning
+        │
+        ▼
+Programme Improvement
+```
+
+---
+
+# 5. MEAL Functions
+
+## Monitoring
+
+Tracks:
+
+- Activities.
+- Outputs.
+- Indicators.
+- Budgets.
+- Timelines.
+
+---
+
+## Evaluation
+
+Assesses:
+
+- Outcomes.
+- Impact.
+- Effectiveness.
+
+---
+
+## Accountability
+
+Ensures:
+
+- Feedback systems.
+- Stakeholder engagement.
+- Complaint mechanisms.
+
+---
+
+## Learning
+
+Captures:
+
+- Best practices.
+- Lessons learned.
+- Innovation opportunities.
+
+---
+
+# 6. MEAL Governance
+
+## Board of Trustees
+
+Provides:
+
+- Strategic oversight.
+- Accountability assurance.
+
+---
+
+## Executive Director
+
+Responsible for:
+
+- Ensuring MEAL integration.
+- Using evidence in decision-making.
+
+---
+
+## MEAL Department
+
+Responsible for:
+
+- Framework implementation.
+- Data systems.
+- Evaluations.
+- Learning processes.
+
+---
+
+## Programme Teams
+
+Responsible for:
+
+- Data collection.
+- Activity tracking.
+- Reporting.
+
+---
+
+# 7. MEAL Tools
+
+TJF maintains:
+
+```
+MEAL Tools
+
+├── Theory of Change
+├── Logical Frameworks
+├── Indicators Database
+├── Data Collection Tools
+├── Surveys
+├── Assessment Tools
+├── Evaluation Reports
+├── Feedback Systems
+├── Learning Reports
+└── Complaint and Response Mechanisms
+```
+
+---
+
+# 8. Key MEAL Indicators
+
+Examples:
+
+## Programme Indicators
+
+- Number of beneficiaries reached.
+- Activities completed.
+- Outputs achieved.
+
+---
+
+## Outcome Indicators
+
+- Behaviour change.
+- Improved conditions.
+- Increased capacity.
+
+---
+
+## Impact Indicators
+
+- Long-term improvements.
+- Sustainable change.
+- Community transformation.
+
+---
+
+# 9. Data Management
+
+TJF shall maintain:
+
+- Accurate records.
+- Secure storage.
+- Data protection.
+- Controlled access.
+
+---
+
+# 10. Reporting
+
+MEAL information supports:
+
+- Donor reports.
+- Board reports.
+- Programme reviews.
+- Public communication.
+
+---
+
+# 11. Learning Approach
+
+TJF promotes learning through:
+
+- Reflection meetings.
+- After-action reviews.
+- Evaluation findings.
+- Stakeholder feedback.
+
+---
+
+# 12. Accountability Commitment
+
+TJF commits to being accountable to:
+
+- Communities served.
+- Donors.
+- Partners.
+- Staff.
+- Stakeholders.
+
+---
+
+# Legacy Migration Review
+
+The following legacy files were reviewed during the repository cleanup and retained in the archive folder pending final consolidation or archival approval:
 
 - `Beneficiary_Feedback_Framework.md`
 - `Complaints_and_Response_Mechanism.md`
@@ -63,10 +371,16 @@ The following files remain in the legacy folder and are being reviewed for migra
 - `Results_Framework.md`
 - `Theory_of_Change.md`
 
-## Maintenance Note
-
-This repository should treat `monitoring_evaluation_learning/` as the single source of truth for ongoing MEAL work. Any future edits should be made here unless a legacy document is intentionally retained for historical reference.
+These files remain in `monitoring-evaluation/` for safety and traceability. Active work should continue in `monitoring_evaluation_learning/` unless a specific archival or historical reason requires legacy use.
 
 ---
 
-> The Jopetnah Foundation's MEAL system is strongest when documentation is clear, consistent, and centralized.
+# Conclusion
+
+Strong impact requires strong evidence.
+
+Through a robust MEAL system, The Jopetnah Foundation ensures that programmes are effective, accountable and continuously improved.
+
+---
+
+> What gets measured gets improved; what gets learned becomes sustainable impact.
