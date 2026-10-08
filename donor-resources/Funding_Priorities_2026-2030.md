@@ -1,23 +1,23 @@
 ---
 
-title: Funding Priorities 2026–2030
-document_number: TJF-DR-006
-version: 2.0
-status: Draft for Approval
-classification: Public
-document_owner: Partnerships & Resource Mobilization
-approved_by: Board of Trustees
-effective_date: TBD
-review_cycle: Annual
-strategic_horizon: 2026–2030
+title: "Funding Priorities 2026–2030"
+document_number: "TJF-DR-006"
+version: "2.0"
+status: "Draft for Approval"
+classification: "Public"
+document_owner: "Partnerships & Resource Mobilization"
+approved_by: "Board of Trustees"
+effective_date: "TBD"
+review_cycle: "Annual"
+strategic_horizon: "2026–2030"
 related_documents:
 
-* README.md
-* Donor_Value_Proposition.md
-* Institutional_Profile.md
-* Why_Partner_With_TJF.md
-* GRANTS_CALENDAR.md
-* FUNDING_PIPELINE.md
+* "README.md"
+* "Donor_Value_Proposition.md"
+* "Institutional_Profile.md"
+* "Why_Partner_With_TJF.md"
+* "GRANTS_CALENDAR.md"
+* "FUNDING_PIPELINE.md"
 
 ---
 
