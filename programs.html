@@ -66,7 +66,9 @@ content="https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/s
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<!-- Fonts load without blocking first paint; text shows in fallback fonts until they arrive (display=swap). -->
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"></noscript>
 
 <link rel="stylesheet" href="assets/css/tokens.css">
 <style>
@@ -324,7 +326,7 @@ nav .wrap{min-height:68px; display:flex; align-items:center; gap:28px; position:
   h1{font-size:2.5rem;}
 }
 </style>
-<link rel="stylesheet" href="assets/css/footer.css">
+<link rel="stylesheet" href="assets/css/site.css">
 </head>
 
 <body>
@@ -346,7 +348,7 @@ nav .wrap{min-height:68px; display:flex; align-items:center; gap:28px; position:
     <div class="navlinks" id="navlinks">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="programs.html">Programs</a>
+      <a href="programs.html" aria-current="page">Programs</a>
       <a href="index.html#support">Support</a>
       <a href="index.html#donate">Donate</a>
       <a href="index.html#faq">FAQ</a>
@@ -868,6 +870,7 @@ nav .wrap{min-height:68px; display:flex; align-items:center; gap:28px; position:
     <div class="footer-col">
       <p class="footer-h">Transparency</p>
       <ul>
+        <li><a href="accountability.html">Accountability</a></li>
         <li><a href="https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation/blob/main/README.md" target="_blank" rel="noopener">Repository README</a></li>
         <li><a href="https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation/blob/main/Jopetnah_Foundation_Blueprint.md" target="_blank" rel="noopener">Blueprint</a></li>
         <li><a href="https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation/tree/main/governance" target="_blank" rel="noopener">Governance documents</a></li>
@@ -891,7 +894,7 @@ nav .wrap{min-height:68px; display:flex; align-items:center; gap:28px; position:
   </div>
   <div class="wrap footer-bottom">
     <p>&copy; 2026 The Jopetnah Foundation (TJF). All rights reserved.</p>
-    <p class="footer-legal"><a href="privacy.html">Privacy</a><a href="contact.html">Contact</a></p>
+    <p class="footer-legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="contact.html">Contact</a></p>
   </div>
 </footer>
 

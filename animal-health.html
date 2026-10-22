@@ -70,7 +70,9 @@ content="https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/s
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<!-- Fonts load without blocking first paint; text shows in fallback fonts until they arrive (display=swap). -->
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"></noscript>
 
 <link rel="stylesheet" href="assets/css/tokens.css">
 <style>
@@ -338,7 +340,7 @@ nav .wrap{min-height:68px; display:flex; align-items:center; gap:28px; position:
 .fit-row{display:flex; gap:14px; align-items:flex-start; padding:20px 0; border-top:1px solid var(--line);}
 .fit-row:first-child{border-top:none; padding-top:0;}
 .fit-row .pillar-dot{margin-top:8px;}
-.fit-row h4{margin:0; font-family:'Work Sans', Arial, sans-serif; font-weight:600; font-size:1.02rem; color:var(--cream);}
+.fit-row h3{margin:0; font-family:'Work Sans', Arial, sans-serif; font-weight:600; font-size:1.02rem; color:var(--cream);}
 .fit-row p{margin:4px 0 0; color:var(--muted); font-size:0.94rem;}
 .bitten{
   border:1px solid var(--terracotta-dim);
@@ -359,7 +361,7 @@ nav .wrap{min-height:68px; display:flex; align-items:center; gap:28px; position:
 .log-item p{margin:0; color:var(--muted);}
 @media(max-width:720px){ .log-item{grid-template-columns:1fr; gap:4px;} .bitten{padding:26px;} }
 </style>
-<link rel="stylesheet" href="assets/css/footer.css">
+<link rel="stylesheet" href="assets/css/site.css">
 </head>
 
 <body>
@@ -551,19 +553,19 @@ nav .wrap{min-height:68px; display:flex; align-items:center; gap:28px; position:
     <div class="panel">
       <div class="fit-row">
         <span class="pillar-dot" style="background:var(--terracotta-dim)"></span>
-        <div><h4>Health &amp; Wellbeing</h4><p>Vaccination, bite response and referral sit alongside Community Health Champions and Mobile Wellness Clinics.</p></div>
+        <div><h3>Health &amp; Wellbeing</h3><p>Vaccination, bite response and referral sit alongside Community Health Champions and Mobile Wellness Clinics.</p></div>
       </div>
       <div class="fit-row">
         <span class="pillar-dot" style="background:var(--terracotta)"></span>
-        <div><h4>Education &amp; Youth Development</h4><p>School sessions teach bite prevention and first aid.</p></div>
+        <div><h3>Education &amp; Youth Development</h3><p>School sessions teach bite prevention and first aid.</p></div>
       </div>
       <div class="fit-row">
         <span class="pillar-dot" style="background:var(--gold)"></span>
-        <div><h4>Livelihoods</h4><p>Community Animal Health Workers build local skills, income and small enterprises.</p></div>
+        <div><h3>Livelihoods</h3><p>Community Animal Health Workers build local skills, income and small enterprises.</p></div>
       </div>
       <div class="fit-row">
         <span class="pillar-dot" style="background:var(--sage)"></span>
-        <div><h4>Environment &amp; Community Development</h4><p>Stray-animal and waste management links to community clean-up work.</p></div>
+        <div><h3>Environment &amp; Community Development</h3><p>Stray-animal and waste management links to community clean-up work.</p></div>
       </div>
     </div>
   </div>
@@ -711,6 +713,7 @@ nav .wrap{min-height:68px; display:flex; align-items:center; gap:28px; position:
     <div class="footer-col">
       <p class="footer-h">Transparency</p>
       <ul>
+        <li><a href="accountability.html">Accountability</a></li>
         <li><a href="https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation/blob/main/README.md" target="_blank" rel="noopener">Repository README</a></li>
         <li><a href="https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation/blob/main/Jopetnah_Foundation_Blueprint.md" target="_blank" rel="noopener">Blueprint</a></li>
         <li><a href="https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation/tree/main/governance" target="_blank" rel="noopener">Governance documents</a></li>
@@ -734,7 +737,7 @@ nav .wrap{min-height:68px; display:flex; align-items:center; gap:28px; position:
   </div>
   <div class="wrap footer-bottom">
     <p>&copy; 2026 The Jopetnah Foundation (TJF). All rights reserved.</p>
-    <p class="footer-legal"><a href="privacy.html">Privacy</a><a href="contact.html">Contact</a></p>
+    <p class="footer-legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="contact.html">Contact</a></p>
   </div>
 </footer>
 
