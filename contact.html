@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact The Jopetnah Foundation | TJF Uganda</title>
+
+<meta name="description"
+content="Contact The Jopetnah Foundation (TJF) about partnerships, giving, volunteering, board and advisory roles, or media enquiries.">
+
+<link rel="canonical"
+href="https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/contact.html">
+
+<meta name="theme-color" content="#180E06">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact The Jopetnah Foundation | TJF Uganda">
+<meta property="og:description"
+content="Partnerships, giving, volunteering, board roles and media enquiries.">
+<meta property="og:url"
+content="https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/contact.html">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="The Jopetnah Foundation">
+<meta property="og:image"
+content="https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/social-preview.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contact The Jopetnah Foundation | TJF Uganda">
+<meta name="twitter:description"
+content="Partnerships, giving, volunteering, board roles and media enquiries.">
+<meta name="twitter:image"
+content="https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/social-preview.png">
+
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/tokens.css">
+<style>
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
+section[id]{scroll-margin-top:88px;}
+a:focus-visible, button:focus-visible{outline:2px solid var(--gold); outline-offset:3px;}
+.skip-link{
+  position:absolute; left:-999px; top:0; z-index:1000;
+  background:var(--gold); color:var(--bg-deep); font-weight:700;
+  padding:12px 18px; border-radius:0 0 8px 0;
+}
+.skip-link:focus{left:0;}
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--cream);
+  font-family:'Work Sans', Arial, Helvetica, sans-serif;
+  font-size:16px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+
+a{color:var(--gold); text-decoration:none;}
+a:hover{color:var(--cream);}
+
+.wrap{max-width:var(--maxw); margin:0 auto; padding:0 28px;}
+
+h1,h2,h3{
+  font-family:'Fraunces', Georgia, serif;
+  font-weight:600;
+  letter-spacing:-0.01em;
+  line-height:1.15;
+  margin:0 0 0.4em 0;
+}
+h1{font-size:clamp(2.4rem,5vw,3.6rem); max-width:900px; margin-bottom:20px;}
+h2{font-size:2rem; margin-bottom:20px;}
+h3{font-size:1.25rem; margin-bottom:10px;}
+
+.eyebrow{
+  font-family:'IBM Plex Mono', monospace;
+  display:inline-block;
+  text-transform:uppercase;
+  letter-spacing:.14em;
+  font-size:.78rem;
+  color:var(--gold);
+  font-weight:500;
+  margin-bottom:.9em;
+}
+.eyebrow-center{display:block; text-align:center;}
+
+.lede{max-width:780px; color:var(--muted); font-size:1.12rem;}
+
+section{padding:100px 0;}
+@media(max-width:720px){ section{padding:64px 0;} }
+
+.band-surface{background:var(--surface); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+.band-deep{background:var(--bg-deep); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+
+.grid-2{display:grid; grid-template-columns:1fr 1fr; gap:28px;}
+.grid-3{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
+
+.card{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:28px;
+  transition:border-color .2s ease;
+}
+.card:hover{border-color:var(--terracotta-dim);}
+.card h3{color:var(--cream);}
+.card p{color:var(--muted); margin-bottom:0; font-size:0.94rem;}
+.card ul{color:var(--muted); padding-left:20px; font-size:0.94rem;}
+
+.highlight{
+  background:var(--surface-2);
+  border-left:4px solid var(--gold);
+  padding:28px 30px;
+  border-radius:0 var(--radius) var(--radius) 0;
+  margin-top:30px;
+}
+.accent-gold{color:var(--gold);}
+
+.quote{
+  font-family:'Fraunces', Georgia, serif;
+  font-weight:500;
+  font-style:italic;
+  font-size:1.55rem;
+  line-height:1.45;
+  color:var(--cream);
+}
+
+.status-box{
+  background:var(--surface-2);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:22px 26px;
+  margin-top:28px;
+  color:var(--muted);
+  font-size:0.95rem;
+}
+.status-box strong{color:var(--gold);}
+
+.pillars{margin-top:35px;}
+.pillar{
+  padding:24px;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  background:var(--bg);
+  border-top:3px solid var(--pillar-color, var(--gold));
+}
+.pillar h3{margin-bottom:8px; color:var(--pillar-color, var(--cream));}
+.pillar p{color:var(--muted); margin:0; font-size:0.94rem;}
+.pillar.edu{--pillar-color:var(--terracotta);}
+.pillar.health{--pillar-color:var(--terracotta-dim);}
+.pillar.income{--pillar-color:var(--gold);}
+.pillar.env{--pillar-color:var(--sage);}
+
+.timeline{
+  border-left:1px solid var(--line);
+  margin-left:10px;
+  padding-left:30px;
+}
+.timeline-item{margin-bottom:35px; position:relative;}
+.timeline-item::before{
+  content:"";
+  width:11px; height:11px;
+  background:var(--terracotta);
+  border:3px solid var(--bg);
+  border-radius:50%;
+  position:absolute; left:-40px; top:2px;
+}
+.timeline-item h3{margin-bottom:7px; font-size:1.15rem; color:var(--cream);}
+.timeline-item p{color:var(--muted); margin:0; font-size:0.95rem;}
+
+.leadership-table{width:100%; border-collapse:collapse; margin-top:0; font-size:0.92rem;}
+.leadership-table th,
+.leadership-table td{text-align:left; padding:14px 16px; border-bottom:1px solid var(--line);}
+.leadership-table th{
+  font-family:'IBM Plex Mono', monospace;
+  font-size:0.75rem;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  color:var(--muted);
+  font-weight:500;
+}
+.leadership-table td:first-child,
+.leadership-table th:first-child{color:var(--cream); font-weight:600;}
+.leadership-table td{color:var(--muted);}
+.placeholder{color:var(--gold); font-style:italic;}
+
+.cta{
+  text-align:center;
+  padding:100px 0;
+  background:linear-gradient(160deg, var(--surface-2), var(--bg-deep));
+}
+.cta .hero-actions{justify-content:center;}
+
+.hero-actions{display:flex; gap:14px; margin-top:28px; flex-wrap:wrap;}
+.btn{
+  display:inline-block;
+  padding:13px 26px;
+  border-radius:999px;
+  text-decoration:none;
+  font-weight:600;
+  font-size:0.95rem;
+  transition:transform .15s ease, opacity .15s ease;
+}
+.btn:hover{transform:translateY(-1px);}
+.btn-primary{background:var(--terracotta); color:#1A0F07;}
+.btn-secondary{background:transparent; color:var(--cream); border:1px solid var(--line);}
+
+
+/* ---------- NAV ---------- */
+nav{
+  position:sticky; top:0; z-index:50;
+  background:rgba(24,14,6,0.95);
+  border-bottom:1px solid var(--line);
+}
+nav .wrap{min-height:68px; display:flex; align-items:center; gap:28px; position:relative; padding-top:0; padding-bottom:0;}
+.brand{
+  font-family:'Fraunces', Georgia, serif; font-weight:600; font-size:1.05rem;
+  display:flex; align-items:center; gap:10px; color:var(--cream);
+  margin-right:auto;
+}
+.brand span{color:var(--terracotta);}
+.brand-mark{width:31px; height:31px; flex-shrink:0;}
+.navlinks{display:flex; gap:22px; align-items:center; font-size:.92rem;}
+.navlinks a{color:var(--muted);}
+.navlinks a:hover{color:var(--cream);}
+.navcta{
+  background:var(--terracotta); color:var(--bg-deep) !important;
+  padding:9px 18px; border-radius:999px; font-weight:600; font-size:.88rem;
+}
+.nav-toggle{display:none; flex-direction:column; justify-content:center; gap:5px; width:38px; height:38px; background:none; border:1px solid var(--line); border-radius:8px; cursor:pointer; padding:0; margin-left:12px;}
+.nav-toggle span{width:18px; height:2px; background:var(--cream); display:block; margin:0 auto;}
+
+@media(max-width:720px){
+  .nav-toggle{display:flex;}
+  .navlinks{
+    display:none; flex-direction:column; align-items:flex-start; gap:2px;
+    position:absolute; top:100%; left:0; right:0;
+    background:var(--bg-deep); border:1px solid var(--line); border-top:none;
+    padding:8px 28px 18px;
+  }
+  .navlinks.open{display:flex;}
+  .navlinks a{padding:12px 0; width:100%; border-bottom:1px solid var(--line);}
+  .navlinks a:last-child{border-bottom:none;}
+  .grid-2,.grid-3{grid-template-columns:1fr;}
+  .leadership-table{font-size:0.88rem;}
+}
+
+@media(max-width:560px){
+  h1{font-size:2.5rem;}
+  .leadership-table th,
+  .leadership-table td{padding:10px 8px;}
+}
+</style>
+<link rel="stylesheet" href="assets/css/footer.css">
+<link rel="stylesheet" href="assets/css/contact.css">
+</head>
+
+<body>
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<nav aria-label="Primary">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M100,150 C66,126.25 66,74 100,55 C134,74 134,126.25 100,150 Z" fill="#7C9473" transform="rotate(-48 100 150)"/>
+        <path d="M100,150 C66,126.25 66,74 100,55 C134,74 134,126.25 100,150 Z" fill="#D8A63D" transform="rotate(48 100 150)"/>
+        <path d="M100,150 C74,130.5 74,87.6 100,72 C126,87.6 126,130.5 100,150 Z" fill="#C4623C" transform="rotate(-16 100 150)"/>
+        <path d="M100,150 C74,130.5 74,87.6 100,72 C126,87.6 126,130.5 100,150 Z" fill="#8F4A31" transform="rotate(16 100 150)"/>
+        <rect x="95" y="150" width="10" height="17" rx="5" fill="#F3E9DC"/>
+      </svg>
+      Jopetnah<span>.</span>
+    </a>
+
+    <div class="navlinks" id="navlinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="index.html#support">Support</a>
+      <a href="index.html#donate">Donate</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <a class="navcta" href="index.html#get-involved">Get Involved</a>
+    <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navlinks" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<main id="main-content">
+
+<header class="hero" style="padding:90px 0 50px; background:radial-gradient(circle at top right, rgba(216,166,61,.12), transparent 30%), linear-gradient(180deg,var(--bg-deep),var(--bg));">
+  <div class="wrap">
+    <span class="eyebrow">Contact</span>
+    <h1>Let&rsquo;s start a conversation.</h1>
+    <p class="lede">
+      We are a founding-stage organisation and we read every message. Tell us who you are and what
+      you have in mind, whether that is a partnership, a gift, your time, or a question.
+    </p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="contact-layout">
+
+      <div>
+        <form class="contact-form" id="contactForm" action="mailto:thejopetnahfoundation@gmail.com" method="post" enctype="text/plain" novalidate>
+          <div class="field">
+            <label for="f-name">Your name <span class="req" aria-hidden="true">*</span></label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="e-name">
+            <span class="field-error" id="e-name">Please enter your name.</span>
+          </div>
+          <div class="field">
+            <label for="f-email">Your email <span class="req" aria-hidden="true">*</span></label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required aria-describedby="e-email">
+            <span class="field-error" id="e-email">Please enter a valid email address so we can reply.</span>
+          </div>
+          <div class="field">
+            <label for="f-audience">I am a&hellip; <span class="req" aria-hidden="true">*</span></label>
+            <select id="f-audience" name="audience" required aria-describedby="e-audience">
+              <option value="">Choose one</option>
+              <option value="donor">Prospective donor</option>
+              <option value="partner">Partner organisation or company</option>
+              <option value="board">Board or advisory candidate</option>
+              <option value="volunteer">Volunteer or professional offering skills</option>
+              <option value="media">Journalist or media contact</option>
+              <option value="other">Something else</option>
+            </select>
+            <span class="field-error" id="e-audience">Please choose the option that fits best.</span>
+          </div>
+          <div class="field">
+            <label for="f-org">Organisation <span class="optional">(optional)</span></label>
+            <input id="f-org" name="organisation" type="text" autocomplete="organization">
+          </div>
+          <div class="field">
+            <label for="f-message">Your message <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="f-message" name="message" required aria-describedby="e-message"></textarea>
+            <span class="field-error" id="e-message">Please tell us a little about your enquiry.</span>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Prepare my email</button>
+          </div>
+          <p class="form-note">This form opens your own email app with the message filled in. Nothing is sent to us until you press send there. See our <a href="privacy.html">privacy policy</a>.</p>
+
+          <div class="form-result" id="formResult" aria-live="polite">
+            <h3>Almost there</h3>
+            <p id="resultLead">Your email app should have opened. If it did not, copy the message below and send it to thejopetnahfoundation@gmail.com.</p>
+            <label for="composedText" class="optional" style="display:block;margin-bottom:6px;">Your message</label>
+            <textarea id="composedText" readonly></textarea>
+            <button class="copy-btn" type="button" id="copyBtn">Copy message</button>
+            <span id="copyStatus" role="status" style="margin-left:10px;color:var(--muted);font-size:.85rem;"></span>
+          </div>
+        </form>
+      </div>
+
+      <aside>
+        <h2 style="font-size:1.4rem;">Who we hear from</h2>
+        <ul class="pathways">
+          <li><strong>Donors</strong><span>Online giving is not live yet. Write to us to hear when it opens, or to discuss in-kind gifts.</span></li>
+          <li><strong>Partners</strong><span>Technology, expertise, logistics, research or volunteering all count. A partnership does not have to start with money.</span></li>
+          <li><strong>Board and advisory candidates</strong><span>We are building our founding board. Tell us about your experience and why this work matters to you.</span></li>
+          <li><strong>Media</strong><span>Please say what you are working on and your deadline.</span></li>
+        </ul>
+        <p class="form-note">Prefer email directly? Write to <a href="mailto:thejopetnahfoundation@gmail.com">thejopetnahfoundation@gmail.com</a>. We are a small team, so please allow a few days for a reply.</p>
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <p class="footer-name">The Jopetnah Foundation</p>
+      <p class="footer-tag">Building whole communities, one life at a time.</p>
+      <p class="footer-status"><strong>Founding stage.</strong> Legal registration in Uganda is in progress and online donations are not yet active.</p>
+    </div>
+    <div class="footer-col">
+      <p class="footer-h">Explore</p>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="animal-health.html">Animal Health Initiative</a></li>
+        <li><a href="index.html#get-involved">Get Involved</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <p class="footer-h">Transparency</p>
+      <ul>
+        <li><a href="https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation/blob/main/README.md" target="_blank" rel="noopener">Repository README</a></li>
+        <li><a href="https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation/blob/main/Jopetnah_Foundation_Blueprint.md" target="_blank" rel="noopener">Blueprint</a></li>
+        <li><a href="https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation/tree/main/governance" target="_blank" rel="noopener">Governance documents</a></li>
+        <li><a href="https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation/tree/main/donor-resources" target="_blank" rel="noopener">Donor resources</a></li>
+        <li><a href="https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">Contributing</a></li>
+        <li><a href="https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation/blob/main/LICENSE.md" target="_blank" rel="noopener">License</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <p class="footer-h">Connect</p>
+      <ul>
+        <li><a href="mailto:thejopetnahfoundation@gmail.com">thejopetnahfoundation@gmail.com</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=61592047384135" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.linkedin.com/company/135127890" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://x.com/FoundationTJF" target="_blank" rel="noopener">X</a></li>
+        <li><a href="https://www.youtube.com/@TheJopetnahFoundationTJF" target="_blank" rel="noopener">YouTube</a></li>
+        <li><a href="https://www.instagram.com/thejopetnahfoundation/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.tiktok.com/@thejopetnahfoundationtjf" target="_blank" rel="noopener">TikTok</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>&copy; 2026 The Jopetnah Foundation (TJF). All rights reserved.</p>
+    <p class="footer-legal"><a href="privacy.html">Privacy</a><a href="contact.html">Contact</a></p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/analytics.js" defer></script>
+<script src="assets/js/contact.js" defer></script>
+
+</body>
+</html>

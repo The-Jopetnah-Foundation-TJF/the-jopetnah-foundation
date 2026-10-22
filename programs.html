@@ -20,6 +20,7 @@ href="https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/prog
 content="TJF's integrated program portfolio connects education, health, livelihoods and environmental resilience to strengthen underserved communities.">
 <meta property="og:url"
 content="https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/programs.html">
+<meta property="og:locale" content="en_GB">
 <meta property="og:site_name" content="The Jopetnah Foundation">
 <meta property="og:image"
 content="https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/social-preview.png">
@@ -67,22 +68,8 @@ content="https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/s
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
+<link rel="stylesheet" href="assets/css/tokens.css">
 <style>
-:root{
-  --bg: #241609;
-  --bg-deep: #180E06;
-  --surface: #32211A;
-  --surface-2: #3D291F;
-  --terracotta: #C4623C;
-  --terracotta-dim: #8F4A31;
-  --gold: #D8A63D;
-  --sage: #7C9473;
-  --cream: #F3E9DC;
-  --muted: #B9A390;
-  --line: rgba(243,233,220,0.12);
-  --radius: 14px;
-  --maxw: 1120px;
-}
 
 *{box-sizing:border-box;}
 html{scroll-behavior:smooth;}
@@ -248,7 +235,7 @@ section{padding:100px 0;}
   font-weight:500;
 }
 .timeline-item p{color:var(--muted); margin:0; font-size:0.95rem;}
-.timeline-item.current .phase-label{color:var(--terracotta);}
+.timeline-item.current .phase-label{color:var(--terracotta-text);}
 .timeline-item.current::before{background:var(--terracotta);}
 
 .callout{
@@ -294,11 +281,6 @@ ul.checklist li::before{
 .btn-primary{background:var(--terracotta); color:#1A0F07;}
 .btn-secondary{background:transparent; color:var(--cream); border:1px solid var(--line);}
 
-footer{border-top:1px solid var(--line); padding:44px 0; background:var(--bg-deep); color:var(--muted); font-size:.85rem;}
-footer .wrap{display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:16px;}
-footer p{margin:0;}
-footer .flinks a{color:var(--muted); text-decoration:none; margin-left:18px; font-size:0.85rem;}
-footer .flinks a:hover{color:var(--cream);}
 
 /* ---------- NAV ---------- */
 nav{
@@ -342,6 +324,7 @@ nav .wrap{min-height:68px; display:flex; align-items:center; gap:28px; position:
   h1{font-size:2.5rem;}
 }
 </style>
+<link rel="stylesheet" href="assets/css/footer.css">
 </head>
 
 <body>
@@ -367,6 +350,7 @@ nav .wrap{min-height:68px; display:flex; align-items:center; gap:28px; position:
       <a href="index.html#support">Support</a>
       <a href="index.html#donate">Donate</a>
       <a href="index.html#faq">FAQ</a>
+      <a href="contact.html">Contact</a>
     </div>
 
     <a class="navcta" href="index.html#get-involved">Get Involved</a>
@@ -864,33 +848,55 @@ nav .wrap{min-height:68px; display:flex; align-items:center; gap:28px; position:
 </main>
 
 <footer>
-  <div class="wrap">
-    <p>© 2026 The Jopetnah Foundation (TJF). All rights reserved.</p>
-    <div class="flinks">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="index.html#get-involved">Get Involved</a>
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <p class="footer-name">The Jopetnah Foundation</p>
+      <p class="footer-tag">Building whole communities, one life at a time.</p>
+      <p class="footer-status"><strong>Founding stage.</strong> Legal registration in Uganda is in progress and online donations are not yet active.</p>
     </div>
+    <div class="footer-col">
+      <p class="footer-h">Explore</p>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="animal-health.html">Animal Health Initiative</a></li>
+        <li><a href="index.html#get-involved">Get Involved</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <p class="footer-h">Transparency</p>
+      <ul>
+        <li><a href="https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation/blob/main/README.md" target="_blank" rel="noopener">Repository README</a></li>
+        <li><a href="https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation/blob/main/Jopetnah_Foundation_Blueprint.md" target="_blank" rel="noopener">Blueprint</a></li>
+        <li><a href="https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation/tree/main/governance" target="_blank" rel="noopener">Governance documents</a></li>
+        <li><a href="https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation/tree/main/donor-resources" target="_blank" rel="noopener">Donor resources</a></li>
+        <li><a href="https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">Contributing</a></li>
+        <li><a href="https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation/blob/main/LICENSE.md" target="_blank" rel="noopener">License</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <p class="footer-h">Connect</p>
+      <ul>
+        <li><a href="mailto:thejopetnahfoundation@gmail.com">thejopetnahfoundation@gmail.com</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=61592047384135" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.linkedin.com/company/135127890" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://x.com/FoundationTJF" target="_blank" rel="noopener">X</a></li>
+        <li><a href="https://www.youtube.com/@TheJopetnahFoundationTJF" target="_blank" rel="noopener">YouTube</a></li>
+        <li><a href="https://www.instagram.com/thejopetnahfoundation/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.tiktok.com/@thejopetnahfoundationtjf" target="_blank" rel="noopener">TikTok</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>&copy; 2026 The Jopetnah Foundation (TJF). All rights reserved.</p>
+    <p class="footer-legal"><a href="privacy.html">Privacy</a><a href="contact.html">Contact</a></p>
   </div>
 </footer>
 
-<script>
-(function(){
-  var toggle = document.getElementById('navToggle');
-  var links = document.getElementById('navlinks');
-  if(!toggle || !links) return;
-  toggle.addEventListener('click', function(){
-    var isOpen = links.classList.toggle('open');
-    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-  });
-  links.querySelectorAll('a').forEach(function(a){
-    a.addEventListener('click', function(){
-      links.classList.remove('open');
-      toggle.setAttribute('aria-expanded', 'false');
-    });
-  });
-})();
-</script>
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/analytics.js" defer></script>
 
 </body>
 </html>
