@@ -1,10 +1,12 @@
 /*
  * Privacy-friendly analytics loader for TJF.
  *
- * STATUS: DISABLED until you set a provider below. With provider '' this file
- * loads nothing, sets nothing and sends nothing.
+ * STATUS: ENABLED with GoatCounter (site: thejopetnahfoundation.goatcounter.com).
+ * To switch it off, set provider to '' below: the file then loads nothing,
+ * sets nothing and sends nothing. If you change provider or turn it off,
+ * update the analytics paragraph in privacy.html in the same commit.
  *
- * To turn it on (after creating an account with the provider):
+ * Provider options:
  *   Plausible:    provider: 'plausible',   plausibleDomain: 'your-site-domain'
  *   GoatCounter:  provider: 'goatcounter', goatcounterEndpoint: 'https://CODE.goatcounter.com/count'
  * Both are cookie-free and do not track people across sites. Whenever you
@@ -18,9 +20,9 @@
  */
 (function(){
   var CONFIG = {
-    provider: '',              // '', 'plausible' or 'goatcounter'
+    provider: 'goatcounter',   // '', 'plausible' or 'goatcounter'
     plausibleDomain: '',       // e.g. 'jopetnahfoundation.org'
-    goatcounterEndpoint: ''    // e.g. 'https://tjf.goatcounter.com/count'
+    goatcounterEndpoint: 'https://thejopetnahfoundation.goatcounter.com/count'
   };
 
   if(!CONFIG.provider) return;
