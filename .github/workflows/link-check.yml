@@ -1,0 +1,39 @@
+name: Site check
+
+# Catches broken links, missing files (for example a forgotten assets folder),
+# bad anchors, wrong canonical URLs and sitemap gaps before they reach the live site.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 6 * * 1'   # every Monday 06:00 UTC (09:00 Kampala) also checks external links
+
+permissions:
+  contents: read
+
+jobs:
+  internal:
+    name: Internal links, assets and sitemap
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check site
+        run: python3 scripts/check_links.py
+
+  external:
+    name: External links (weekly and on demand)
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check external links
+        run: python3 scripts/check_links.py --external
