@@ -1,0 +1,17 @@
+:root{
+  --bg: #241609;
+  --bg-deep: #180E06;
+  --surface: #32211A;
+  --surface-2: #3D291F;
+  --terracotta: #C4623C;
+  --terracotta-dim: #8F4A31;
+  /* Lighter terracotta for small text: >=4.6:1 on bg, surface and surface-2 */
+  --terracotta-text: #E07B54;
+  --gold: #D8A63D;
+  --sage: #7C9473;
+  --cream: #F3E9DC;
+  --muted: #B9A390;
+  --line: rgba(243,233,220,0.12);
+  --radius: 14px;
+  --maxw: 1120px;
+}
