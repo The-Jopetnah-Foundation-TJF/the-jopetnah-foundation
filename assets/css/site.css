@@ -1,0 +1,88 @@
+/* Shared site styles: footer + accessibility refinements. Loaded after each page's inline styles. */
+footer{
+  border-top:1px solid var(--line);
+  padding:56px 0 28px;
+  background:var(--bg-deep);
+  color:var(--muted);
+  font-size:.9rem;
+  line-height:1.6;
+}
+footer p{margin:0;}
+footer ul{list-style:none; margin:0; padding:0;}
+footer li{margin:0 0 8px;}
+footer a{color:var(--muted); text-decoration:none;}
+footer a:hover, footer a:focus-visible{color:var(--cream); text-decoration:underline;}
+
+.footer-grid, footer .footer-grid{
+  display:grid;
+  grid-template-columns:1.6fr 1fr 1fr 1fr;
+  gap:36px;
+}
+.footer-brand .footer-name{
+  font-family:'Fraunces', Georgia, serif;
+  font-size:1.2rem; font-weight:600; color:var(--cream); margin-bottom:6px;
+}
+.footer-col .footer-h{margin-bottom:14px;}
+.footer-brand .footer-tag{color:var(--muted); max-width:34ch;}
+.footer-status{
+  margin-top:16px; padding:12px 14px;
+  border-left:3px solid var(--gold);
+  background:var(--surface);
+  border-radius:0 8px 8px 0;
+  font-size:.82rem; max-width:40ch;
+}
+.footer-h{
+  font-family:'IBM Plex Mono', monospace;
+  font-size:.74rem; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--gold); margin:0 0 14px; font-weight:500;
+}
+.footer-bottom, footer .footer-bottom{
+  margin-top:40px; padding-top:20px;
+  border-top:1px solid var(--line);
+  display:flex; flex-wrap:wrap; gap:10px 24px;
+  justify-content:space-between; font-size:.82rem;
+}
+.footer-bottom .footer-legal a{margin-left:18px;}
+.footer-bottom .footer-legal a:first-child{margin-left:0;}
+
+@media (max-width:860px){
+  footer .footer-grid{grid-template-columns:1fr 1fr;}
+  footer .footer-brand{grid-column:1 / -1;}
+}
+@media (max-width:480px){
+  footer .footer-grid{grid-template-columns:1fr;}
+  footer .footer-bottom{flex-direction:column;}
+}
+
+/* footer link tap targets (WCAG 2.2 target size) */
+footer li a{display:inline-block; padding:3px 0; min-height:24px; min-width:24px;}
+
+/* ---------- Accessibility refinements ---------- */
+/* Links inside running text must not rely on colour alone (WCAG 1.4.1) */
+main p a:not(.btn), main li a:not(.btn), main td a:not(.btn), main .status-box a, main .form-note a{
+  text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:3px;
+}
+main p a:not(.btn):hover, main li a:not(.btn):hover, main td a:not(.btn):hover{text-decoration-thickness:2px;}
+
+/* Nav links: comfortable hit area, current-page marker */
+.navlinks a{padding-top:4px; padding-bottom:4px;}
+.navlinks a[aria-current="page"]{color:var(--cream); text-decoration:underline; text-decoration-color:var(--gold); text-decoration-thickness:2px; text-underline-offset:6px;}
+
+/* Wide tables scroll inside their own region instead of the whole page */
+.table-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.table-scroll:focus-visible{outline:2px solid var(--gold); outline-offset:3px;}
+
+/* Very small screens: keep the nav inside 320px (WCAG 1.4.10 reflow) */
+@media (max-width:380px){
+  nav .wrap{gap:10px; padding-left:16px; padding-right:16px;}
+  .navcta{padding-left:12px; padding-right:12px; font-size:.82rem;}
+  .brand{font-size:1.05rem;}
+}
+
+/* Respect reduced-motion for scroll-reveal */
+@media (prefers-reduced-motion: reduce){
+  .reveal{transition:none !important; transform:none !important;}
+}
+
+/* Inline social link rows */
+.social-links a{display:inline-flex; align-items:center; justify-content:center; min-width:24px; min-height:28px; padding:2px 2px;}

@@ -7,6 +7,8 @@
   --terracotta-dim: #8F4A31;
   /* Lighter terracotta for small text: >=4.6:1 on bg, surface and surface-2 */
   --terracotta-text: #E07B54;
+  /* Lighter terracotta-dim for text on surfaces: >=5.2:1 */
+  --terracotta-soft: #D98F6E;
   --gold: #D8A63D;
   --sage: #7C9473;
   --cream: #F3E9DC;

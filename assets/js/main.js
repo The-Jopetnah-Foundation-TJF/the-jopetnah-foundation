@@ -7,6 +7,13 @@
       var isOpen = links.classList.toggle('open');
       toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape' && links.classList.contains('open')){
+        links.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.focus();
+      }
+    });
     links.querySelectorAll('a').forEach(function(a){
       a.addEventListener('click', function(){
         links.classList.remove('open');
