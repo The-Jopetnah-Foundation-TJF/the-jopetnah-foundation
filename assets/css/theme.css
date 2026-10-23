@@ -1,0 +1,78 @@
+/*
+ * Light theme for TJF.
+ * Same earth-tone brand family as the dark theme: warm parchment instead of deep brown,
+ * the same terracotta / gold / sage accents deepened so text stays readable (WCAG AA).
+ * Applied when <html data-theme="light">. Loaded last so it can override page styles.
+ *
+ * Contrast (checked): text #2B1B0F on #F8F1E6 = 14.8:1; muted #65503F = 6.7:1;
+ * gold #7D5606 = 5.8:1; terracotta-text #983F20 = 6.1:1; sage #46603F = 6.2:1;
+ * button text #FFFBF4 on #A84A28 = 5.5:1.
+ */
+:root[data-theme="light"]{
+  color-scheme: light;
+  --bg: #F8F1E6;
+  --bg-deep: #EBDDC5;
+  --surface: #FFFBF4;
+  --surface-2: #F1E5D0;
+  --terracotta: #A84A28;
+  --terracotta-dim: #85402A;
+  --terracotta-text: #983F20;
+  --terracotta-soft: #85402A;
+  --gold: #7D5606;
+  --sage: #46603F;
+  --cream: #2B1B0F;          /* main text colour (named "cream" in the dark theme) */
+  --muted: #65503F;
+  --line: rgba(43,27,15,0.16);
+  --ink-on-accent: #FFFBF4;
+  --nav-bg: rgba(248,241,230,0.95);
+  --field-border: rgba(43,27,15,.5);
+  --error: #A63D1E;
+  --error-border: #A63D1E;
+}
+
+/* Buttons and nav call-to-action: text colour follows the theme */
+.btn-primary{color:var(--ink-on-accent);}
+nav[aria-label="Primary"] .navcta{color:var(--ink-on-accent) !important;}
+
+/* Brand mark: the stem is ink-coloured so it shows on both themes */
+.brand-mark .stem{fill:var(--cream);}
+
+/* Hero graphic: the centre disc needs an edge on a light page */
+:root[data-theme="light"] .converge circle:not(.node){stroke:#8F4A31; stroke-width:1.5;}
+:root[data-theme="light"] .converge .beam{opacity:.8;}
+
+/* Soft card shadow reads better than hairlines alone on light surfaces */
+:root[data-theme="light"] .card,
+:root[data-theme="light"] .pillar,
+:root[data-theme="light"] .contact-form,
+:root[data-theme="light"] .panel{box-shadow:0 1px 2px rgba(43,27,15,.06), 0 8px 24px rgba(43,27,15,.05);}
+
+/* Footer stays a deep, warm band in both themes (scoped dark tokens) */
+:root[data-theme="light"] footer{
+  --bg:#241609; --bg-deep:#1E1208; --surface:#32211A; --surface-2:#3D291F;
+  --cream:#F3E9DC; --muted:#CDBBA7; --gold:#D8A63D; --terracotta-text:#E07B54;
+  --line:rgba(243,233,220,.16);
+  background:var(--bg-deep);
+  color:var(--muted);
+}
+
+/* ---------- Theme switch ---------- */
+.theme-toggle{
+  display:inline-flex; align-items:center; justify-content:center;
+  width:38px; height:38px; flex-shrink:0;
+  background:none; color:var(--cream);
+  border:1px solid var(--line); border-radius:999px;
+  cursor:pointer; padding:0;
+}
+.theme-toggle:hover{border-color:var(--gold);}
+.theme-toggle:focus-visible{outline:2px solid var(--gold); outline-offset:3px;}
+.theme-toggle svg{width:18px; height:18px; display:block;}
+.theme-toggle .icon-sun{display:block;}
+.theme-toggle .icon-moon{display:none;}
+:root[data-theme="light"] .theme-toggle .icon-sun{display:none;}
+:root[data-theme="light"] .theme-toggle .icon-moon{display:block;}
+
+/* Smooth colour change, but never for people who ask for less motion */
+@media (prefers-reduced-motion: no-preference){
+  body, nav[aria-label="Primary"], .card, .pillar, .btn, footer{transition:background-color .25s ease, color .25s ease, border-color .25s ease;}
+}

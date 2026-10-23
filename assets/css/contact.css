@@ -16,15 +16,15 @@
   width:100%;
   font:inherit; color:var(--cream);
   background:var(--bg);
-  border:1px solid rgba(243,233,220,.28);
+  border:1px solid var(--field-border);
   border-radius:10px;
   padding:12px 14px;
 }
 .field textarea{min-height:150px; resize:vertical;}
 .field select{appearance:none; background-image:linear-gradient(45deg,transparent 50%,var(--muted) 50%),linear-gradient(135deg,var(--muted) 50%,transparent 50%); background-position:calc(100% - 20px) 50%, calc(100% - 14px) 50%; background-size:6px 6px,6px 6px; background-repeat:no-repeat; padding-right:38px;}
 .field input:focus-visible, .field select:focus-visible, .field textarea:focus-visible{outline:2px solid var(--gold); outline-offset:2px; border-color:var(--gold);}
-.field.invalid input, .field.invalid select, .field.invalid textarea{border-color:#E8825A;}
-.field-error{display:none; color:#F0A184; font-size:.84rem; margin-top:6px;}
+.field.invalid input, .field.invalid select, .field.invalid textarea{border-color:var(--error-border);}
+.field-error{display:none; color:var(--error); font-size:.84rem; margin-top:6px;}
 .field.invalid .field-error{display:block;}
 .req{color:var(--gold);}
 
@@ -44,11 +44,11 @@
 .form-result textarea{
   width:100%; min-height:130px; font:inherit; font-size:.85rem;
   color:var(--cream); background:var(--bg);
-  border:1px solid rgba(243,233,220,.28); border-radius:10px; padding:10px 12px;
+  border:1px solid var(--field-border); border-radius:10px; padding:10px 12px;
 }
 .copy-btn{
   font:inherit; cursor:pointer; color:var(--cream);
-  background:transparent; border:1px solid rgba(243,233,220,.4);
+  background:transparent; border:1px solid var(--field-border);
   border-radius:999px; padding:8px 18px; margin-top:10px;
 }
 .copy-btn:hover{border-color:var(--gold);}

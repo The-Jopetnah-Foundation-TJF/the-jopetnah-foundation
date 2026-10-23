@@ -1,4 +1,68 @@
-/* Shared site styles: footer + accessibility refinements. Loaded after each page's inline styles. */
+/*
+ * Shared site styles: navigation, footer, accessibility refinements and
+ * components used by the supporting pages. Loaded after each page's inline
+ * styles and before theme.css. Uses only the design tokens, so it works in
+ * both the dark and light themes.
+ */
+
+/* ---------- Navigation (one definition for every page) ---------- */
+nav[aria-label="Primary"]{
+  position:sticky; top:0; z-index:50;
+  background:var(--nav-bg);
+  -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+nav[aria-label="Primary"] > .wrap{
+  display:flex; align-items:center; justify-content:flex-start; gap:18px;
+  min-height:68px; padding-top:0; padding-bottom:0; position:relative;
+}
+nav[aria-label="Primary"] .brand{
+  font-family:'Fraunces', Georgia, serif; font-weight:600; font-size:1.1rem;
+  display:flex; align-items:center; gap:10px; color:var(--cream);
+  margin-right:auto; text-decoration:none; white-space:nowrap;
+}
+nav[aria-label="Primary"] .brand span{color:var(--terracotta);}
+nav[aria-label="Primary"] .brand-mark{width:31px; height:31px; flex-shrink:0;}
+nav[aria-label="Primary"] .navlinks{display:flex; gap:20px; align-items:center; font-size:.92rem;}
+nav[aria-label="Primary"] .navlinks a{color:var(--muted); text-decoration:none; padding:4px 0; white-space:nowrap;}
+nav[aria-label="Primary"] .navlinks a:hover{color:var(--cream);}
+nav[aria-label="Primary"] .navlinks a[aria-current="page"]{
+  color:var(--cream); text-decoration:underline; text-decoration-color:var(--gold);
+  text-decoration-thickness:2px; text-underline-offset:6px;
+}
+nav[aria-label="Primary"] .navcta{
+  background:var(--terracotta); font-weight:600; font-size:.88rem;
+  padding:9px 18px; border-radius:999px; text-decoration:none; white-space:nowrap;
+}
+nav[aria-label="Primary"] .nav-toggle{
+  display:none; flex-direction:column; justify-content:center; gap:5px;
+  width:38px; height:38px; background:none; border:1px solid var(--line);
+  border-radius:8px; cursor:pointer; padding:0;
+}
+nav[aria-label="Primary"] .nav-toggle span{width:18px; height:2px; background:var(--cream); display:block; margin:0 auto;}
+nav[aria-label="Primary"] .nav-toggle:focus-visible{outline:2px solid var(--gold); outline-offset:3px;}
+
+@media (max-width:1040px){
+  nav[aria-label="Primary"] .nav-toggle{display:flex;}
+  nav[aria-label="Primary"] .navlinks{
+    display:none; flex-direction:column; align-items:flex-start; gap:2px;
+    position:absolute; top:100%; left:0; right:0;
+    background:var(--bg-deep); border:1px solid var(--line); border-top:none;
+    padding:8px 28px 18px; font-size:1rem;
+  }
+  nav[aria-label="Primary"] .navlinks.open{display:flex;}
+  nav[aria-label="Primary"] .navlinks a{padding:12px 0; width:100%; border-bottom:1px solid var(--line);}
+  nav[aria-label="Primary"] .navlinks a:last-child{border-bottom:none;}
+}
+@media (max-width:420px){
+  nav[aria-label="Primary"] > .wrap{gap:8px; padding-left:14px; padding-right:14px;}
+  nav[aria-label="Primary"] .brand{font-size:1rem; gap:7px;}
+  nav[aria-label="Primary"] .brand-mark{width:26px; height:26px;}
+  nav[aria-label="Primary"] .navcta{padding:8px 11px; font-size:.78rem;}
+  nav[aria-label="Primary"] .theme-toggle, nav[aria-label="Primary"] .nav-toggle{width:34px; height:34px;}
+}
+
+/* ---------- Footer ---------- */
 footer{
   border-top:1px solid var(--line);
   padding:56px 0 28px;
@@ -9,20 +73,20 @@ footer{
 }
 footer p{margin:0;}
 footer ul{list-style:none; margin:0; padding:0;}
-footer li{margin:0 0 8px;}
+footer li{margin:0 0 4px;}
 footer a{color:var(--muted); text-decoration:none;}
 footer a:hover, footer a:focus-visible{color:var(--cream); text-decoration:underline;}
+footer li a{display:inline-block; padding:3px 0; min-height:24px; min-width:24px;}
 
 .footer-grid, footer .footer-grid{
   display:grid;
-  grid-template-columns:1.6fr 1fr 1fr 1fr;
-  gap:36px;
+  grid-template-columns:1.5fr 1fr 1fr 1fr 1.1fr;
+  gap:32px;
 }
 .footer-brand .footer-name{
   font-family:'Fraunces', Georgia, serif;
   font-size:1.2rem; font-weight:600; color:var(--cream); margin-bottom:6px;
 }
-.footer-col .footer-h{margin-bottom:14px;}
 .footer-brand .footer-tag{color:var(--muted); max-width:34ch;}
 .footer-status{
   margin-top:16px; padding:12px 14px;
@@ -45,8 +109,8 @@ footer a:hover, footer a:focus-visible{color:var(--cream); text-decoration:under
 .footer-bottom .footer-legal a{margin-left:18px;}
 .footer-bottom .footer-legal a:first-child{margin-left:0;}
 
-@media (max-width:860px){
-  footer .footer-grid{grid-template-columns:1fr 1fr;}
+@media (max-width:1040px){
+  footer .footer-grid{grid-template-columns:repeat(2,1fr);}
   footer .footer-brand{grid-column:1 / -1;}
 }
 @media (max-width:480px){
@@ -54,30 +118,17 @@ footer a:hover, footer a:focus-visible{color:var(--cream); text-decoration:under
   footer .footer-bottom{flex-direction:column;}
 }
 
-/* footer link tap targets (WCAG 2.2 target size) */
-footer li a{display:inline-block; padding:3px 0; min-height:24px; min-width:24px;}
-
 /* ---------- Accessibility refinements ---------- */
 /* Links inside running text must not rely on colour alone (WCAG 1.4.1) */
-main p a:not(.btn), main li a:not(.btn), main td a:not(.btn), main .status-box a, main .form-note a{
+main p a:not(.btn), main li a:not(.btn), main td a:not(.btn),
+main .status-box a, main .form-note a, main .notice a, main .site-disclosure a{
   text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:3px;
 }
 main p a:not(.btn):hover, main li a:not(.btn):hover, main td a:not(.btn):hover{text-decoration-thickness:2px;}
 
-/* Nav links: comfortable hit area, current-page marker */
-.navlinks a{padding-top:4px; padding-bottom:4px;}
-.navlinks a[aria-current="page"]{color:var(--cream); text-decoration:underline; text-decoration-color:var(--gold); text-decoration-thickness:2px; text-underline-offset:6px;}
-
 /* Wide tables scroll inside their own region instead of the whole page */
 .table-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
 .table-scroll:focus-visible{outline:2px solid var(--gold); outline-offset:3px;}
-
-/* Very small screens: keep the nav inside 320px (WCAG 1.4.10 reflow) */
-@media (max-width:380px){
-  nav .wrap{gap:10px; padding-left:16px; padding-right:16px;}
-  .navcta{padding-left:12px; padding-right:12px; font-size:.82rem;}
-  .brand{font-size:1.05rem;}
-}
 
 /* Respect reduced-motion for scroll-reveal */
 @media (prefers-reduced-motion: reduce){
@@ -86,3 +137,66 @@ main p a:not(.btn):hover, main li a:not(.btn):hover, main td a:not(.btn):hover{t
 
 /* Inline social link rows */
 .social-links a{display:inline-flex; align-items:center; justify-content:center; min-width:24px; min-height:28px; padding:2px 2px;}
+
+/* ---------- Components for the supporting pages ---------- */
+.page-content p, .page-content li{max-width:78ch;}
+.page-content h2{margin-top:2.4rem;}
+.page-content h2:first-child{margin-top:0;}
+.page-content .grid-3, .page-content .grid-2{margin:1.2rem 0 0;}
+.page-content ul{color:var(--muted); padding-left:22px;}
+.page-content li{margin-bottom:6px;}
+
+.notice{
+  background:var(--surface-2);
+  border-left:4px solid var(--gold);
+  border-radius:0 var(--radius) var(--radius) 0;
+  padding:18px 22px; margin:0 0 28px; color:var(--cream);
+}
+.notice strong{color:var(--gold);}
+
+.kicker{
+  display:block;
+  font-family:'IBM Plex Mono', monospace; font-size:.74rem;
+  letter-spacing:.12em; text-transform:uppercase;
+  color:var(--gold); margin-bottom:10px;
+}
+
+.inline-links{display:flex; flex-wrap:wrap; gap:10px 14px; margin:1.4rem 0 0;}
+.inline-links a{
+  display:inline-block; padding:9px 16px;
+  border:1px solid var(--line); border-radius:999px;
+  color:var(--cream); text-decoration:none; font-size:.92rem;
+}
+.inline-links a:hover{border-color:var(--gold);}
+
+.site-disclosure{
+  margin-top:3rem; padding-top:1.4rem;
+  border-top:1px solid var(--line);
+  color:var(--muted); font-size:.88rem; max-width:78ch;
+}
+.site-disclosure strong{color:var(--cream);}
+
+.resource-list{display:grid; gap:12px; margin-top:1.2rem;}
+.resource-link{
+  display:flex; justify-content:space-between; align-items:center; gap:16px;
+  background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+  padding:18px 22px; color:var(--cream); text-decoration:none;
+}
+.resource-link:hover{border-color:var(--gold);}
+.resource-link strong{color:var(--cream);}
+.resource-link span{color:var(--muted); font-size:.92rem;}
+.resource-link > span:last-child{color:var(--gold); font-weight:600; white-space:nowrap;}
+
+.metric-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin:1.2rem 0 0;}
+.metric{
+  background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+  padding:22px; color:var(--muted); font-size:.94rem;
+}
+.metric strong{display:block; font-family:'Fraunces', Georgia, serif; font-size:1.3rem; color:var(--gold); margin-bottom:6px;}
+@media (max-width:720px){ .metric-grid{grid-template-columns:1fr;} }
+
+/* Animal Health brand artwork */
+.brand-figure{margin:0 0 28px;}
+.brand-figure img{display:block; width:100%; height:auto; border-radius:var(--radius); border:1px solid var(--line);}
+.brand-figure figcaption{color:var(--muted); font-size:.84rem; margin-top:8px;}
+.share-figure{max-width:460px;}
