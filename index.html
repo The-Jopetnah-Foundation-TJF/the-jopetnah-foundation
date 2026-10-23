@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#180E06">
+<script>(function(){var t=null;try{t=localStorage.getItem("tjf-theme")}catch(e){}if(t!=="light"&&t!=="dark"){t=(window.matchMedia&&matchMedia("(prefers-color-scheme: light)").matches)?"light":"dark"}document.documentElement.setAttribute("data-theme",t)})();</script>
 <meta name="google-site-verification" content="_Eg663Hq9ZPiB28TuhgNFLIrnGq34O-PieZXQLz6pJc" />
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -86,7 +89,7 @@
       "name": "Why should we trust TJF?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Trust shouldn't be demanded — it should be earned and demonstrated. That's why our governance documents, financial controls, and decision-making structure are published before we ever make a funding ask, not after. A donor shouldn't have to take our word for it; our systems should provide the evidence."
+        "text": "Trust should be earned. TJF is developing its governance, financial controls and public disclosures. Approved documents will be published when they are ready and authorised for release; draft or internal documents should not be treated as public approvals."
       }
     },
     {
@@ -94,7 +97,7 @@
       "name": "Why an integrated model instead of a single-issue charity?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Because vulnerability rarely has one cause. A child leaves school because a household can't afford basics; a parent can't earn because of poor health; a community stagnates because its environment has degraded. These problems are connected, so our response is too — one gift, working across education, health, livelihoods, and environment for the same family, instead of four separate, disconnected efforts."
+        "text": "Education, health, livelihoods and environmental conditions can reinforce one another. TJF is developing an integrated model intended to consider these connections rather than treating each challenge in isolation."
       }
     },
     {
@@ -102,7 +105,7 @@
       "name": "What will our support actually accomplish?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We'll tell you specifically, not vaguely — see the Year 1 Pilot Goals under each program pillar for concrete, named targets. We won't tell a donor your gift will change lives; we'll tell them what it's intended to accomplish and how we'll report back on whether it did."
+        "text": "Before any pilot begins, TJF intends to define the intended outcomes, indicators, data-collection approach and reporting arrangements. We will distinguish planned targets from results actually measured."
       }
     },
     {
@@ -110,7 +113,7 @@
       "name": "How will we know it worked?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Every major program will track a clear chain: who we reached, what access they gained, what capability they built, what behavior changed, what outcome resulted. Numbers alone can mislead, so our reporting will combine data with real beneficiary outcomes, not activity counts alone."
+        "text": "Every major program will track a clear chain: who we reached → what access they gained → what capability they built → what behavior changed → what outcome resulted. Numbers alone can mislead (\"10,000 people trained\" says nothing about what happened to them afterward) — so our reporting will combine data with real beneficiary outcomes, not activity counts alone."
       }
     },
     {
@@ -118,7 +121,7 @@
       "name": "Is TJF able to receive donations right now?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not yet online — see the Support Our Work section for our current, honest status. We're finalizing our bank account and payment processing. In the meantime, we welcome in-kind gifts and early conversations with anyone ready to give once we're live."
+        "text": "No. Online donations are not active. TJF is developing its legal, governance and financial arrangements before any public giving pathway is activated. Please do not send funds to personal accounts or respond to unofficial payment requests."
       }
     },
     {
@@ -126,7 +129,7 @@
       "name": "What can a corporate or institutional partner contribute besides money?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Technology, equipment, professional expertise, employee volunteering, research capacity, logistics, market access, or mentorship — a partnership with TJF doesn't have to start with a check. It can start with here's what our organization is good at."
+        "text": "Technology, equipment, professional expertise, employee volunteering, research capacity, logistics, market access, or mentorship — a partnership with TJF doesn't have to start with \"here's a check.\" It can start with \"here's what our organization is good at.\""
       }
     },
     {
@@ -134,7 +137,7 @@
       "name": "What makes TJF different from other NGOs?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not a claim to be the only organization doing this work. Our differentiation is the integrated model itself: connecting interventions across pillars rather than treating each as an isolated project, backed by governance and evidence discipline from day one rather than added later."
+        "text": "Not a claim to be the only organization doing this work — that would be hard to substantiate. Our differentiation is the integrated model itself: connecting interventions across pillars rather than treating each as an isolated project, backed by governance and evidence discipline from day one rather than added later."
       }
     }
   ]
@@ -376,6 +379,7 @@
   .support-note{color:var(--muted); font-size:0.95rem;}
 </style>
 <link rel="stylesheet" href="assets/css/site.css">
+<link rel="stylesheet" href="assets/css/theme.css">
 </head>
 <body>
 <noscript><style>.reveal{opacity:1 !important; transform:none !important;}</style></noscript>
@@ -384,27 +388,26 @@
 
 <nav aria-label="Primary">
   <div class="wrap">
-    <a href="index.html" class="brand">
-      <svg class="brand-mark" width="30" height="30" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M100,150 C 66,126.25 66,74 100,55 C 134,74 134,126.25 100,150 Z" fill="#7C9473" transform="rotate(-48 100 150)"/>
-        <path d="M100,150 C 66,126.25 66,74 100,55 C 134,74 134,126.25 100,150 Z" fill="#D8A63D" transform="rotate(48 100 150)"/>
-        <path d="M100,150 C 74,130.5 74,87.6 100,72 C 126,87.6 126,130.5 100,150 Z" fill="#C4623C" transform="rotate(-16 100 150)"/>
-        <path d="M100,150 C 74,130.5 74,87.6 100,72 C 126,87.6 126,130.5 100,150 Z" fill="#8F4A31" transform="rotate(16 100 150)"/>
-        <rect x="95" y="150" width="10" height="17" rx="5" fill="#F3E9DC"/>
+    <a href="index.html" class="brand" aria-label="The Jopetnah Foundation home">
+      <svg class="brand-mark" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M100,150 C66,126.25 66,74 100,55 C134,74 134,126.25 100,150 Z" fill="#7C9473" transform="rotate(-48 100 150)"/>
+        <path d="M100,150 C66,126.25 66,74 100,55 C134,74 134,126.25 100,150 Z" fill="#D8A63D" transform="rotate(48 100 150)"/>
+        <path d="M100,150 C74,130.5 74,87.6 100,72 C126,87.6 126,130.5 100,150 Z" fill="#C4623C" transform="rotate(-16 100 150)"/>
+        <path d="M100,150 C74,130.5 74,87.6 100,72 C126,87.6 126,130.5 100,150 Z" fill="#8F4A31" transform="rotate(16 100 150)"/>
+        <rect class="stem" x="95" y="150" width="10" height="17" rx="5" fill="#F3E9DC"/>
       </svg>
       Jopetnah<span>.</span>
     </a>
+
     <div class="navlinks" id="navlinks">
-      <a href="about.html">About</a>
-      <a href="#model">Model</a>
-      <a href="#values">Values</a>
-      <a href="#programs">Programs</a>
-      <a href="#support">Support</a>
-      <a href="#donate">Donate</a>
-      <a href="#faq">FAQ</a>
-      <a href="#roadmap">Roadmap</a>
+      <a href="about.html">About</a><a href="programs.html">Programmes</a><a href="impact.html">Impact</a><a href="transparency.html">Transparency</a><a href="resources.html">Resources</a><a href="contact.html">Contact</a>
     </div>
-    <a class="navcta" href="#get-involved">Get Involved</a>
+
+    <a class="navcta" href="get-involved.html">Get involved</a>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light theme" title="Switch to light theme">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
     <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navlinks" aria-label="Toggle navigation menu">
       <span></span><span></span><span></span>
     </button>
@@ -459,299 +462,183 @@
 </div>
 
 <section class="problem reveal">
-  <div class="wrap">
-    <span class="eyebrow">The problem</span>
-    <h2>It never arrives in one piece.</h2>
-    <p>In the communities Jopetnah serves, a child out of school, a family without healthcare, and a household without income are rarely separate problems — they're the same problem, seen from different angles.</p>
-    <p class="emph">Most organizations specialize in one slice of it. Jopetnah is built to address the whole picture, for the whole family.</p>
-  </div>
+<div class="wrap">
+<span class="eyebrow">The problem</span>
+<h2>It never arrives in one piece.</h2>
+<p>In communities TJF hopes to serve, a child out of school, a family without healthcare, and a household without income may be connected challenges. TJF is being designed to address the whole picture, with communities helping define priorities and solutions.</p>
+<p class="emph">Most organizations specialize in one slice of it. Jopetnah is built to address the whole picture, for the whole family.</p>
+</div>
 </section>
-
 <section class="model reveal" id="model">
-  <div class="wrap model-grid">
-    <div>
-      <span class="eyebrow">Our model</span>
-      <h2>Four pillars.<br>One point of entry.</h2>
-      <p>Because our programs work together, a single Jopetnah gift or partnership can be shown to reach every part of one family's life — not just one slice of it.</p>
-    </div>
-    <div>
-      <div class="pillar-row"><span class="pillar-dot" style="background:var(--terracotta)"></span><div><h3>Education & Youth Development</h3><p>Scholarships, mentorship, and digital-skills labs.</p></div></div>
-      <div class="pillar-row"><span class="pillar-dot" style="background:var(--terracotta-dim)"></span><div><h3>Health & Wellbeing</h3><p>Community health champions, malaria prevention, and mobile wellness clinics.</p></div></div>
-      <div class="pillar-row"><span class="pillar-dot" style="background:var(--gold)"></span><div><h3>Livelihoods</h3><p>Micro-grants, vocational-to-job pipelines, savings circles.</p></div></div>
-      <div class="pillar-row"><span class="pillar-dot" style="background:var(--sage)"></span><div><h3>Environment</h3><p>Clean water, sanitation access, and climate-smart farming.</p></div></div>
-    </div>
-  </div>
+<div class="wrap model-grid">
+<div>
+<span class="eyebrow">Our model</span>
+<h2>Four pillars.<br/>One point of entry.</h2>
+<p>TJF is developing an integrated model in which future programmes could reinforce one another around a household’s priorities. Any funding, delivery arrangements and expected results will be defined only after programme design, readiness checks and appropriate approvals.</p>
+</div>
+<div>
+<div class="pillar-row"><span class="pillar-dot" style="background:var(--terracotta)"></span><div><h3>Education &amp; Youth Development</h3><p>Scholarships, mentorship, and digital-skills labs.</p></div></div>
+<div class="pillar-row"><span class="pillar-dot" style="background:var(--terracotta-dim)"></span><div><h3>Health &amp; Wellbeing</h3><p>Community health champions, malaria prevention, and mobile wellness clinics.</p></div></div>
+<div class="pillar-row"><span class="pillar-dot" style="background:var(--gold)"></span><div><h3>Livelihoods</h3><p>Micro-grants, vocational-to-job pipelines, savings circles.</p></div></div>
+<div class="pillar-row"><span class="pillar-dot" style="background:var(--sage)"></span><div><h3>Environment</h3><p>Clean water, sanitation access, and climate-smart farming.</p></div></div>
+</div>
+</div>
 </section>
-
 <section class="values reveal" id="values">
-  <div class="wrap">
-    <span class="eyebrow eyebrow-center">Our Values</span>
-    <h2>How we intend to work.</h2>
-    <p class="center">The principles that shape every program decision, from pilot design to how we report back.</p>
-
-    <div class="values-grid">
-      <div class="card">
-        <h3>Integrity</h3>
-        <p>We seek to act honestly, responsibly and transparently in how we manage relationships, resources and commitments.</p>
-      </div>
-      <div class="card">
-        <h3>Community Ownership</h3>
-        <p>We believe sustainable development is stronger when communities participate meaningfully in defining priorities and solutions.</p>
-      </div>
-      <div class="card">
-        <h3>Transparency</h3>
-        <p>We aim to communicate clearly about our plans, progress, limitations, resources and results — including publishing key working documents on our public GitHub repository.</p>
-      </div>
-      <div class="card">
-        <h3>Sustainability</h3>
-        <p>We seek approaches that strengthen capacity and resilience rather than creating unnecessary long-term dependency.</p>
-      </div>
-      <div class="card">
-        <h3>Inclusion</h3>
-        <p>We seek to create opportunities that respect dignity, participation and fair access for underserved people and communities.</p>
-      </div>
-      <div class="card">
-        <h3>Learning</h3>
-        <p>We intend to measure, reflect, adapt and improve as programs develop and evidence becomes available.</p>
-      </div>
-    </div>
-  </div>
+<div class="wrap">
+<span class="eyebrow eyebrow-center">Our Values</span>
+<h2>How we intend to work.</h2>
+<p class="center">The principles that shape every program decision, from pilot design to how we report back.</p>
+<div class="values-grid">
+<div class="card">
+<h3>Integrity</h3>
+<p>We seek to act honestly, responsibly and transparently in how we manage relationships, resources and commitments.</p>
+</div>
+<div class="card">
+<h3>Community Ownership</h3>
+<p>We believe sustainable development is stronger when communities participate meaningfully in defining priorities and solutions.</p>
+</div>
+<div class="card">
+<h3>Transparency</h3>
+<p>We aim to communicate clearly about our plans, progress, limitations, resources and results — including publishing key working documents on our public GitHub repository.</p>
+</div>
+<div class="card">
+<h3>Sustainability</h3>
+<p>We seek approaches that strengthen capacity and resilience rather than creating unnecessary long-term dependency.</p>
+</div>
+<div class="card">
+<h3>Inclusion</h3>
+<p>We seek to create opportunities that respect dignity, participation and fair access for underserved people and communities.</p>
+</div>
+<div class="card">
+<h3>Learning</h3>
+<p>We intend to measure, reflect, adapt and improve as programs develop and evidence becomes available.</p>
+</div>
+</div>
+</div>
 </section>
-
 <section class="programs reveal" id="programs">
-  <div class="wrap">
-    <span class="eyebrow eyebrow-center">Programs</span>
-    <h2>Flagship work in every pillar</h2>
-    <p class="center">A closer look at what Jopetnah funds and runs on the ground.</p>
-    <div class="card-grid">
-      <div class="card">
-        <div class="icon" style="background:var(--terracotta)"></div>
-        <h3>Education & Youth Development</h3>
-        <ul>
-          <li><strong>Jopetnah Scholars</strong> — need-based scholarships + mentorship</li>
-          <li><strong>Future-Ready Labs</strong> — digital & vocational skills hubs</li>
-          <li><strong>Read to Lead</strong> — community libraries & literacy</li>
-        </ul>
-      </div>
-      <div class="card">
-        <div class="icon" style="background:var(--terracotta-dim)"></div>
-        <h3>Health & Wellbeing</h3>
-        <ul>
-          <li><strong>Community Health Champions</strong> — trained local health educators</li>
-          <li><strong>Mobile Wellness Clinics & Malaria Response</strong> — maternal health, screenings, vaccines, bed nets & rapid testing referrals</li>
-          <li><strong>Mind & Body Program</strong> — mental health & nutrition education</li>
-        </ul>
-      </div>
-      <div class="card">
-        <div class="icon" style="background:var(--gold)"></div>
-        <h3>Poverty Alleviation & Livelihoods</h3>
-        <ul>
-          <li><strong>Jopetnah Micro-Grants</strong> — seed capital + training</li>
-          <li><strong>Skills-to-Income Pipeline</strong> — training tied to jobs</li>
-          <li><strong>Cooperative Savings Circles</strong> — savings + financial literacy</li>
-        </ul>
-      </div>
-      <div class="card">
-        <div class="icon" style="background:var(--sage)"></div>
-        <h3>Environment & Community Development</h3>
-        <ul>
-          <li><strong>Green Neighborhoods</strong> — tree planting & clean-ups</li>
-          <li><strong>Water & Sanitation Access</strong> — boreholes & hygiene education</li>
-          <li><strong>Climate-Smart Livelihoods</strong> — eco-friendly agribusiness</li>
-        </ul>
-      </div>
-      <div class="card" style="grid-column:1 / -1; border-color:var(--terracotta-dim);">
-        <div class="icon" style="background:linear-gradient(135deg,var(--terracotta-dim) 50%,var(--sage) 50%)"></div>
-        <h3>One Health thread: Animal Health Initiative</h3>
-        <p style="color:var(--muted); font-size:0.94rem; margin:0 0 12px 0;">A planned program across all four pillars that aims to protect families from rabies by vaccinating community dogs and cats, training local animal-health workers and connecting bite victims to treatment. Currently in design; no field activity has started.</p>
-        <a href="animal-health.html">Read the initiative plan</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="support reveal" id="support">
-  <div class="wrap">
-    <span class="eyebrow eyebrow-center">How to support</span>
-    <h2>Three ways to partner with Jopetnah</h2>
-    <div class="support-grid">
-      <div class="support-col">
-        <h3>Individuals & Diaspora</h3>
-        <ul>
-          <li>Send Home Hope giving circle</li>
-          <li>Sponsor-a-Student / Sponsor-a-Family</li>
-          <li>Founder's Circle recurring giving</li>
-        </ul>
-      </div>
-      <div class="support-col">
-        <h3>Corporate Sponsors</h3>
-        <ul>
-          <li>Tiered partnership program</li>
-          <li>Adopt-a-Program sponsorship</li>
-          <li>Employee giving & matching</li>
-        </ul>
-      </div>
-      <div class="support-col">
-        <h3>Institutional Grants</h3>
-        <ul>
-          <li>Active, trackable grants calendar</li>
-          <li>Modular concept notes per pillar</li>
-          <li>Consortium partnerships for scale</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="tiers">
-      <div class="table-scroll" role="region" aria-label="Suggested giving tiers and what each funds" tabindex="0">
-<table>
-        <caption style="text-align:left;color:var(--muted);font-size:0.85rem;margin-bottom:12px;">Suggested giving tiers and what each funds</caption>
-        <thead><tr><th scope="col">Tier</th><th scope="col">Gift</th><th scope="col">Funds</th></tr></thead>
-        <tbody>
-          <tr><td>Friend</td><td class="amt">$25/mo</td><td>One month of a community library slot</td></tr>
-          <tr><td>Champion</td><td class="amt">$100/mo</td><td>One month of a Community Health Champion's outreach</td></tr>
-          <tr><td>Guardian</td><td class="amt">$500</td><td>A full "whole-family" bundled gift</td></tr>
-          <tr><td>Founder's Circle</td><td class="amt">$5,000+/yr</td><td>Named recognition, gala invite, quarterly briefings</td></tr>
-        </tbody>
-      </table>
+<div class="wrap">
+<span class="eyebrow eyebrow-center">Programs</span>
+<h2>Flagship work in every pillar</h2>
+<p class="center">A closer look at proposed programme pathways currently in design and development.</p>
+<div class="card-grid">
+<div class="card">
+<div class="icon" style="background:var(--terracotta)"></div>
+<h3>Education &amp; Youth Development</h3>
+<ul>
+<li><strong>Jopetnah Scholars</strong> — need-based scholarships + mentorship</li>
+<li><strong>Future-Ready Labs</strong> — digital &amp; vocational skills hubs</li>
+<li><strong>Read to Lead</strong> — community libraries &amp; literacy</li>
+</ul>
 </div>
-    </div>
-
-    <div class="diaspora">
-      <p class="tagline">"Send Home Hope." A giving circle for the Jopetnah diaspora community — because home is never as far as it feels.</p>
-      <p class="body">You left, but your community didn't leave your heart. Send Home Hope turns that pull into something concrete: a child staying in school, a mother getting a check-up, a neighbor starting a small business.</p>
-      <div class="table-scroll" role="region" aria-label="Send Home Hope monthly giving tiers" tabindex="0">
-<table>
-        <caption style="text-align:left;color:var(--muted);font-size:0.85rem;margin-bottom:12px;">Send Home Hope monthly giving tiers</caption>
-        <thead><tr><th scope="col">Tier</th><th scope="col">Monthly Gift</th><th scope="col">What it funds</th></tr></thead>
-        <tbody>
-          <tr><td>Seedling</td><td class="amt">$15</td><td>One month of school supplies for one child</td></tr>
-          <tr><td>Rooted</td><td class="amt">$40</td><td>One month of a Community Health Champion's outreach</td></tr>
-          <tr><td>Grove</td><td class="amt">$100</td><td>One family's monthly "whole-family" bundled support</td></tr>
-          <tr><td>Elder</td><td class="amt">$250+</td><td>Recognition in our diaspora newsletter + invite to virtual town halls</td></tr>
-        </tbody>
-      </table>
+<div class="card">
+<div class="icon" style="background:var(--terracotta-dim)"></div>
+<h3>Health &amp; Wellbeing</h3>
+<ul>
+<li><strong>Community Health Champions</strong> — trained local health educators</li>
+<li><strong>Mobile Wellness Clinics &amp; Malaria Response</strong> — maternal health, screenings, vaccines, bed nets &amp; rapid testing referrals</li>
+<li><strong>Mind &amp; Body Program</strong> — mental health &amp; nutrition education</li>
+</ul>
 </div>
-      <p class="note">Why recurring, not one-time? A single $500 gift helps one family for one moment. A $40/month gift helps one family for a whole year — and lets Jopetnah plan programs with confidence instead of guessing what next quarter's funding will look like.</p>
-    </div>
-  </div>
+<div class="card">
+<div class="icon" style="background:var(--gold)"></div>
+<h3>Poverty Alleviation &amp; Livelihoods</h3>
+<ul>
+<li><strong>Jopetnah Micro-Grants</strong> — seed capital + training</li>
+<li><strong>Skills-to-Income Pipeline</strong> — training tied to jobs</li>
+<li><strong>Cooperative Savings Circles</strong> — savings + financial literacy</li>
+</ul>
+</div>
+<div class="card">
+<div class="icon" style="background:var(--sage)"></div>
+<h3>Environment &amp; Community Development</h3>
+<ul>
+<li><strong>Green Neighborhoods</strong> — tree planting &amp; clean-ups</li>
+<li><strong>Water &amp; Sanitation Access</strong> — boreholes &amp; hygiene education</li>
+<li><strong>Climate-Smart Livelihoods</strong> — eco-friendly agribusiness</li>
+</ul>
+</div>
+<div class="card" style="grid-column:1 / -1; border-color:var(--terracotta-dim);">
+<div class="icon" style="background:linear-gradient(135deg,var(--terracotta-dim) 50%,var(--sage) 50%)"></div>
+<h3>One Health thread: Animal Health Initiative</h3>
+<p style="color:var(--muted); font-size:0.94rem; margin:0 0 12px 0;">A planned program across all four pillars that aims to protect families from rabies by vaccinating community dogs and cats, training local animal-health workers and connecting bite victims to treatment. Currently in design; no field activity has started.</p>
+<a href="animal-health.html">Read the initiative plan</a>
+</div>
+</div>
+</div>
 </section>
-
-<section class="support reveal" id="donate">
-  <div class="wrap">
-    <span class="eyebrow eyebrow-center">Donate</span>
-    <h2 style="text-align:center;">Support our work</h2>
-
-    <div style="max-width:720px;margin:0 auto 40px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:28px 32px;">
-      <p style="margin:0;color:var(--cream);font-weight:600;">📢 We are finalizing our bank account and payment processing — direct online donations will be enabled soon.</p>
-      <p style="margin:12px 0 0;color:var(--muted);">We're a founding-stage organization and we'd rather tell you that plainly than show you a donate button that doesn't work yet. In the meantime, here's how you can support us right now:</p>
-    </div>
-
-    <div class="trust-strip">
-      <div class="trust-strip-heading">Our Commitments</div>
-      <div class="item"><span class="check">→</span><span>Governance by an independent Board of Trustees, once formally seated</span></div>
-      <div class="item"><span class="check">→</span><span>Full publication of annual audited financials, from our first fiscal year</span></div>
-      <div class="item"><span class="check">→</span><span>Locally-led program decisions, shaped by the communities we serve</span></div>
-      <div class="item"><span class="check">→</span><span>Directing at least 72% of every dollar to programs</span></div>
-    </div>
-
-    <div class="support-grid">
-      <div class="support-col">
-        <h3>Give In-Kind, Today</h3>
-        <p class="support-note">Books, medical supplies, tools, equipment, professional time, or connections — matched directly to real needs across our four pillars.</p>
-        <a class="btn btn-secondary" style="margin-top:14px;display:inline-block;" href="https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation/blob/main/donor-resources/IN_KIND_GIVING.md">See what we're welcoming</a>
-      </div>
-      <div class="support-col">
-        <h3>Tell Us You're Ready to Give</h3>
-        <p class="support-note">Email us now and we'll notify you the moment cash donations go live — and share our fiscal sponsorship (GlobalGiving) timeline in the meantime.</p>
-        <a class="btn btn-secondary" style="margin-top:14px;display:inline-block;" href="mailto:thejopetnahfoundation@gmail.com?subject=I'd like to give to TJF">Email us</a>
-      </div>
-      <div class="support-col">
-        <h3>Follow Our Progress</h3>
-        <p class="support-note">Watch this repository or follow us on social media — we'll announce the moment bank details and online giving are live.</p>
-        <a class="btn btn-secondary" style="margin-top:14px;display:inline-block;" href="https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation">Watch on GitHub</a>
-        <div class="social-links" style="margin-top:12px;display:flex;gap:14px;flex-wrap:wrap;font-size:0.85rem;">
-          <a href="https://www.facebook.com/profile.php?id=61592047384135" target="_blank" rel="noopener" style="color:var(--gold);">Facebook</a>
-          <a href="https://www.instagram.com/thejopetnahfoundation/" target="_blank" rel="noopener" style="color:var(--gold);">Instagram</a>
-          <a href="https://x.com/FoundationTJF" target="_blank" rel="noopener" style="color:var(--gold);">X</a>
-          <a href="https://www.youtube.com/@TheJopetnahFoundationTJF" target="_blank" rel="noopener" style="color:var(--gold);">YouTube</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+<section class="support reveal" id="support"><div class="wrap">
+<span class="eyebrow">How to engage</span>
+<h2>Three ways to explore collaboration</h2>
+<p class="lede">At this stage, TJF is building relationships, governance and programme readiness. These are exploratory pathways, not active fundraising offers or confirmed programme opportunities.</p>
+<div class="grid-3">
+<article class="card"><h3>Technical contribution</h3><p>Share relevant skills or advice in governance, programme design, health, education, livelihoods, environment, finance or monitoring and evaluation.</p><a href="get-involved.html">Explore ways to help →</a></article>
+<article class="card"><h3>Institutional partnership</h3><p>Discuss potential alignment with a community organisation, academic institution, technical agency or responsible corporate partner.</p><a href="partnerships.html">Explore partnerships →</a></article>
+<article class="card"><h3>Future funding dialogue</h3><p>Institutional and philanthropic partners may introduce themselves while TJF develops the legal and financial systems required for responsible fundraising.</p><a href="donate.html">Read giving status →</a></article>
+</div></div></section>
+<section class="support reveal" id="donate"><div class="wrap">
+<span class="eyebrow">Giving status</span><h2>Online donations are not active.</h2>
+<p class="lede">TJF is developing the legal, governance and financial arrangements needed before any public donation pathway is activated.</p>
+<div class="notice"><strong>Please do not send funds to personal accounts or respond to unofficial payment requests made in TJF’s name.</strong> This website does not provide donation instructions or process payments.</div>
+<div class="hero-actions"><a class="btn btn-primary" href="donate.html">Read our giving status</a><a class="btn btn-secondary" href="transparency.html">Governance &amp; transparency</a></div>
+</div></section>
 <section class="support reveal" id="faq">
-  <div class="wrap">
-    <span class="eyebrow eyebrow-center">FAQ</span>
-    <h2 style="text-align:center;">Questions serious partners ask</h2>
-
-    <div style="max-width:820px;margin:32px auto 0;">
-      <div style="margin-bottom:28px;">
-        <h3 style="color:var(--gold);font-size:1.05rem;margin-bottom:8px;">Why should we trust TJF?</h3>
-        <p style="color:var(--muted);">Trust shouldn't be demanded — it should be earned and demonstrated. That's why our governance documents, financial controls, and decision-making structure are published before we ever make a funding ask, not after. A donor shouldn't have to take our word for it; our systems should provide the evidence.</p>
-      </div>
-      <div style="margin-bottom:28px;">
-        <h3 style="color:var(--gold);font-size:1.05rem;margin-bottom:8px;">Why an integrated model instead of a single-issue charity?</h3>
-        <p style="color:var(--muted);">Because vulnerability rarely has one cause. A child leaves school because a household can't afford basics; a parent can't earn because of poor health; a community stagnates because its environment has degraded. These problems are connected, so our response is too — one gift, working across education, health, livelihoods, and environment for the same family, instead of four separate, disconnected efforts.</p>
-      </div>
-      <div style="margin-bottom:28px;">
-        <h3 style="color:var(--gold);font-size:1.05rem;margin-bottom:8px;">What will our support actually accomplish?</h3>
-        <p style="color:var(--muted);">We'll tell you specifically, not vaguely — see the <a href="#programs" style="color:var(--cream);">Year 1 Pilot Goals</a> under each program pillar for concrete, named targets. We won't tell a donor "your gift will change lives"; we'll tell them what it's intended to accomplish and how we'll report back on whether it did.</p>
-      </div>
-      <div style="margin-bottom:28px;">
-        <h3 style="color:var(--gold);font-size:1.05rem;margin-bottom:8px;">How will we know it worked?</h3>
-        <p style="color:var(--muted);">Every major program will track a clear chain: who we reached → what access they gained → what capability they built → what behavior changed → what outcome resulted. Numbers alone can mislead ("10,000 people trained" says nothing about what happened to them afterward) — so our reporting will combine data with real beneficiary outcomes, not activity counts alone.</p>
-      </div>
-      <div style="margin-bottom:28px;">
-        <h3 style="color:var(--gold);font-size:1.05rem;margin-bottom:8px;">Is TJF able to receive donations right now?</h3>
-        <p style="color:var(--muted);">Not yet online — see <a href="#donate" style="color:var(--cream);">Support Our Work</a> for our current, honest status. We're finalizing our bank account and payment processing. In the meantime, we welcome in-kind gifts and early conversations with anyone ready to give once we're live.</p>
-      </div>
-      <div style="margin-bottom:28px;">
-        <h3 style="color:var(--gold);font-size:1.05rem;margin-bottom:8px;">What can a corporate or institutional partner contribute besides money?</h3>
-        <p style="color:var(--muted);">Technology, equipment, professional expertise, employee volunteering, research capacity, logistics, market access, or mentorship — a partnership with TJF doesn't have to start with "here's a check." It can start with "here's what our organization is good at."</p>
-      </div>
-      <div style="margin-bottom:8px;">
-        <h3 style="color:var(--gold);font-size:1.05rem;margin-bottom:8px;">What makes TJF different from other NGOs?</h3>
-        <p style="color:var(--muted);">Not a claim to be the only organization doing this work — that would be hard to substantiate. Our differentiation is the integrated model itself: connecting interventions across pillars rather than treating each as an isolated project, backed by governance and evidence discipline from day one rather than added later.</p>
-      </div>
-    </div>
-  </div>
+<div class="wrap">
+<span class="eyebrow eyebrow-center">FAQ</span>
+<h2 style="text-align:center;">Questions serious partners ask</h2>
+<div style="max-width:820px;margin:32px auto 0;">
+<div style="margin-bottom:28px;">
+<h3 style="color:var(--gold);font-size:1.05rem;margin-bottom:8px;">Why should we trust TJF?</h3>
+<p style="color:var(--muted);">Trust should be earned. TJF is developing its governance, financial controls and public disclosures. Approved documents will be published when they are ready and authorised for release; draft or internal documents should not be treated as public approvals.</p>
+</div>
+<div style="margin-bottom:28px;">
+<h3 style="color:var(--gold);font-size:1.05rem;margin-bottom:8px;">Why an integrated model instead of a single-issue charity?</h3>
+<p style="color:var(--muted);">Education, health, livelihoods and environmental conditions can reinforce one another. TJF is developing an integrated model intended to consider these connections rather than treating each challenge in isolation.</p>
+</div>
+<div style="margin-bottom:28px;">
+<h3 style="color:var(--gold);font-size:1.05rem;margin-bottom:8px;">What will our support actually accomplish?</h3>
+<p style="color:var(--muted);">Before any pilot begins, TJF intends to define the intended outcomes, indicators, data-collection approach and reporting arrangements. We will distinguish planned targets from results actually measured.</p>
+</div>
+<div style="margin-bottom:28px;">
+<h3 style="color:var(--gold);font-size:1.05rem;margin-bottom:8px;">How will we know it worked?</h3>
+<p style="color:var(--muted);">Every major program will track a clear chain: who we reached → what access they gained → what capability they built → what behavior changed → what outcome resulted. Numbers alone can mislead ("10,000 people trained" says nothing about what happened to them afterward) — so our reporting will combine data with real beneficiary outcomes, not activity counts alone.</p>
+</div>
+<div style="margin-bottom:28px;">
+<h3 style="color:var(--gold);font-size:1.05rem;margin-bottom:8px;">Is TJF able to receive donations right now?</h3>
+<p style="color:var(--muted);">No. Online donations are not active. TJF is developing its legal, governance and financial arrangements before any public giving pathway is activated. Please do not send funds to personal accounts or respond to unofficial payment requests.</p>
+</div>
+<div style="margin-bottom:28px;">
+<h3 style="color:var(--gold);font-size:1.05rem;margin-bottom:8px;">What can a corporate or institutional partner contribute besides money?</h3>
+<p style="color:var(--muted);">Technology, equipment, professional expertise, employee volunteering, research capacity, logistics, market access, or mentorship — a partnership with TJF doesn't have to start with "here's a check." It can start with "here's what our organization is good at."</p>
+</div>
+<div style="margin-bottom:8px;">
+<h3 style="color:var(--gold);font-size:1.05rem;margin-bottom:8px;">What makes TJF different from other NGOs?</h3>
+<p style="color:var(--muted);">Not a claim to be the only organization doing this work — that would be hard to substantiate. Our differentiation is the integrated model itself: connecting interventions across pillars rather than treating each as an isolated project, backed by governance and evidence discipline from day one rather than added later.</p>
+</div>
+</div>
+</div>
 </section>
-
-<section class="roadmap reveal" id="roadmap">
-  <div class="wrap">
-    <span class="eyebrow eyebrow-center">Launch roadmap</span>
-    <h2>Where we are, and where we're headed</h2>
-    <div class="timeline">
-      <div class="phase">
-        <h3>Phase 1 — Foundation</h3>
-        <p>Legal registration, board formation, brand & website launch, one pilot program per pillar.</p>
-      </div>
-      <div class="phase">
-        <h3>Phase 2 — First Partners</h3>
-        <p>First Jopetnah Day giving campaign, 2–3 anchor corporate sponsors signed, first grant applications submitted.</p>
-      </div>
-      <div class="phase">
-        <h3>Phase 3 — Scale</h3>
-        <p>Scale successful pilots, host the first annual Gala, pursue multi-year institutional grants, expand geographically.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
+<section class="roadmap reveal" id="roadmap"><div class="wrap">
+<span class="eyebrow">Readiness roadmap</span><h2>Where we are, and what comes next.</h2>
+<p class="lede">This is an indicative sequence, not a fixed delivery timetable. Each stage depends on legal status, governance decisions, resources, safeguarding and operational readiness.</p>
+<div class="grid-3">
+<article class="card"><span class="kicker">Stage 1 · Foundation</span><h3>Establish the essentials</h3><p>Continue the registration process, formalise governance, approve core controls and prepare programme designs and accountability systems.</p></article>
+<article class="card"><span class="kicker">Stage 2 · Readiness</span><h3>Build responsible partnerships</h3><p>Assess potential partners, confirm community priorities, define pilot plans and budgets, and establish the monitoring and safeguarding arrangements needed before delivery.</p></article>
+<article class="card"><span class="kicker">Stage 3 · Learn and grow</span><h3>Implement only when ready</h3><p>If resources and approvals allow, launch appropriately scoped pilots, review evidence with communities and partners, and publish verified updates.</p></article>
+</div></div></section>
 <section class="cta reveal" id="get-involved">
-  <div class="wrap">
-    <span class="eyebrow">Get involved</span>
-    <h2>Join us at the ground level.</h2>
-    <p>We're in the final stages of our legal registration and looking for founding board members, an incorporation partner, and early corporate and institutional co-founders.</p>
-    <div class="hero-actions">
-      <a class="btn btn-primary" href="mailto:thejopetnahfoundation@gmail.com?subject=I want to get involved with TJF">Email thejopetnahfoundation@gmail.com</a>
-      <a class="btn btn-secondary" href="contact.html">Use the contact form</a>
-      <a class="btn btn-secondary" href="https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation/issues/new/choose">Open an issue on GitHub</a>
-    </div>
-  </div>
+<div class="wrap">
+<span class="eyebrow">Get involved</span>
+<h2>Join us at the ground level.</h2>
+<p>TJF is in its founding stage and is developing its governance and institutional systems. We welcome exploratory conversations with people and organisations who may be able to contribute relevant expertise or future partnership opportunities.</p>
+<div class="hero-actions">
+<a class="btn btn-primary" href="mailto:thejopetnahfoundation@gmail.com?subject=I want to get involved with TJF">Email thejopetnahfoundation@gmail.com</a>
+<a class="btn btn-secondary" href="contact.html">Use the contact form</a>
+<a class="btn btn-secondary" href="https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation/issues/new/choose">Open an issue on GitHub</a>
+</div>
+</div>
 </section>
-
 </main>
 
 <footer>
@@ -759,35 +646,44 @@
     <div class="footer-brand">
       <p class="footer-name">The Jopetnah Foundation</p>
       <p class="footer-tag">Building whole communities, one life at a time.</p>
-      <p class="footer-status"><strong>Founding stage.</strong> Legal registration in Uganda is in progress and online donations are not yet active.</p>
+      <p class="footer-status"><strong>Founding stage.</strong> Legal registration is in progress and online donations are not active. Programmes described on this site are in design unless stated otherwise.</p>
     </div>
     <div class="footer-col">
       <p class="footer-h">Explore</p>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="programs.html">Programs</a></li>
+        <li><a href="about.html">About TJF</a></li>
+        <li><a href="programs.html">Programmes</a></li>
         <li><a href="animal-health.html">Animal Health Initiative</a></li>
-        <li><a href="index.html#get-involved">Get Involved</a></li>
+        <li><a href="impact.html">Impact &amp; learning</a></li>
+        <li><a href="news.html">News &amp; updates</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <p class="footer-h">Work with us</p>
+      <ul>
+        <li><a href="partnerships.html">Partnerships</a></li>
+        <li><a href="get-involved.html">Get involved</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="donate.html">Giving status</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
     <div class="footer-col">
-      <p class="footer-h">Transparency</p>
+      <p class="footer-h">Accountability</p>
       <ul>
-        <li><a href="accountability.html">Accountability</a></li>
-        <li><a href="https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation/blob/main/README.md" target="_blank" rel="noopener">Repository README</a></li>
-        <li><a href="https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation/blob/main/Jopetnah_Foundation_Blueprint.md" target="_blank" rel="noopener">Blueprint</a></li>
-        <li><a href="https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation/tree/main/governance" target="_blank" rel="noopener">Governance documents</a></li>
-        <li><a href="https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation/tree/main/donor-resources" target="_blank" rel="noopener">Donor resources</a></li>
-        <li><a href="https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">Contributing</a></li>
-        <li><a href="https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation/blob/main/LICENSE.md" target="_blank" rel="noopener">License</a></li>
+        <li><a href="transparency.html">Governance &amp; transparency</a></li>
+        <li><a href="safeguarding.html">Safeguarding</a></li>
+        <li><a href="feedback.html">Feedback &amp; concerns</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms of use</a></li>
+        <li><a href="accessibility.html">Accessibility</a></li>
       </ul>
     </div>
     <div class="footer-col">
       <p class="footer-h">Connect</p>
       <ul>
         <li><a href="mailto:thejopetnahfoundation@gmail.com">thejopetnahfoundation@gmail.com</a></li>
+        <li><a href="https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation" target="_blank" rel="noopener">Open repository</a></li>
         <li><a href="https://www.facebook.com/profile.php?id=61592047384135" target="_blank" rel="noopener">Facebook</a></li>
         <li><a href="https://www.linkedin.com/company/135127890" target="_blank" rel="noopener">LinkedIn</a></li>
         <li><a href="https://x.com/FoundationTJF" target="_blank" rel="noopener">X</a></li>
@@ -798,7 +694,7 @@
     </div>
   </div>
   <div class="wrap footer-bottom">
-    <p>&copy; 2026 The Jopetnah Foundation (TJF). All rights reserved.</p>
+    <p>&copy; 2026 The Jopetnah Foundation (TJF). All rights reserved. Uganda.</p>
     <p class="footer-legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="contact.html">Contact</a></p>
   </div>
 </footer>

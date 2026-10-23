@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark light">
+<script>(function(){var t=null;try{t=localStorage.getItem("tjf-theme")}catch(e){}if(t!=="light"&&t!=="dark"){t=(window.matchMedia&&matchMedia("(prefers-color-scheme: light)").matches)?"light":"dark"}document.documentElement.setAttribute("data-theme",t)})();</script>
+
+<title>Accessibility Statement | The Jopetnah Foundation</title>
+
+<meta name="description"
+content="Accessibility principles and ways to report barriers on The Jopetnah Foundation website.">
+
+<link rel="canonical"
+href="https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/accessibility.html">
+
+<meta name="theme-color" content="#180E06">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Accessibility Statement | The Jopetnah Foundation">
+<meta property="og:description"
+content="Accessibility principles and ways to report barriers on The Jopetnah Foundation website.">
+<meta property="og:url"
+content="https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/accessibility.html">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="The Jopetnah Foundation">
+<meta property="og:image"
+content="https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/social-preview.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Accessibility Statement | The Jopetnah Foundation">
+<meta name="twitter:description"
+content="Accessibility principles and ways to report barriers on The Jopetnah Foundation website.">
+<meta name="twitter:image"
+content="https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/social-preview.png">
+
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Fonts load without blocking first paint; text shows in fallback fonts until they arrive (display=swap). -->
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"></noscript>
+
+<link rel="stylesheet" href="assets/css/tokens.css">
+<style>
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
+section[id]{scroll-margin-top:88px;}
+a:focus-visible, button:focus-visible{outline:2px solid var(--gold); outline-offset:3px;}
+.skip-link{
+  position:absolute; left:-999px; top:0; z-index:1000;
+  background:var(--gold); color:var(--bg-deep); font-weight:700;
+  padding:12px 18px; border-radius:0 0 8px 0;
+}
+.skip-link:focus{left:0;}
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--cream);
+  font-family:'Work Sans', Arial, Helvetica, sans-serif;
+  font-size:16px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+
+a{color:var(--gold); text-decoration:none;}
+a:hover{color:var(--cream);}
+
+.wrap{max-width:var(--maxw); margin:0 auto; padding:0 28px;}
+
+h1,h2,h3{
+  font-family:'Fraunces', Georgia, serif;
+  font-weight:600;
+  letter-spacing:-0.01em;
+  line-height:1.15;
+  margin:0 0 0.4em 0;
+}
+h1{font-size:clamp(2.4rem,5vw,3.6rem); max-width:900px; margin-bottom:20px;}
+h2{font-size:2rem; margin-bottom:20px;}
+h3{font-size:1.25rem; margin-bottom:10px;}
+
+.eyebrow{
+  font-family:'IBM Plex Mono', monospace;
+  display:inline-block;
+  text-transform:uppercase;
+  letter-spacing:.14em;
+  font-size:.78rem;
+  color:var(--gold);
+  font-weight:500;
+  margin-bottom:.9em;
+}
+.eyebrow-center{display:block; text-align:center;}
+
+.lede{max-width:780px; color:var(--muted); font-size:1.12rem;}
+
+section{padding:100px 0;}
+@media(max-width:720px){ section{padding:64px 0;} }
+
+.band-surface{background:var(--surface); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+.band-deep{background:var(--bg-deep); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+
+.grid-2{display:grid; grid-template-columns:1fr 1fr; gap:28px;}
+.grid-3{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
+
+.card{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:28px;
+  transition:border-color .2s ease;
+}
+.card:hover{border-color:var(--terracotta-dim);}
+.card h3{color:var(--cream);}
+.card p{color:var(--muted); margin-bottom:0; font-size:0.94rem;}
+.card ul{color:var(--muted); padding-left:20px; font-size:0.94rem;}
+
+.highlight{
+  background:var(--surface-2);
+  border-left:4px solid var(--gold);
+  padding:28px 30px;
+  border-radius:0 var(--radius) var(--radius) 0;
+  margin-top:30px;
+}
+.accent-gold{color:var(--gold);}
+
+.quote{
+  font-family:'Fraunces', Georgia, serif;
+  font-weight:500;
+  font-style:italic;
+  font-size:1.55rem;
+  line-height:1.45;
+  color:var(--cream);
+}
+
+.status-box{
+  background:var(--surface-2);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:22px 26px;
+  margin-top:28px;
+  color:var(--muted);
+  font-size:0.95rem;
+}
+.status-box strong{color:var(--gold);}
+
+.pillars{margin-top:35px;}
+.pillar{
+  padding:24px;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  background:var(--bg);
+  border-top:3px solid var(--pillar-color, var(--gold));
+}
+.pillar h3{margin-bottom:8px; color:var(--pillar-color, var(--cream));}
+.pillar p{color:var(--muted); margin:0; font-size:0.94rem;}
+.pillar.edu{--pillar-color:var(--terracotta);}
+.pillar.health{--pillar-color:var(--terracotta-dim);}
+.pillar.income{--pillar-color:var(--gold);}
+.pillar.env{--pillar-color:var(--sage);}
+
+.timeline{
+  border-left:1px solid var(--line);
+  margin-left:10px;
+  padding-left:30px;
+}
+.timeline-item{margin-bottom:35px; position:relative;}
+.timeline-item::before{
+  content:"";
+  width:11px; height:11px;
+  background:var(--terracotta);
+  border:3px solid var(--bg);
+  border-radius:50%;
+  position:absolute; left:-40px; top:2px;
+}
+.timeline-item h3{margin-bottom:7px; font-size:1.15rem; color:var(--cream);}
+.timeline-item p{color:var(--muted); margin:0; font-size:0.95rem;}
+
+.leadership-table{width:100%; border-collapse:collapse; margin-top:0; font-size:0.92rem;}
+.leadership-table th,
+.leadership-table td{text-align:left; padding:14px 16px; border-bottom:1px solid var(--line);}
+.leadership-table th{
+  font-family:'IBM Plex Mono', monospace;
+  font-size:0.75rem;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  color:var(--muted);
+  font-weight:500;
+}
+.leadership-table td:first-child,
+.leadership-table th:first-child{color:var(--cream); font-weight:600;}
+.leadership-table td{color:var(--muted);}
+.placeholder{color:var(--gold); font-style:italic;}
+
+.cta{
+  text-align:center;
+  padding:100px 0;
+  background:linear-gradient(160deg, var(--surface-2), var(--bg-deep));
+}
+.cta .hero-actions{justify-content:center;}
+
+.hero-actions{display:flex; gap:14px; margin-top:28px; flex-wrap:wrap;}
+.btn{
+  display:inline-block;
+  padding:13px 26px;
+  border-radius:999px;
+  text-decoration:none;
+  font-weight:600;
+  font-size:0.95rem;
+  transition:transform .15s ease, opacity .15s ease;
+}
+.btn:hover{transform:translateY(-1px);}
+.btn-primary{background:var(--terracotta); color:#1A0F07;}
+.btn-secondary{background:transparent; color:var(--cream); border:1px solid var(--line);}
+
+
+/* ---------- NAV ---------- */
+nav{
+  position:sticky; top:0; z-index:50;
+  background:rgba(24,14,6,0.95);
+  border-bottom:1px solid var(--line);
+}
+nav .wrap{min-height:68px; display:flex; align-items:center; gap:28px; position:relative; padding-top:0; padding-bottom:0;}
+.brand{
+  font-family:'Fraunces', Georgia, serif; font-weight:600; font-size:1.05rem;
+  display:flex; align-items:center; gap:10px; color:var(--cream);
+  margin-right:auto;
+}
+.brand span{color:var(--terracotta);}
+.brand-mark{width:31px; height:31px; flex-shrink:0;}
+.navlinks{display:flex; gap:22px; align-items:center; font-size:.92rem;}
+.navlinks a{color:var(--muted);}
+.navlinks a:hover{color:var(--cream);}
+.navcta{
+  background:var(--terracotta); color:var(--bg-deep) !important;
+  padding:9px 18px; border-radius:999px; font-weight:600; font-size:.88rem;
+}
+.nav-toggle{display:none; flex-direction:column; justify-content:center; gap:5px; width:38px; height:38px; background:none; border:1px solid var(--line); border-radius:8px; cursor:pointer; padding:0; margin-left:12px;}
+.nav-toggle span{width:18px; height:2px; background:var(--cream); display:block; margin:0 auto;}
+
+@media(max-width:720px){
+  .nav-toggle{display:flex;}
+  .navlinks{
+    display:none; flex-direction:column; align-items:flex-start; gap:2px;
+    position:absolute; top:100%; left:0; right:0;
+    background:var(--bg-deep); border:1px solid var(--line); border-top:none;
+    padding:8px 28px 18px;
+  }
+  .navlinks.open{display:flex;}
+  .navlinks a{padding:12px 0; width:100%; border-bottom:1px solid var(--line);}
+  .navlinks a:last-child{border-bottom:none;}
+  .grid-2,.grid-3{grid-template-columns:1fr;}
+  .leadership-table{font-size:0.88rem;}
+}
+
+@media(max-width:560px){
+  h1{font-size:2.5rem;}
+  .leadership-table th,
+  .leadership-table td{padding:10px 8px;}
+}
+</style>
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="stylesheet" href="assets/css/theme.css">
+</head>
+
+<body>
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<nav aria-label="Primary">
+  <div class="wrap">
+    <a href="index.html" class="brand" aria-label="The Jopetnah Foundation home">
+      <svg class="brand-mark" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M100,150 C66,126.25 66,74 100,55 C134,74 134,126.25 100,150 Z" fill="#7C9473" transform="rotate(-48 100 150)"/>
+        <path d="M100,150 C66,126.25 66,74 100,55 C134,74 134,126.25 100,150 Z" fill="#D8A63D" transform="rotate(48 100 150)"/>
+        <path d="M100,150 C74,130.5 74,87.6 100,72 C126,87.6 126,130.5 100,150 Z" fill="#C4623C" transform="rotate(-16 100 150)"/>
+        <path d="M100,150 C74,130.5 74,87.6 100,72 C126,87.6 126,130.5 100,150 Z" fill="#8F4A31" transform="rotate(16 100 150)"/>
+        <rect class="stem" x="95" y="150" width="10" height="17" rx="5" fill="#F3E9DC"/>
+      </svg>
+      Jopetnah<span>.</span>
+    </a>
+
+    <div class="navlinks" id="navlinks">
+      <a href="about.html">About</a><a href="programs.html">Programmes</a><a href="impact.html">Impact</a><a href="transparency.html">Transparency</a><a href="resources.html">Resources</a><a href="contact.html">Contact</a>
+    </div>
+
+    <a class="navcta" href="get-involved.html">Get involved</a>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light theme" title="Switch to light theme">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+    <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navlinks" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<main id="main-content">
+
+<header class="hero" style="padding:90px 0 50px; background:radial-gradient(circle at top right, rgba(216,166,61,.12), transparent 30%), linear-gradient(180deg,var(--bg-deep),var(--bg));">
+  <div class="wrap">
+    <span class="eyebrow">Accessibility</span>
+    <h1>A website that works for more people.</h1>
+    <p class="lede">We aim to make this website usable across devices and assistive technologies, and we welcome feedback when something creates a barrier.</p>
+    <div class="hero-actions"><a class="btn btn-primary" href="contact.html">Start a conversation</a><a class="btn btn-secondary" href="transparency.html">How we work</a></div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap page-content" style="max-width:860px;">
+<h2>Our approach</h2><p>We aim to use readable typography, meaningful headings, sufficient contrast, descriptive image text, keyboard-visible focus, skip navigation and responsive layouts. We also aim to respect reduced-motion preferences.</p>
+<h2>Known limitations</h2><p>This website is being improved and may not yet meet every accessibility requirement. Fonts load from Google Fonts, an external service, and fall back to system fonts if it is unavailable. Some page layouts may need further testing. The site offers a light and a dark theme; your choice is kept in your browser only.</p>
+<h2>Report a barrier</h2><p>If you cannot access information or use a feature, email <a href="mailto:thejopetnahfoundation@gmail.com?subject=Website%20accessibility%20feedback">thejopetnahfoundation@gmail.com</a> or use our feedback page. If possible, tell us which page you were using, what you expected to happen and which device or assistive technology you use. Please avoid sharing sensitive personal information.</p>
+<p><a class="btn btn-primary" href="feedback.html">Send accessibility feedback</a></p>
+<p class="site-disclosure"><strong>Current stage:</strong> The Jopetnah Foundation is in its founding stage. Legal registration and institutional systems are in progress; programmes described on this site are in design or development unless explicitly stated otherwise. Online donations are not active.</p>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <p class="footer-name">The Jopetnah Foundation</p>
+      <p class="footer-tag">Building whole communities, one life at a time.</p>
+      <p class="footer-status"><strong>Founding stage.</strong> Legal registration is in progress and online donations are not active. Programmes described on this site are in design unless stated otherwise.</p>
+    </div>
+    <div class="footer-col">
+      <p class="footer-h">Explore</p>
+      <ul>
+        <li><a href="about.html">About TJF</a></li>
+        <li><a href="programs.html">Programmes</a></li>
+        <li><a href="animal-health.html">Animal Health Initiative</a></li>
+        <li><a href="impact.html">Impact &amp; learning</a></li>
+        <li><a href="news.html">News &amp; updates</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <p class="footer-h">Work with us</p>
+      <ul>
+        <li><a href="partnerships.html">Partnerships</a></li>
+        <li><a href="get-involved.html">Get involved</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="donate.html">Giving status</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <p class="footer-h">Accountability</p>
+      <ul>
+        <li><a href="transparency.html">Governance &amp; transparency</a></li>
+        <li><a href="safeguarding.html">Safeguarding</a></li>
+        <li><a href="feedback.html">Feedback &amp; concerns</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms of use</a></li>
+        <li><a href="accessibility.html">Accessibility</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <p class="footer-h">Connect</p>
+      <ul>
+        <li><a href="mailto:thejopetnahfoundation@gmail.com">thejopetnahfoundation@gmail.com</a></li>
+        <li><a href="https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation" target="_blank" rel="noopener">Open repository</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=61592047384135" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.linkedin.com/company/135127890" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://x.com/FoundationTJF" target="_blank" rel="noopener">X</a></li>
+        <li><a href="https://www.youtube.com/@TheJopetnahFoundationTJF" target="_blank" rel="noopener">YouTube</a></li>
+        <li><a href="https://www.instagram.com/thejopetnahfoundation/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.tiktok.com/@thejopetnahfoundationtjf" target="_blank" rel="noopener">TikTok</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>&copy; 2026 The Jopetnah Foundation (TJF). All rights reserved. Uganda.</p>
+    <p class="footer-legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="contact.html">Contact</a></p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/analytics.js" defer></script>
+
+</body>
+</html>

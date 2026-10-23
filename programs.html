@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark light">
+<script>(function(){var t=null;try{t=localStorage.getItem("tjf-theme")}catch(e){}if(t!=="light"&&t!=="dark"){t=(window.matchMedia&&matchMedia("(prefers-color-scheme: light)").matches)?"light":"dark"}document.documentElement.setAttribute("data-theme",t)})();</script>
 
 <title>TJF Programs | Education, Health, Livelihoods & Environment</title>
 
@@ -327,6 +329,7 @@ nav .wrap{min-height:68px; display:flex; align-items:center; gap:28px; position:
 }
 </style>
 <link rel="stylesheet" href="assets/css/site.css">
+<link rel="stylesheet" href="assets/css/theme.css">
 </head>
 
 <body>
@@ -334,28 +337,26 @@ nav .wrap{min-height:68px; display:flex; align-items:center; gap:28px; position:
 
 <nav aria-label="Primary">
   <div class="wrap">
-    <a href="index.html" class="brand">
+    <a href="index.html" class="brand" aria-label="The Jopetnah Foundation home">
       <svg class="brand-mark" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <path d="M100,150 C66,126.25 66,74 100,55 C134,74 134,126.25 100,150 Z" fill="#7C9473" transform="rotate(-48 100 150)"/>
         <path d="M100,150 C66,126.25 66,74 100,55 C134,74 134,126.25 100,150 Z" fill="#D8A63D" transform="rotate(48 100 150)"/>
         <path d="M100,150 C74,130.5 74,87.6 100,72 C126,87.6 126,130.5 100,150 Z" fill="#C4623C" transform="rotate(-16 100 150)"/>
         <path d="M100,150 C74,130.5 74,87.6 100,72 C126,87.6 126,130.5 100,150 Z" fill="#8F4A31" transform="rotate(16 100 150)"/>
-        <rect x="95" y="150" width="10" height="17" rx="5" fill="#F3E9DC"/>
+        <rect class="stem" x="95" y="150" width="10" height="17" rx="5" fill="#F3E9DC"/>
       </svg>
       Jopetnah<span>.</span>
     </a>
 
     <div class="navlinks" id="navlinks">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="programs.html" aria-current="page">Programs</a>
-      <a href="index.html#support">Support</a>
-      <a href="index.html#donate">Donate</a>
-      <a href="index.html#faq">FAQ</a>
-      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a><a href="programs.html" aria-current="page">Programmes</a><a href="impact.html">Impact</a><a href="transparency.html">Transparency</a><a href="resources.html">Resources</a><a href="contact.html">Contact</a>
     </div>
 
-    <a class="navcta" href="index.html#get-involved">Get Involved</a>
+    <a class="navcta" href="get-involved.html">Get involved</a>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light theme" title="Switch to light theme">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
     <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navlinks" aria-label="Toggle navigation menu">
       <span></span><span></span><span></span>
     </button>
@@ -383,7 +384,7 @@ nav .wrap{min-height:68px; display:flex; align-items:center; gap:28px; position:
     </div>
 
     <div class="status-box">
-      <strong>Current Status (August 2026):</strong>
+      <strong>Current status:</strong>
       All programs listed below are in the design stage. Legal registration in Uganda
       is in progress. First pilots are planned once governance, safeguarding systems
       and initial partnerships are in place. No programs are currently operational.
@@ -732,57 +733,39 @@ nav .wrap{min-height:68px; display:flex; align-items:center; gap:28px; position:
 <!-- IMPLEMENTATION TIMELINE -->
 <section id="timeline" class="band-surface">
   <div class="wrap">
-    <span class="eyebrow">Implementation Timeline</span>
-    <h2>From design to measurable impact.</h2>
+    <span class="eyebrow">Indicative timeline</span>
+    <h2>From design to responsible delivery.</h2>
     <p class="lede">
-      TJF follows a deliberate, staged approach. We prioritise institutional readiness
-      and evidence before scale.
+      The sequence below is a planning framework, not a commitment to dates or delivery. Timing depends on legal
+      registration, governance approvals, funding, community priorities, safeguarding and partner readiness.
     </p>
 
     <div class="timeline" style="margin-top:40px;">
       <div class="timeline-item current">
-        <div class="phase-label">Phase 1 — Current</div>
-        <h3>Foundation (2026)</h3>
-        <p>
-          Complete legal registration as a Company Limited by Guarantee and NGO in Uganda.
-          Form the founding Board, finalise core policies (safeguarding, finance, governance),
-          build digital presence, and design the first pilot programs in each pillar.
-        </p>
+        <div class="phase-label">Stage 1 &mdash; Current</div>
+        <h3>Foundation and readiness</h3>
+        <p>Continue the registration process; form and orient governance structures; approve essential controls; develop programme designs, budgets and monitoring plans.</p>
       </div>
-
       <div class="timeline-item">
-        <div class="phase-label">Phase 2</div>
-        <h3>Demonstration (2026–2027)</h3>
-        <p>
-          Launch one carefully selected pilot per pillar. Gather baseline data,
-          test delivery models, strengthen monitoring systems, and document early learning.
-          Secure first institutional and corporate partners.
-        </p>
+        <div class="phase-label">Stage 2</div>
+        <h3>Pilot preparation</h3>
+        <p>Confirm community priorities, assess partners, establish baselines, define safeguards and secure appropriate resources before deciding whether to launch pilots.</p>
       </div>
-
       <div class="timeline-item">
-        <div class="phase-label">Phase 3</div>
-        <h3>Consolidation (2027–2028)</h3>
-        <p>
-          Strengthen successful pilots, deepen community ownership, improve cost-effectiveness,
-          and expand partnerships. Publish the first public impact and learning report.
-        </p>
+        <div class="phase-label">Stage 3</div>
+        <h3>Learning and adaptation</h3>
+        <p>If pilots proceed, review delivery quality and evidence with communities and partners; adapt the approach and publish verified learning where appropriate.</p>
       </div>
-
       <div class="timeline-item">
-        <div class="phase-label">Phase 4</div>
-        <h3>Responsible Scale (2028 onwards)</h3>
-        <p>
-          Expand only where evidence, local capacity, partnerships and sustainable funding
-          justify broader reach. Maintain rigorous outcome measurement and continuous adaptation.
-        </p>
+        <div class="phase-label">Stage 4</div>
+        <h3>Responsible scale</h3>
+        <p>Consider expansion only where evidence, local capacity, partnership quality and sustainable funding justify broader reach.</p>
       </div>
     </div>
 
     <div class="callout" style="margin-top:40px;">
       <strong>Note:</strong>
-      Exact timing depends on the completion of legal registration, availability of seed funding,
-      and the strength of early partnerships. TJF will update this timeline publicly as milestones are reached.
+      We will update this page publicly as verified milestones are reached.
     </div>
   </div>
 </section>
@@ -854,35 +837,44 @@ nav .wrap{min-height:68px; display:flex; align-items:center; gap:28px; position:
     <div class="footer-brand">
       <p class="footer-name">The Jopetnah Foundation</p>
       <p class="footer-tag">Building whole communities, one life at a time.</p>
-      <p class="footer-status"><strong>Founding stage.</strong> Legal registration in Uganda is in progress and online donations are not yet active.</p>
+      <p class="footer-status"><strong>Founding stage.</strong> Legal registration is in progress and online donations are not active. Programmes described on this site are in design unless stated otherwise.</p>
     </div>
     <div class="footer-col">
       <p class="footer-h">Explore</p>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="programs.html">Programs</a></li>
+        <li><a href="about.html">About TJF</a></li>
+        <li><a href="programs.html">Programmes</a></li>
         <li><a href="animal-health.html">Animal Health Initiative</a></li>
-        <li><a href="index.html#get-involved">Get Involved</a></li>
+        <li><a href="impact.html">Impact &amp; learning</a></li>
+        <li><a href="news.html">News &amp; updates</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <p class="footer-h">Work with us</p>
+      <ul>
+        <li><a href="partnerships.html">Partnerships</a></li>
+        <li><a href="get-involved.html">Get involved</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="donate.html">Giving status</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
     <div class="footer-col">
-      <p class="footer-h">Transparency</p>
+      <p class="footer-h">Accountability</p>
       <ul>
-        <li><a href="accountability.html">Accountability</a></li>
-        <li><a href="https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation/blob/main/README.md" target="_blank" rel="noopener">Repository README</a></li>
-        <li><a href="https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation/blob/main/Jopetnah_Foundation_Blueprint.md" target="_blank" rel="noopener">Blueprint</a></li>
-        <li><a href="https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation/tree/main/governance" target="_blank" rel="noopener">Governance documents</a></li>
-        <li><a href="https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation/tree/main/donor-resources" target="_blank" rel="noopener">Donor resources</a></li>
-        <li><a href="https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">Contributing</a></li>
-        <li><a href="https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation/blob/main/LICENSE.md" target="_blank" rel="noopener">License</a></li>
+        <li><a href="transparency.html">Governance &amp; transparency</a></li>
+        <li><a href="safeguarding.html">Safeguarding</a></li>
+        <li><a href="feedback.html">Feedback &amp; concerns</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms of use</a></li>
+        <li><a href="accessibility.html">Accessibility</a></li>
       </ul>
     </div>
     <div class="footer-col">
       <p class="footer-h">Connect</p>
       <ul>
         <li><a href="mailto:thejopetnahfoundation@gmail.com">thejopetnahfoundation@gmail.com</a></li>
+        <li><a href="https://github.com/The-Jopetnah-Foundation-TJF/the-jopetnah-foundation" target="_blank" rel="noopener">Open repository</a></li>
         <li><a href="https://www.facebook.com/profile.php?id=61592047384135" target="_blank" rel="noopener">Facebook</a></li>
         <li><a href="https://www.linkedin.com/company/135127890" target="_blank" rel="noopener">LinkedIn</a></li>
         <li><a href="https://x.com/FoundationTJF" target="_blank" rel="noopener">X</a></li>
@@ -893,7 +885,7 @@ nav .wrap{min-height:68px; display:flex; align-items:center; gap:28px; position:
     </div>
   </div>
   <div class="wrap footer-bottom">
-    <p>&copy; 2026 The Jopetnah Foundation (TJF). All rights reserved.</p>
+    <p>&copy; 2026 The Jopetnah Foundation (TJF). All rights reserved. Uganda.</p>
     <p class="footer-legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="contact.html">Contact</a></p>
   </div>
 </footer>
