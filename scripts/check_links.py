@@ -41,6 +41,7 @@ class Page(HTMLParser):
         self._in_title = False
         self.desc = None
         self.canonical = None
+        self.noindex = False
         self.lang = None
         self.jsonld = []
         self._in_ld = False
@@ -55,6 +56,7 @@ class Page(HTMLParser):
         if tag == 'title': self._in_title = True
         if tag == 'meta':
             if a.get('name') == 'description': self.desc = a.get('content', '')
+            if (a.get('name') or '').lower() == 'robots' and 'noindex' in (a.get('content') or '').lower(): self.noindex = True
             if a.get('property') in ('og:image', 'og:url') or a.get('name') == 'twitter:image':
                 self.refs.append(('content', a.get('content', ''), 'meta'))
         if tag == 'link':
@@ -114,7 +116,8 @@ def main():
         if not (p.desc or '').strip(): err(f, 'missing meta description')
         if p.h1 != 1: err(f, f'expected exactly one <h1>, found {p.h1}')
         want = SITE if f == 'index.html' else SITE + f
-        if p.canonical != want: err(f, f'canonical is {p.canonical!r}, expected {want!r}')
+        # noindex pages (404, moved-page stubs) are not search targets: no canonical or sitemap rule
+        if not p.noindex and p.canonical != want: err(f, f'canonical is {p.canonical!r}, expected {want!r}')
         for i, block in enumerate(p.jsonld, 1):
             try: json.loads(block)
             except ValueError as e: err(f, f'JSON-LD block {i} is not valid JSON ({e})')
@@ -169,7 +172,9 @@ def main():
                 if not os.path.exists(os.path.join(ROOT, m)): err('sitemap.xml', f'lists a page that does not exist: {u}')
         except ET.ParseError as e: err('sitemap.xml', f'invalid XML ({e})')
         for f in parsed:
-            if f not in listed: err('sitemap.xml', f'{f} is not listed in the sitemap')
+            if parsed[f].noindex:
+                if f in listed: err('sitemap.xml', f'{f} is noindex but listed in the sitemap')
+            elif f not in listed: err('sitemap.xml', f'{f} is not listed in the sitemap')
 
     # -- external
     ext_results = []
