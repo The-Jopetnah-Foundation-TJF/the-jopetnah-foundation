@@ -15,7 +15,8 @@
  * Respects Do Not Track and Global Privacy Control: if either is on, nothing loads.
  *
  * Events recorded (no personal data is attached to any of them):
- *   Email click, GitHub click, Social click, Get Involved click,
+ *   Email click, Call click, Text click, WhatsApp click, GitHub click,
+ *   Social click, Get Involved click,
  *   Contact form opened (page view of contact.html), Contact form submitted.
  */
 (function(){
@@ -56,6 +57,9 @@
     if(!a) return;
     var href = a.getAttribute('href') || '';
     if(href.indexOf('mailto:') === 0) track('Email click');
+    else if(href.indexOf('tel:') === 0) track('Call click');
+    else if(href.indexOf('sms:') === 0) track('Text click');
+    else if(href.indexOf('wa.me/') !== -1) track('WhatsApp click');
     else if(/\/\/(www\.)?(facebook|linkedin|x|youtube|instagram|tiktok)\.com\//.test(href)) track('Social click');
     else if(href.indexOf('github.com') !== -1) track('GitHub click');
     else if(a.classList.contains('navcta') || href.indexOf('#get-involved') !== -1) track('Get Involved click');

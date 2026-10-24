@@ -44,6 +44,16 @@
     else if(mq.addListener) mq.addListener(onChange);
   }
 
+  /* ---------- Floating contact button ---------- */
+  var fab = document.getElementById('fab'), fabBtn = document.getElementById('fabToggle');
+  if(fab && fabBtn){
+    document.body.setAttribute('data-fab','');
+    var setFab = function(open){ fab.setAttribute('data-open', open ? 'true' : 'false'); fabBtn.setAttribute('aria-expanded', open ? 'true' : 'false'); };
+    fabBtn.addEventListener('click', function(){ setFab(fab.getAttribute('data-open') !== 'true'); });
+    document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && fab.getAttribute('data-open') === 'true'){ setFab(false); fabBtn.focus(); } });
+    document.addEventListener('click', function(e){ if(!fab.contains(e.target)) setFab(false); });
+  }
+
   /* ---------- Mobile navigation ---------- */
   var toggle = document.getElementById('navToggle');
   var links = document.getElementById('navlinks');

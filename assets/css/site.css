@@ -226,3 +226,46 @@ main p a:not(.btn):hover, main li a:not(.btn):hover, main td a:not(.btn):hover{t
   #roadmap .grid-3::before{top:0; bottom:0; left:12px; right:auto; width:2px; height:auto; background:linear-gradient(180deg,var(--terracotta),var(--gold),var(--sage));}
   #roadmap .grid-3 > .card::before{top:20px; left:-40px;}
 }
+
+/* Founder page */
+.founder-intro{display:grid; grid-template-columns:240px 1fr; gap:32px; align-items:start;}
+.founder-photo{margin:0;}
+.founder-photo img{display:block; width:100%; height:auto; aspect-ratio:1/1; object-fit:cover; border-radius:var(--radius); border:1px solid var(--line);}
+.founder-photo figcaption{color:var(--muted); font-size:.82rem; margin-top:8px;}
+.signature-quote{margin:2.2rem 0; padding:22px 26px; border-left:4px solid var(--gold); background:var(--surface-2); border-radius:0 var(--radius) var(--radius) 0;}
+.signature-quote p{font-family:'Fraunces', Georgia, serif; font-size:1.25rem; line-height:1.5; color:var(--cream); margin:0; max-width:none;}
+.signature-quote .quote-by{margin:12px 0 0; color:var(--muted); font-size:.9rem; font-family:inherit;}
+@media (max-width:720px){ .founder-intro{grid-template-columns:1fr;} .founder-photo{max-width:260px;} }
+
+/* Floating contact button (call, WhatsApp, SMS) */
+.fab{position:fixed; right:18px; bottom:18px; z-index:60; display:flex; flex-direction:column; align-items:flex-end; gap:10px;}
+.fab-menu{list-style:none; margin:0; padding:0; display:none; flex-direction:column; gap:10px; align-items:flex-end;}
+.fab[data-open="true"] .fab-menu{display:flex;}
+.fab-item{display:inline-flex; align-items:center; gap:10px; min-height:48px; padding:0 18px 0 14px; border-radius:999px; font-weight:600; font-size:.95rem; text-decoration:none; color:#fff; box-shadow:0 6px 18px rgba(0,0,0,.28);}
+.fab-item svg{width:22px; height:22px; flex-shrink:0;}
+.fab-wa{background:#1B7F45;}
+.fab-call{background:#A84A28;}
+.fab-sms{background:#46603F;}
+.fab-item:hover{filter:brightness(1.08);}
+.fab-item:focus-visible, .fab-toggle:focus-visible{outline:3px solid var(--gold); outline-offset:3px;}
+.fab-toggle{display:inline-flex; align-items:center; gap:10px; min-height:52px; padding:0 20px 0 16px; border:0; border-radius:999px; cursor:pointer; background:var(--terracotta); color:var(--ink-on-accent); font:inherit; font-weight:700; box-shadow:0 8px 22px rgba(0,0,0,.32);}
+.fab-toggle svg{width:24px; height:24px;}
+.fab-toggle .fab-icon-close{display:none;}
+.fab[data-open="true"] .fab-icon-open{display:none;}
+.fab[data-open="true"] .fab-icon-close{display:block;}
+@media (max-width:480px){ .fab{right:12px; bottom:12px;} .fab-label{display:none;} .fab-toggle{padding:0 14px; min-width:52px; justify-content:center;} }
+@media (prefers-reduced-motion:no-preference){ .fab-item{animation:fabIn .18s ease-out;} @keyframes fabIn{from{opacity:0; transform:translateY(8px);} to{opacity:1; transform:none;}} }
+body[data-fab] footer{padding-bottom:84px;}
+
+/* Print: clean pages for partners who print */
+@media print{
+  nav[aria-label="Primary"], .fab, .skip-link, .theme-toggle, .hero-banner, .hero-actions, .jump-links, footer .footer-col{display:none !important;}
+  html,body{background:#fff !important; color:#000 !important;}
+  *{color:#000 !important; background:transparent !important; box-shadow:none !important; text-shadow:none !important;}
+  a{text-decoration:underline;}
+  main a[href^="http"]::after, main a[href^="mailto:"]::after{content:" (" attr(href) ")"; font-size:.8em; word-break:break-all;}
+  .card, .panel, .program-card, .notice, .status-box, .highlight{border:1px solid #999 !important; break-inside:avoid;}
+  h1,h2,h3{break-after:avoid;}
+  section{padding:16pt 0 !important;}
+  footer{border-top:1px solid #999; padding:12pt 0 !important;}
+}
