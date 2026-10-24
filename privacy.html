@@ -327,6 +327,7 @@ nav .wrap{min-height:68px; display:flex; align-items:center; gap:28px; position:
     <p><strong>Technical data.</strong> This site is hosted on GitHub Pages. Like most web hosts, GitHub may process technical data such as IP addresses and browser details when you load a page. We do not receive or control this data. See GitHub's privacy statement for details.</p>
     <p><strong>Fonts.</strong> Pages load typefaces from Google Fonts, so your browser connects to Google's servers when a page opens. See Google's privacy policy for how that data is handled.</p>
     <p><strong>Cookies.</strong> We do not set cookies, and we run no advertising tools.</p>
+    <p><strong>Call, text and WhatsApp.</strong> The floating contact button on the home page opens a phone call, a text message or a WhatsApp chat to our number. These happen in your phone or in WhatsApp, not on this site, so your number and message go to us through your carrier or through WhatsApp (a service run by Meta, with its own privacy policy). We use them only to reply to you. Please do not send sensitive personal information this way.</p>
     <p><strong>Theme choice.</strong> If you switch between the light and dark theme, your choice is saved in your own browser (in local storage, under the name <code>tjf-theme</code>) so the site looks the same next time. It is never sent to us. Clear your browser&rsquo;s site data to remove it.</p>
     <p><strong>Visitor counts.</strong> We use <a href="https://www.goatcounter.com/" target="_blank" rel="noopener">GoatCounter</a>, a privacy-focused analytics service, to see which pages are read and which links are used, so we can improve the site. It does not use cookies or store anything in your browser. It does not store your IP address; it uses your IP address and browser type only briefly in memory to avoid counting the same visit twice, and its provider says it does not keep them. It records the page you viewed, the site that referred you, your browser, screen size and approximate country, as counts. We also count clicks on email, social media, GitHub and Get Involved links, and use of the contact form, without recording who clicked. Nothing is linked to your name or email. If your browser sends a Do Not Track or Global Privacy Control signal, we do not load it at all. Details are in <a href="https://www.goatcounter.com/privacy" target="_blank" rel="noopener">GoatCounter&rsquo;s privacy policy</a>. If we change this, we will update this page first.</p>
 
@@ -364,6 +365,7 @@ nav .wrap{min-height:68px; display:flex; align-items:center; gap:28px; position:
       <p class="footer-h">Explore</p>
       <ul>
         <li><a href="about.html">About TJF</a></li>
+        <li><a href="founder.html">Founder &amp; Executive Director</a></li>
         <li><a href="programs.html">Programmes</a></li>
         <li><a href="animal-health.html">Animal Health Initiative</a></li>
         <li><a href="impact.html">Impact &amp; learning</a></li>
@@ -376,6 +378,7 @@ nav .wrap{min-height:68px; display:flex; align-items:center; gap:28px; position:
         <li><a href="partnerships.html">Partnerships</a></li>
         <li><a href="get-involved.html">Get involved</a></li>
         <li><a href="resources.html">Resources</a></li>
+        <li><a href="media.html">Media kit</a></li>
         <li><a href="donate.html">Giving status</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -411,6 +414,18 @@ nav .wrap{min-height:68px; display:flex; align-items:center; gap:28px; position:
   </div>
 </footer>
 
+<div class="fab" id="fab" data-open="false">
+  <ul class="fab-menu" id="fabMenu">
+    <li><a class="fab-item fab-wa" href="https://wa.me/256782520058?text=Hello%2C%20I%27d%20like%20to%20learn%20more%20about%20The%20Jopetnah%20Foundation." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-1.500-.7-2.500-1.300-3.400-2.900-.3-.4.2-.4.700-1.300.1-.2 0-.3 0-.5l-.8-1.900c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.300-.8.800-1.100 1.800-.9 2.800.3 1.100.9 2.100 1.700 3 1.300 1.500 2.900 2.600 4.800 3.200 1 .3 1.900.3 2.700.2.800-.1 1.900-.8 2.100-1.500.3-.7.3-1.400.2-1.500-.1-.1-.3-.2-.5-.3z"/></svg><span>WhatsApp</span></a></li>
+    <li><a class="fab-item fab-call" href="tel:+256782520058"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.600 10.800a15 15 0 0 0 6.600 6.600l2.200-2.200c.3-.3.700-.4 1-.2 1.100.4 2.300.6 3.600.6.600 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.500c.6 0 1 .4 1 1 0 1.300.2 2.500.6 3.600.1.300 0 .7-.2 1l-2.300 2.200z"/></svg><span>Call</span></a></li>
+    <li><a class="fab-item fab-sms" href="sms:+256782520058"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H8l-5 4V6a2 2 0 0 1 2-2zm3 5v2h10V9H7zm0 4v2h7v-2H7z"/></svg><span>Text (SMS)</span></a></li>
+  </ul>
+  <button class="fab-toggle" id="fabToggle" type="button" aria-expanded="false" aria-controls="fabMenu" aria-label="Contact us by call, WhatsApp or text">
+    <svg class="fab-icon-open" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H8l-5 4V6a2 2 0 0 1 2-2z"/></svg>
+    <svg class="fab-icon-close" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.500" stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></svg>
+    <span class="fab-label">Talk to us</span>
+  </button>
+</div>
 <script src="assets/js/main.js" defer></script>
 <script src="assets/js/analytics.js" defer></script>
 
