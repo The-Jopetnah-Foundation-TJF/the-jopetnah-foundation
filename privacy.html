@@ -40,11 +40,9 @@ content="https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/s
 
 
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!-- Fonts load without blocking first paint; text shows in fallback fonts until they arrive (display=swap). -->
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"></noscript>
+<link rel="preload" href="assets/fonts/fraunces-var.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="assets/fonts/worksans-var.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="assets/css/fonts.css">
 
 <link rel="stylesheet" href="assets/css/tokens.css">
 <style>
@@ -325,7 +323,7 @@ nav .wrap{min-height:68px; display:flex; align-items:center; gap:28px; position:
     <p><strong>Emails you send us.</strong> If you contact us at thejopetnahfoundation@gmail.com, we receive your email address, your name if you include it, and whatever you write. This is the only personal information we knowingly collect through this website.</p>
     <p><strong>Contact form.</strong> The form on our <a href="contact.html">contact page</a> does not send anything to a server. It prepares an email in your own email app, and nothing reaches us until you press send there.</p>
     <p><strong>Technical data.</strong> This site is hosted on GitHub Pages. Like most web hosts, GitHub may process technical data such as IP addresses and browser details when you load a page. We do not receive or control this data. See GitHub's privacy statement for details.</p>
-    <p><strong>Fonts.</strong> Pages load typefaces from Google Fonts, so your browser connects to Google's servers when a page opens. See Google's privacy policy for how that data is handled.</p>
+    <p><strong>Fonts.</strong> Typefaces are hosted on this website, so opening a page does not make your browser contact Google or any other font provider.</p>
     <p><strong>Cookies.</strong> We do not set cookies, and we run no advertising tools.</p>
     <p><strong>Call, text and WhatsApp.</strong> The floating contact button on the home page opens a phone call, a text message or a WhatsApp chat to our number. These happen in your phone or in WhatsApp, not on this site, so your number and message go to us through your carrier or through WhatsApp (a service run by Meta, with its own privacy policy). We use them only to reply to you. Please do not send sensitive personal information this way.</p>
     <p><strong>Theme choice.</strong> If you switch between the light and dark theme, your choice is saved in your own browser (in local storage, under the name <code>tjf-theme</code>) so the site looks the same next time. It is never sent to us. Clear your browser&rsquo;s site data to remove it.</p>
