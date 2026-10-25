@@ -14,6 +14,23 @@
   var copyBtn = document.getElementById('copyBtn');
   var copyStatus = document.getElementById('copyStatus');
 
+
+  // Prefill from ?audience=inkind|volunteer|donor... and show guidance in the message box.
+  var HINTS = {
+    inkind: 'Tell us what you would like to give (for example books, shelving, furniture, solar equipment), roughly how much, its condition, where it is, and whether you can help with transport. Please do not ship anything until we have replied.',
+    volunteer: 'Tell us your skills or profession, how many hours you could offer, whether you can work remotely or in person, and any relevant experience. All volunteers go through TJF safeguarding checks before any contact with children.',
+    donor: 'Tell us what you are interested in supporting and anything you would need to see first. Online donations are not active yet.',
+    partner: 'Tell us about your organisation and how you would like to work with TJF.'
+  };
+  var sel = form.elements.audience, msg = form.elements.message;
+  function applyHint(){ msg.placeholder = HINTS[sel.value] || ''; }
+  try{
+    var q = new URLSearchParams(window.location.search).get('audience');
+    if(q && sel.querySelector('option[value="'+q+'"]')) sel.value = q;
+  }catch(e){}
+  sel.addEventListener('change', applyHint);
+  applyHint();
+
   function fieldWrap(el){ return el.closest('.field'); }
 
   function validate(){
