@@ -5,7 +5,7 @@ version: 1.0
 status: Approved
 classification: Public
 document_owner: Executive Director
-approved_by: Board of Trustees
+approved_by: "Executive Director, pending Board ratification"
 effective_date: TBD
 review_cycle: Annual
 related_documents:
@@ -35,7 +35,7 @@ Our work is guided by principles of integrity, accountability, inclusion, innova
 | Type | Non-profit Foundation |
 | Headquarters | Kampala, Uganda *(update if required)* |
 | Geographic Focus | Uganda with potential regional expansion |
-| Legal Status | Registered Foundation *(update once registration is complete)* |
+| Legal Status | Company Limited by Guarantee and NGO in Uganda *(in the final stages of registration; update once complete)* |
 | Governance | Board of Trustees |
 | Executive Leadership | Executive Director |
 | Website | https://www.jopetnah.com |
