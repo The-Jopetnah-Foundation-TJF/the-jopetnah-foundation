@@ -5,7 +5,7 @@ version: 1.0
 status: Approved
 classification: Public
 document_owner: Monitoring, Evaluation, Accountability & Learning (MEAL)
-approved_by: Board of Trustees
+approved_by: "Executive Director, pending Board ratification"
 effective_date: TBD
 review_cycle: Biennial
 related_documents:
