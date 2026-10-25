@@ -1,0 +1,350 @@
+/*
+ * Shared site styles: navigation, footer, accessibility refinements and
+ * components used by the supporting pages. Loaded after each page's inline
+ * styles and before theme.css. Uses only the design tokens, so it works in
+ * both the dark and light themes.
+ */
+
+/* ---------- Navigation (one definition for every page) ---------- */
+nav[aria-label="Primary"]{
+  position:sticky; top:0; z-index:50;
+  background:var(--nav-bg);
+  -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+nav[aria-label="Primary"] > .wrap{
+  display:flex; align-items:center; justify-content:flex-start; gap:18px;
+  min-height:68px; padding-top:0; padding-bottom:0; position:relative;
+}
+nav[aria-label="Primary"] .brand{
+  font-family:'Fraunces', Georgia, serif; font-weight:600; font-size:1.1rem;
+  display:flex; align-items:center; gap:10px; color:var(--cream);
+  margin-right:auto; text-decoration:none; white-space:nowrap;
+}
+nav[aria-label="Primary"] .brand span{color:var(--terracotta); margin-left:-10px;}
+nav[aria-label="Primary"] .brand-mark{width:31px; height:31px; flex-shrink:0;}
+nav[aria-label="Primary"] .navlinks{display:flex; gap:20px; align-items:center; font-size:.92rem;}
+nav[aria-label="Primary"] .navlinks a{color:var(--muted); text-decoration:none; padding:4px 0; white-space:nowrap;}
+nav[aria-label="Primary"] .navlinks a:hover{color:var(--cream);}
+nav[aria-label="Primary"] .navlinks a[aria-current="page"]{
+  color:var(--cream); text-decoration:underline; text-decoration-color:var(--gold);
+  text-decoration-thickness:2px; text-underline-offset:6px;
+}
+nav[aria-label="Primary"] .navcta{
+  background:var(--terracotta); font-weight:600; font-size:.88rem;
+  padding:9px 18px; border-radius:999px; text-decoration:none; white-space:nowrap;
+}
+nav[aria-label="Primary"] .nav-toggle{
+  display:none; flex-direction:column; justify-content:center; gap:5px;
+  width:38px; height:38px; background:none; border:1px solid var(--line);
+  border-radius:8px; cursor:pointer; padding:0;
+}
+nav[aria-label="Primary"] .nav-toggle span{width:18px; height:2px; background:var(--cream); display:block; margin:0 auto;}
+nav[aria-label="Primary"] .nav-toggle:focus-visible{outline:2px solid var(--gold); outline-offset:3px;}
+
+@media (max-width:1040px){
+  nav[aria-label="Primary"] .nav-toggle{display:flex;}
+  nav[aria-label="Primary"] .navlinks{
+    display:none; flex-direction:column; align-items:flex-start; gap:2px;
+    position:absolute; top:100%; left:0; right:0;
+    background:var(--bg-deep); border:1px solid var(--line); border-top:none;
+    padding:8px 28px 18px; font-size:1rem;
+  }
+  nav[aria-label="Primary"] .navlinks.open{display:flex;}
+  nav[aria-label="Primary"] .navlinks a{padding:12px 0; width:100%; border-bottom:1px solid var(--line);}
+  nav[aria-label="Primary"] .navlinks a:last-child{border-bottom:none;}
+}
+@media (max-width:420px){
+  nav[aria-label="Primary"] .brand span{margin-left:-7px;}
+  nav[aria-label="Primary"] > .wrap{gap:8px; padding-left:14px; padding-right:14px;}
+  nav[aria-label="Primary"] .brand{font-size:1rem; gap:7px;}
+  nav[aria-label="Primary"] .brand-mark{width:26px; height:26px;}
+  nav[aria-label="Primary"] .navcta{padding:8px 11px; font-size:.78rem;}
+  nav[aria-label="Primary"] .theme-toggle, nav[aria-label="Primary"] .nav-toggle{width:34px; height:34px;}
+}
+
+/* ---------- Footer ---------- */
+footer{
+  border-top:1px solid var(--line);
+  padding:56px 0 28px;
+  background:var(--bg-deep);
+  color:var(--muted);
+  font-size:.9rem;
+  line-height:1.6;
+}
+footer p{margin:0;}
+footer ul{list-style:none; margin:0; padding:0;}
+footer li{margin:0 0 4px;}
+footer a{color:var(--muted); text-decoration:none;}
+footer a:hover, footer a:focus-visible{color:var(--cream); text-decoration:underline;}
+footer li a{display:inline-block; padding:3px 0; min-height:24px; min-width:24px;}
+
+.footer-grid, footer .footer-grid{
+  display:grid;
+  grid-template-columns:1.5fr 1fr 1fr 1fr 1.1fr;
+  gap:32px;
+}
+.footer-brand .footer-name{
+  font-family:'Fraunces', Georgia, serif;
+  font-size:1.2rem; font-weight:600; color:var(--cream); margin-bottom:6px;
+}
+.footer-brand .footer-tag{color:var(--muted); max-width:34ch;}
+.footer-status{
+  margin-top:16px; padding:12px 14px;
+  border-left:3px solid var(--gold);
+  background:var(--surface);
+  border-radius:0 8px 8px 0;
+  font-size:.82rem; max-width:40ch;
+}
+.footer-h{
+  font-family:'IBM Plex Mono', monospace;
+  font-size:.74rem; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--gold); margin:0 0 14px; font-weight:500;
+}
+.footer-bottom, footer .footer-bottom{
+  margin-top:40px; padding-top:20px;
+  border-top:1px solid var(--line);
+  display:flex; flex-wrap:wrap; gap:10px 24px;
+  justify-content:space-between; font-size:.82rem;
+}
+.footer-bottom .footer-legal a{margin-left:18px;}
+.footer-bottom .footer-legal a:first-child{margin-left:0;}
+
+@media (max-width:1040px){
+  footer .footer-grid{grid-template-columns:repeat(2,1fr);}
+  footer .footer-brand{grid-column:1 / -1;}
+}
+@media (max-width:480px){
+  footer .footer-grid{grid-template-columns:1fr;}
+  footer .footer-bottom{flex-direction:column;}
+}
+
+/* ---------- Accessibility refinements ---------- */
+/* Links inside running text must not rely on colour alone (WCAG 1.4.1) */
+main p a:not(.btn), main li a:not(.btn), main td a:not(.btn),
+main .status-box a, main .form-note a, main .notice a, main .site-disclosure a{
+  text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:3px;
+}
+main p a:not(.btn):hover, main li a:not(.btn):hover, main td a:not(.btn):hover{text-decoration-thickness:2px;}
+
+/* Wide tables scroll inside their own region instead of the whole page */
+.table-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.table-scroll:focus-visible{outline:2px solid var(--gold); outline-offset:3px;}
+
+/* Respect reduced-motion for scroll-reveal */
+@media (prefers-reduced-motion: reduce){
+  .reveal{transition:none !important; transform:none !important;}
+}
+
+/* Inline social link rows */
+.social-links a{display:inline-flex; align-items:center; justify-content:center; min-width:24px; min-height:28px; padding:2px 2px;}
+
+/* ---------- Components for the supporting pages ---------- */
+.page-content p, .page-content li{max-width:78ch;}
+.page-content h2{margin-top:2.4rem;}
+.page-content h2:first-child{margin-top:0;}
+.page-content .grid-3, .page-content .grid-2{margin:1.2rem 0 0;}
+.page-content ul{color:var(--muted); padding-left:22px;}
+.page-content li{margin-bottom:6px;}
+
+.notice{
+  background:var(--surface-2);
+  border-left:4px solid var(--gold);
+  border-radius:0 var(--radius) var(--radius) 0;
+  padding:18px 22px; margin:0 0 28px; color:var(--cream);
+}
+.notice strong{color:var(--gold);}
+
+.kicker{
+  display:block;
+  font-family:'IBM Plex Mono', monospace; font-size:.74rem;
+  letter-spacing:.12em; text-transform:uppercase;
+  color:var(--gold); margin-bottom:10px;
+}
+
+.inline-links{display:flex; flex-wrap:wrap; gap:10px 14px; margin:1.4rem 0 0;}
+.inline-links a{
+  display:inline-block; padding:9px 16px;
+  border:1px solid var(--line); border-radius:999px;
+  color:var(--cream); text-decoration:none; font-size:.92rem;
+}
+.inline-links a:hover{border-color:var(--gold);}
+
+.site-disclosure{
+  margin-top:3rem; padding-top:1.4rem;
+  border-top:1px solid var(--line);
+  color:var(--muted); font-size:.88rem; max-width:78ch;
+}
+.site-disclosure strong{color:var(--cream);}
+
+.resource-list{display:grid; gap:12px; margin-top:1.2rem;}
+.resource-link{
+  display:flex; justify-content:space-between; align-items:center; gap:16px;
+  background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+  padding:18px 22px; color:var(--cream); text-decoration:none;
+}
+.resource-link:hover{border-color:var(--gold);}
+.resource-link strong{color:var(--cream);}
+.resource-link span{color:var(--muted); font-size:.92rem;}
+.resource-link > span:last-child{color:var(--gold); font-weight:600; white-space:nowrap;}
+
+.metric-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin:1.2rem 0 0;}
+.metric{
+  background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+  padding:22px; color:var(--muted); font-size:.94rem;
+}
+.metric strong{display:block; font-family:'Fraunces', Georgia, serif; font-size:1.3rem; color:var(--gold); margin-bottom:6px;}
+@media (max-width:720px){ .metric-grid{grid-template-columns:1fr;} }
+
+/* Animal Health brand artwork */
+.brand-figure{margin:0 0 28px;}
+.brand-figure img{display:block; width:100%; height:auto; border-radius:var(--radius); border:1px solid var(--line);}
+.brand-figure figcaption{color:var(--muted); font-size:.84rem; margin-top:8px;}
+.share-figure{max-width:460px;}
+
+/* Illustrative banner photographs under page headers */
+.hero-banner{margin:0; background:var(--bg-deep);}
+.hero-banner img{display:block; width:100%; height:auto; max-height:420px; object-fit:cover;}
+.hero-banner figcaption{color:var(--muted); font-size:.8rem; padding-top:8px; padding-bottom:8px;}
+@media (max-width:600px){ .hero-banner img{height:200px;} }
+
+/* Visual readiness roadmap (home page): numbered steps on a connecting line */
+#roadmap .grid-3{counter-reset:step; position:relative; padding-top:30px; display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
+#roadmap .grid-3::before{content:""; position:absolute; top:14px; left:6%; right:6%; height:2px; background:linear-gradient(90deg,var(--terracotta),var(--gold),var(--sage));}
+#roadmap .grid-3 > .card{position:relative; counter-increment:step;}
+#roadmap .grid-3 > .card::before{
+  content:counter(step); position:absolute; top:-30px; left:22px;
+  width:30px; height:30px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  background:var(--terracotta); color:var(--ink-on-accent);
+  font-weight:700; font-size:.9rem; border:3px solid var(--bg);
+}
+#roadmap .grid-3 > .card:nth-child(2)::before{background:var(--gold);}
+#roadmap .grid-3 > .card:nth-child(3)::before{background:var(--sage); color:#fff;}
+@media (max-width:900px){
+  #roadmap .grid-3{padding-top:0; padding-left:26px; grid-template-columns:1fr;}
+  #roadmap .grid-3::before{top:0; bottom:0; left:12px; right:auto; width:2px; height:auto; background:linear-gradient(180deg,var(--terracotta),var(--gold),var(--sage));}
+  #roadmap .grid-3 > .card::before{top:20px; left:-40px;}
+}
+
+/* Founder page */
+.founder-intro{display:grid; grid-template-columns:240px 1fr; gap:32px; align-items:start;}
+.founder-photo{margin:0;}
+.founder-photo img{display:block; width:100%; height:auto; aspect-ratio:1/1; object-fit:cover; border-radius:var(--radius); border:1px solid var(--line);}
+.founder-photo figcaption{color:var(--muted); font-size:.82rem; margin-top:8px;}
+.signature-quote{margin:2.2rem 0; padding:22px 26px; border-left:4px solid var(--gold); background:var(--surface-2); border-radius:0 var(--radius) var(--radius) 0;}
+.signature-quote p{font-family:'Fraunces', Georgia, serif; font-size:1.25rem; line-height:1.5; color:var(--cream); margin:0; max-width:none;}
+.signature-quote .quote-by{margin:12px 0 0; color:var(--muted); font-size:.9rem; font-family:inherit;}
+@media (max-width:720px){ .founder-intro{grid-template-columns:1fr;} .founder-photo{max-width:260px;} }
+
+/* Floating contact button (call, WhatsApp, SMS) */
+.fab{position:fixed; right:18px; bottom:18px; z-index:60; display:flex; flex-direction:column; align-items:flex-end; gap:10px;}
+.fab-menu{list-style:none; margin:0; padding:0; display:none; flex-direction:column; gap:10px; align-items:flex-end;}
+.fab[data-open="true"] .fab-menu{display:flex;}
+.fab-item{display:inline-flex; align-items:center; gap:10px; min-height:48px; padding:0 18px 0 14px; border-radius:999px; font-weight:600; font-size:.95rem; text-decoration:none; color:#fff; box-shadow:0 6px 18px rgba(0,0,0,.28);}
+.fab-item svg{width:22px; height:22px; flex-shrink:0;}
+.fab-wa{background:#1B7F45;}
+.fab-call{background:#A84A28;}
+.fab-sms{background:#46603F;}
+.fab-item:hover{filter:brightness(1.08);}
+.fab-item:focus-visible, .fab-toggle:focus-visible{outline:3px solid var(--gold); outline-offset:3px;}
+.fab-toggle{display:inline-flex; align-items:center; gap:10px; min-height:52px; padding:0 20px 0 16px; border:0; border-radius:999px; cursor:pointer; background:var(--terracotta); color:var(--ink-on-accent); font:inherit; font-weight:700; box-shadow:0 8px 22px rgba(0,0,0,.32);}
+.fab-toggle svg{width:24px; height:24px;}
+.fab-toggle .fab-icon-close{display:none;}
+.fab[data-open="true"] .fab-icon-open{display:none;}
+.fab[data-open="true"] .fab-icon-close{display:block;}
+@media (max-width:480px){ .fab{right:12px; bottom:12px;} .fab-label{display:none;} .fab-toggle{padding:0 14px; min-width:52px; justify-content:center;} }
+@media (prefers-reduced-motion:no-preference){ .fab-item{animation:fabIn .18s ease-out;} @keyframes fabIn{from{opacity:0; transform:translateY(8px);} to{opacity:1; transform:none;}} }
+body[data-fab] footer{padding-bottom:84px;}
+
+/* Print: clean pages for partners who print */
+@media print{
+  nav[aria-label="Primary"], .fab, .skip-link, .theme-toggle, .hero-banner, .hero-actions, .jump-links, footer .footer-col{display:none !important;}
+  html,body{background:#fff !important; color:#000 !important;}
+  *{color:#000 !important; background:transparent !important; box-shadow:none !important; text-shadow:none !important;}
+  a{text-decoration:underline;}
+  main a[href^="http"]::after, main a[href^="mailto:"]::after{content:" (" attr(href) ")"; font-size:.8em; word-break:break-all;}
+  .card, .panel, .program-card, .notice, .status-box, .highlight{border:1px solid #999 !important; break-inside:avoid;}
+  h1,h2,h3{break-after:avoid;}
+  section{padding:16pt 0 !important;}
+  footer{border-top:1px solid #999; padding:12pt 0 !important;}
+}
+
+/*
+ * Light theme for TJF.
+ * Same earth-tone brand family as the dark theme: warm parchment instead of deep brown,
+ * the same terracotta / gold / sage accents deepened so text stays readable (WCAG AA).
+ * Applied when <html data-theme="light">. Loaded last so it can override page styles.
+ *
+ * Contrast (checked): text #2B1B0F on #F8F1E6 = 14.8:1; muted #65503F = 6.7:1;
+ * gold #7D5606 = 5.8:1; terracotta-text #983F20 = 6.1:1; sage #46603F = 6.2:1;
+ * button text #FFFBF4 on #A84A28 = 5.5:1.
+ */
+:root[data-theme="light"]{
+  color-scheme: light;
+  --bg: #F8F1E6;
+  --bg-deep: #EBDDC5;
+  --surface: #FFFBF4;
+  --surface-2: #F1E5D0;
+  --terracotta: #A84A28;
+  --terracotta-dim: #85402A;
+  --terracotta-text: #983F20;
+  --terracotta-soft: #85402A;
+  --gold: #7D5606;
+  --sage: #46603F;
+  --cream: #2B1B0F;          /* main text colour (named "cream" in the dark theme) */
+  --muted: #65503F;
+  --line: rgba(43,27,15,0.16);
+  --ink-on-accent: #FFFBF4;
+  --nav-bg: rgba(248,241,230,0.95);
+  --field-border: rgba(43,27,15,.5);
+  --error: #A63D1E;
+  --error-border: #A63D1E;
+}
+
+/* Buttons and nav call-to-action: text colour follows the theme */
+.btn-primary{color:var(--ink-on-accent);}
+nav[aria-label="Primary"] .navcta{color:var(--ink-on-accent) !important;}
+
+/* Brand mark: the stem is ink-coloured so it shows on both themes */
+.brand-mark .stem{fill:var(--cream);}
+
+/* Hero graphic: the centre disc needs an edge on a light page */
+:root[data-theme="light"] .converge circle:not(.node){stroke:#8F4A31; stroke-width:1.5;}
+:root[data-theme="light"] .converge .beam{opacity:.8;}
+
+/* Soft card shadow reads better than hairlines alone on light surfaces */
+:root[data-theme="light"] .card,
+:root[data-theme="light"] .pillar,
+:root[data-theme="light"] .contact-form,
+:root[data-theme="light"] .panel{box-shadow:0 1px 2px rgba(43,27,15,.06), 0 8px 24px rgba(43,27,15,.05);}
+
+/* Footer stays a deep, warm band in both themes (scoped dark tokens) */
+:root[data-theme="light"] footer{
+  --bg:#241609; --bg-deep:#1E1208; --surface:#32211A; --surface-2:#3D291F;
+  --cream:#F3E9DC; --muted:#CDBBA7; --gold:#D8A63D; --terracotta-text:#E07B54;
+  --line:rgba(243,233,220,.16);
+  background:var(--bg-deep);
+  color:var(--muted);
+}
+
+/* ---------- Theme switch ---------- */
+.theme-toggle{
+  display:inline-flex; align-items:center; justify-content:center;
+  width:38px; height:38px; flex-shrink:0;
+  background:none; color:var(--cream);
+  border:1px solid var(--line); border-radius:999px;
+  cursor:pointer; padding:0;
+}
+.theme-toggle:hover{border-color:var(--gold);}
+.theme-toggle:focus-visible{outline:2px solid var(--gold); outline-offset:3px;}
+.theme-toggle svg{width:18px; height:18px; display:block;}
+.theme-toggle .icon-sun{display:block;}
+.theme-toggle .icon-moon{display:none;}
+:root[data-theme="light"] .theme-toggle .icon-sun{display:none;}
+:root[data-theme="light"] .theme-toggle .icon-moon{display:block;}
+
+/* Smooth colour change, but never for people who ask for less motion */
+@media (prefers-reduced-motion: no-preference){
+  body, nav[aria-label="Primary"], .card, .pillar, .btn, footer{transition:background-color .25s ease, color .25s ease, border-color .25s ease;}
+}
