@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="24 44 152 130" role="img" aria-label="The Jopetnah Foundation logo mark">
+  <path d="M100,150 C66,126.25 66,74 100,55 C134,74 134,126.25 100,150 Z" fill="#7C9473" transform="rotate(-48 100 150)"/>
+  <path d="M100,150 C66,126.25 66,74 100,55 C134,74 134,126.25 100,150 Z" fill="#D8A63D" transform="rotate(48 100 150)"/>
+  <path d="M100,150 C74,130.5 74,87.6 100,72 C126,87.6 126,130.5 100,150 Z" fill="#C4623C" transform="rotate(-16 100 150)"/>
+  <path d="M100,150 C74,130.5 74,87.6 100,72 C126,87.6 126,130.5 100,150 Z" fill="#8F4A31" transform="rotate(16 100 150)"/>
+  <rect x="95" y="150" width="10" height="17" rx="5" fill="#7A5A3C"/>
+</svg>
