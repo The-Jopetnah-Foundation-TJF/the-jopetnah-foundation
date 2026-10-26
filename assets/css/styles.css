@@ -351,14 +351,20 @@ nav[aria-label="Primary"] .navcta{color:var(--ink-on-accent) !important;}
 }
 [hidden]{display:none !important;}
 
-/* Justified long-form text on wider screens only. Narrow columns keep left-aligned text to avoid wide gaps. */
-@media (min-width:760px){
-  .page-content > p, .page-content > ul > li, .page-content > article > p, .founder-intro p{
-    text-align:justify; text-justify:inter-word; hyphens:auto; -webkit-hyphens:auto;
-  }
-  .page-content .card p, .page-content .notice p, .page-content .site-disclosure, .page-content .lede, blockquote p, figcaption{
-    text-align:left; hyphens:manual;
-  }
+/* Collapsible long content */
+details.more{margin:1.2rem 0;}
+details.more > summary{
+  cursor:pointer; list-style:none; display:inline-flex; align-items:center; gap:10px;
+  min-height:44px; padding:10px 18px; border:1px solid var(--field-border); border-radius:999px;
+  color:var(--cream); font-weight:600; font-size:.95rem;
 }
+details.more > summary::-webkit-details-marker{display:none;}
+details.more > summary::before{content:"+"; font-weight:700; color:var(--gold); width:1ch; text-align:center;}
+details.more[open] > summary::before{content:"\2212";}
+details.more > summary:hover{border-color:var(--gold);}
+details.more > summary:focus-visible{outline:3px solid var(--gold); outline-offset:3px;}
+details.more[open] > summary{margin-bottom:1.2rem;}
+@media print{ details.more::details-content{content-visibility:visible; display:block;} details.more > summary{display:none;} }
+
 .page-content a, .footer a{overflow-wrap:anywhere;}
 a[href^="mailto:"]{overflow-wrap:anywhere;}
