@@ -350,3 +350,15 @@ nav[aria-label="Primary"] .navcta{color:var(--ink-on-accent) !important;}
   body, nav[aria-label="Primary"], .card, .pillar, .btn, footer{transition:background-color .25s ease, color .25s ease, border-color .25s ease;}
 }
 [hidden]{display:none !important;}
+
+/* Justified long-form text on wider screens only. Narrow columns keep left-aligned text to avoid wide gaps. */
+@media (min-width:760px){
+  .page-content > p, .page-content > ul > li, .page-content > article > p, .founder-intro p{
+    text-align:justify; text-justify:inter-word; hyphens:auto; -webkit-hyphens:auto;
+  }
+  .page-content .card p, .page-content .notice p, .page-content .site-disclosure, .page-content .lede, blockquote p, figcaption{
+    text-align:left; hyphens:manual;
+  }
+}
+.page-content a, .footer a{overflow-wrap:anywhere;}
+a[href^="mailto:"]{overflow-wrap:anywhere;}
