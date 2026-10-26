@@ -314,6 +314,7 @@ nav .wrap{min-height:68px; display:flex; align-items:center; gap:28px; position:
 
       <div>
         <form class="contact-form" id="contactForm" action="mailto:thejopetnahfoundation@gmail.com" method="post" enctype="text/plain" novalidate>
+          <div style="position:absolute;left:-9999px;" aria-hidden="true"><label>Leave this empty <input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></div>
           <div class="field">
             <label for="f-name">Your name <span class="req" aria-hidden="true">*</span></label>
             <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="e-name">
@@ -349,9 +350,11 @@ nav .wrap{min-height:68px; display:flex; align-items:center; gap:28px; position:
           </div>
 
           <div class="form-actions">
-            <button class="btn btn-primary" type="submit">Prepare my email</button>
+            <button class="btn btn-primary" type="submit">Send message</button>
           </div>
-          <p class="form-note">This form opens your own email app with the message filled in. Nothing is sent to us until you press send there. See our <a href="privacy.html">privacy policy</a>.</p>
+          <p id="sendStatus" role="status" class="form-note"></p>
+          <p class="form-note">When you press send, your message goes to us through FormSubmit, a service that relays form messages to our email. If that does not work, the form opens your own email app with the message filled in instead. See our <a href="privacy.html">privacy policy</a>.</p>
+          <div id="sentOk" class="form-result show" hidden aria-live="polite"><h3>Thank you</h3><p>Your message has been sent. We are a small team, so please allow a few days for a reply.</p></div>
 
           <div class="form-result" id="formResult" aria-live="polite">
             <h3>Almost there</h3>
