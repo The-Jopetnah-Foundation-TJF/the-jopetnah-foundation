@@ -26,7 +26,8 @@ nav[aria-label="Primary"] .brand-mark{width:31px; height:31px; flex-shrink:0;}
 nav[aria-label="Primary"] .navlinks{display:flex; gap:20px; align-items:center; font-size:.92rem;}
 nav[aria-label="Primary"] .navlinks a{color:var(--muted); text-decoration:none; padding:4px 0; white-space:nowrap;}
 nav[aria-label="Primary"] .navlinks a:hover{color:var(--cream);}
-nav[aria-label="Primary"] .navlinks a[aria-current="page"]{
+nav[aria-label="Primary"] .navlinks a[aria-current="page"],
+nav[aria-label="Primary"] .navlinks a[aria-current="true"]{
   color:var(--cream); text-decoration:underline; text-decoration-color:var(--gold);
   text-decoration-thickness:2px; text-underline-offset:6px;
 }
@@ -348,3 +349,4 @@ nav[aria-label="Primary"] .navcta{color:var(--ink-on-accent) !important;}
 @media (prefers-reduced-motion: no-preference){
   body, nav[aria-label="Primary"], .card, .pillar, .btn, footer{transition:background-color .25s ease, color .25s ease, border-color .25s ease;}
 }
+[hidden]{display:none !important;}

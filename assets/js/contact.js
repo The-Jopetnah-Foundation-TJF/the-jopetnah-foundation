@@ -6,6 +6,7 @@
  */
 (function(){
   var TO = 'thejopetnahfoundation@gmail.com';
+  var ENDPOINT = 'https://formsubmit.co/ajax/' + TO;
   var form = document.getElementById('contactForm');
   if(!form) return;
 
@@ -63,19 +64,52 @@
     lines.push('', v('message'));
     var body = lines.join('\n');
 
-    preview.value = 'To: ' + TO + '\nSubject: ' + subject + '\n\n' + body;
-    result.classList.add('show');
-    result.setAttribute('tabindex','-1');
+    var btn = form.querySelector('button[type="submit"]');
+    var note = document.getElementById('sendStatus');
+    function fallback(){
+      preview.value = 'To: ' + TO + '\nSubject: ' + subject + '\n\n' + body;
+      result.classList.add('show');
+      result.setAttribute('tabindex','-1');
 
-    var href = 'mailto:' + TO + '?subject=' + encodeURIComponent(subject) +
-               '&body=' + encodeURIComponent(body);
-    if(href.length <= 1900){
-      window.location.href = href;
-    }else{
-      document.getElementById('resultLead').textContent =
-        'Your message is too long to pre-fill automatically. Copy it below and paste it into an email to ' + TO + '.';
+      var href = 'mailto:' + TO + '?subject=' + encodeURIComponent(subject) +
+                 '&body=' + encodeURIComponent(body);
+      if(href.length <= 1900){
+        window.location.href = href;
+      }else{
+        document.getElementById('resultLead').textContent =
+          'Your message is too long to pre-fill automatically. Copy it below and paste it into an email to ' + TO + '.';
+      }
+      result.focus();
     }
-    result.focus();
+    if(btn){ btn.disabled = true; btn.textContent = 'Sending…'; }
+    if(note) note.textContent = 'Sending your message…';
+    var ctl = ('AbortController' in window) ? new AbortController() : null;
+    var timer = setTimeout(function(){ if(ctl) ctl.abort(); }, 12000);
+    fetch(ENDPOINT, {
+      method: 'POST',
+      headers: {'Content-Type':'application/json','Accept':'application/json'},
+      body: JSON.stringify({
+        _subject: subject, _template: 'table', _captcha: 'false',
+        _honey: form.elements._honey ? form.elements._honey.value : '',
+        name: v('name'), email: v('email'), _replyto: v('email'),
+        audience: audience, organisation: v('organisation'), message: v('message')
+      }),
+      signal: ctl ? ctl.signal : undefined
+    }).then(function(r){ return r.json(); }).then(function(d){
+      clearTimeout(timer);
+      if(d && (d.success === true || d.success === 'true')){
+        form.reset(); applyHint();
+        if(btn){ btn.disabled = false; btn.textContent = 'Send message'; }
+        if(note) note.textContent = '';
+        var ok = document.getElementById('sentOk');
+        ok.hidden = false; ok.setAttribute('tabindex','-1'); ok.focus();
+      }else{ throw new Error('not accepted'); }
+    }).catch(function(){
+      clearTimeout(timer);
+      if(btn){ btn.disabled = false; btn.textContent = 'Send message'; }
+      if(note) note.textContent = '';
+      fallback();
+    });
   });
 
   form.addEventListener('input', function(e){
