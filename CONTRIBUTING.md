@@ -7,7 +7,7 @@ Thanks for your interest in Jopetnah. This repo is our public working space whil
 | I want to... | How |
 |---|---|
 | Suggest a change to a program, copy, or plan | Open an [issue](../../issues) describing the change and why |
-| Propose a new funding lead for the grants calendar | Open an issue with the funder name, focus area, and link — or submit a pull request adding a row to `docs/GRANTS_CALENDAR.md` |
+| Propose a new funding lead for the grants calendar | Open an issue with the funder name, focus area, and link|
 | Offer skills (design, legal, finance, grant-writing, translation) | Open an issue tagged `offer-of-support`, or email us (see [README](README.md#-get-involved)) |
 | Join as a founding board member or advisor | Reach out directly — see [Get Involved](README.md#-get-involved) in the README |
 | Report an error or outdated figure | Open an issue tagged `correction` |

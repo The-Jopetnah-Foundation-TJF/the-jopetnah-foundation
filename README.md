@@ -230,13 +230,11 @@ Three tracks running in parallel:
 | Guardian | $500 (one-time or /mo) | A full "whole-family" bundled gift |
 | Founder's Circle | $5,000+/yr | Named recognition, gala invite, quarterly briefings |
 
-**🎁 Not ready to give cash?** We also welcome **in-kind gifts** — books, medical supplies, tools, equipment, professional expertise, or connections — matched directly to real needs across our four pillars. See [`donor-resources/IN_KIND_GIVING.md`](donor-resources/IN_KIND_GIVING.md) for the full list and how to offer one.
-
-**📊 Donor & Partner Pitch Deck:** [`media/Jopetnah_Donor_Pitch_Deck.pptx`](media/Jopetnah_Donor_Pitch_Deck.pptx) — a 15-slide briefing covering the problem, our model, program detail by pillar, Year 1 pilot metrics, budget allocation, giving tiers, and governance highlights.
+**🎁 Not ready to give cash?** We also welcome **in-kind gifts** — books, medical supplies, tools, equipment, professional expertise, or connections — matched directly to real needs across our four pillars. See the website's [Give in kind](https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/in-kind.html) page for how to offer one.
 
 ## 📅 Grants Calendar
 
-Real, current funding opportunities relevant to our pillars in Uganda/East Africa. *(This is a condensed view — see [`donor-resources/GRANTS_CALENDAR.md`](donor-resources/GRANTS_CALENDAR.md) for the full, status-tracked version, including eligibility notes and application links. Propose new leads via the [Grant Lead issue template](../../issues/new?template=grant_lead.md).)*
+Real, current funding opportunities relevant to our pillars in Uganda/East Africa.
 
 | Funder / Program | Pillar(s) | Grant Type | Typical Range (USD) | Deadline / Cycle | Notes |
 |---|---|---|---|---|---|
@@ -346,38 +344,21 @@ Not a claim to be the only organization doing this work — that would be hard t
 
 ```
 .
-├── README.md                  ← you are here (all program, funding, and event detail lives here)
-├── index.html                 ← public landing page (GitHub Pages)
-├── animal-health.html         ← Animal Health Initiative page (One Health thread)
-├── LICENSE                    ← CC BY-NC 4.0
+├── README.md                  ← you are here
+├── *.html                     ← the public website (GitHub Pages)
+├── assets/                    ← site images, fonts, styles and scripts
+├── documents/                 ← published policies and frameworks (PDF)
+├── governance/                ← Governance Bundle (PDF)
+├── newsletter/                ← TJF-The Next Page (PDF, mobile, summary, text)
+├── scripts/                   ← site link checker
+├── LICENSE.md                 ← CC BY-NC 4.0
 ├── CONTRIBUTING.md            ← how to get involved
-├── VOLUNTEER_ONBOARDING.md    ← step-by-step process for new volunteers
-├── jopetnah-icon-512.png      ← logo (used above, and as the site's structured-data logo)
-├── favicon.png                ← browser tab icon
-├── apple-touch-icon.png       ← mobile home-screen icon
-├── social-preview.png         ← link-share preview image
-├── robots.txt                 ← search engine crawl rules
-├── sitemap.xml                ← search engine sitemap
-├── media/
-│   └── Jopetnah_Donor_Pitch_Deck.pptx  ← 15-slide donor & partner briefing (see Funding Strategy)
-├── governance/
-│   └── TJF_Governance_Bundle_FINAL.pdf ← Constitution, Board Charter, and 3 policies (see Governance)
-├── donor-resources/
-│   ├── README.md               ← donor-facing resource index
-│   ├── GRANTS_CALENDAR.md      ← full, status-tracked grants pipeline (see Grants Calendar)
-│   └── IN_KIND_GIVING.md       ← non-cash giving guide (see Funding Strategy)
-├── communications/
-│   ├── README.md               ← communications resource index
-│   └── TJF_Program_Pathways_at_a_Glance.docx  ← 1-page numbered reference to all 13 program pathways (stakeholder/funder handout)
-└── .github/ISSUE_TEMPLATE/
-    ├── grant_lead.md           ← Track a new grant opportunity
-    ├── offer_of_support.md     ← Volunteers, mentors, or pro-bono legal/tech help
-    └── correction.md           ← Report outdated info or broken links
+├── robots.txt, sitemap.xml    ← search engine files
+└── .github/                   ← issue templates and the site check
 ```
 
 **Landing page:** live at `https://the-jopetnah-foundation-tjf.github.io/the-jopetnah-foundation/` via GitHub Pages.
 
-*(The full status-tracked Grants Calendar now lives in-repo at `donor-resources/GRANTS_CALENDAR.md` — see the Grants Calendar section above. The original `Jopetnah_Grants_Calendar.xlsx` may still be used for offline work but is no longer the primary reference.)*
 
 ## 🙋 Get Involved
 
