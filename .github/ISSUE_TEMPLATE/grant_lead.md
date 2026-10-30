@@ -7,7 +7,7 @@ labels: grant-lead
 assignees: ''
 ---
 
-See the current tracker before submitting, to avoid duplicates: [donor-resources/GRANTS_CALENDAR.md](../../blob/main/donor-resources/GRANTS_CALENDAR.md)
+Please check the open issues before submitting, to avoid duplicates.
 
 **Funder name and link**
 
